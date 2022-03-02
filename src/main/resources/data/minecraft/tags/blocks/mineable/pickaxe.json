@@ -1,0 +1,35 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_plus:deep_ocean_bricks",
+    "vanilla_plus:deep_ocean_brick_slab",
+    "vanilla_plus:deep_ocean_brick_vertical_slab",
+    "vanilla_plus:deep_ocean_brick_stairs",
+    "vanilla_plus:deep_ocean_brick_wall",
+    "vanilla_plus:chiseled_deep_ocean_bricks",
+
+    "vanilla_plus:stone_vertical_slab",
+    "vanilla_plus:smooth_stone_vertical_slab",
+    "vanilla_plus:cobblestone_vertical_slab",
+    "vanilla_plus:mossy_cobblestone_vertical_slab",
+    "vanilla_plus:stone_brick_vertical_slab",
+    "vanilla_plus:mossy_stone_brick_vertical_slab",
+    "vanilla_plus:andesite_vertical_slab",
+    "vanilla_plus:polished_andesite_vertical_slab",
+    "vanilla_plus:diorite_vertical_slab",
+    "vanilla_plus:polished_diorite_vertical_slab",
+    "vanilla_plus:granite_vertical_slab",
+    "vanilla_plus:polished_granite_vertical_slab",
+    "vanilla_plus:sandstone_vertical_slab",
+    "vanilla_plus:cut_sandstone_vertical_slab",
+    "vanilla_plus:smooth_sandstone_vertical_slab",
+    "vanilla_plus:red_sandstone_vertical_slab",
+    "vanilla_plus:cut_red_sandstone_vertical_slab",
+    "vanilla_plus:smooth_red_sandstone_vertical_slab",
+    "vanilla_plus:brick_vertical_slab",
+
+    "vanilla_plus:green_lantern",
+    "vanilla_plus:yellow_lantern",
+    "vanilla_plus:red_lantern"
+  ]
+}

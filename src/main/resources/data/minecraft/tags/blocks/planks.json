@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_plus:decorated_oak_planks",
+
+    "vanilla_plus:decorated_acacia_planks",
+
+    "vanilla_plus:decorated_birch_planks",
+
+    "vanilla_plus:decorated_spruce_planks",
+
+    "vanilla_plus:decorated_jungle_planks",
+
+    "vanilla_plus:decorated_dark_oak_planks",
+
+    "vanilla_plus:decorated_crimson_planks",
+
+    "vanilla_plus:decorated_warped_planks"
+  ]
+}

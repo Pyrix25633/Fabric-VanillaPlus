@@ -1,0 +1,244 @@
+{
+  "everything_s_a_symptom": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.everything_s_a_symptom",
+    "sounds": [
+      "vanilla_plus:everything_s_a_symptom"
+    ]
+  },
+  "dawn": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.dawn",
+    "sounds": [
+      "vanilla_plus:dawn"
+    ]
+  },
+  "heron": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.heron",
+    "sounds": [
+      "vanilla_plus:heron"
+    ]
+  },
+  "sweet_look": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.sweet_look",
+    "sounds": [
+      "vanilla_plus:sweet_look"
+    ]
+  },
+  "lost_treasure": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.lost_treasure",
+    "sounds": [
+      "vanilla_plus:lost_treasure"
+    ]
+  },
+  "alien_sky": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.alien_sky",
+    "sounds": [
+      "vanilla_plus:alien_sky"
+    ]
+  },
+  "backpack_city": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.backpack_city",
+    "sounds": [
+      "vanilla_plus:backpack_city"
+    ]
+  },
+  "levitate": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.levitate",
+    "sounds": [
+      "vanilla_plus:levitate"
+    ]
+  },
+  "snaps": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.snaps",
+    "sounds": [
+      "vanilla_plus:snaps"
+    ]
+  },
+  "mount_and_blade": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.mount_and_blade",
+    "sounds": [
+      "vanilla_plus:mount_and_blade"
+    ]
+  },
+  "pink_night_sky": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.pink_night_sky",
+    "sounds": [
+      "vanilla_plus:pink_night_sky"
+    ]
+  },
+  "yerba_mate": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.yerba_mate",
+    "sounds": [
+      "vanilla_plus:yerba_mate"
+    ]
+  },
+
+  "backyard_boy": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.backyard_boy",
+    "sounds": [
+      "vanilla_plus:backyard_boy"
+    ]
+  },
+  "losing_my_grip": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.losing_my_grip",
+    "sounds": [
+      "vanilla_plus:losing_my_grip"
+    ]
+  },
+  "penny_rabbit_and_summer_bear": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.penny_rabbit_and_summer_bear",
+    "sounds": [
+      "vanilla_plus:penny_rabbit_and_summer_bear"
+    ]
+  },
+  "remember_when": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.remember_when",
+    "sounds": [
+      "vanilla_plus:remember_when"
+    ]
+  },
+
+  "i_wonder": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.i_wonder",
+    "sounds": [
+      "vanilla_plus:i_wonder"
+    ]
+  },
+
+  "liberty_belle": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.liberty_belle",
+    "sounds": [
+      "vanilla_plus:liberty_belle"
+    ]
+  },
+
+  "i_have_seen_a_ghost": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.i_have_seen_a_ghost",
+    "sounds": [
+      "vanilla_plus:i_have_seen_a_ghost"
+    ]
+  },
+  "the_distance_between_us": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.the_distance_between_us",
+    "sounds": [
+      "vanilla_plus:the_distance_between_us"
+    ]
+  },
+  "pale_moon": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.pale_moon",
+    "sounds": [
+      "vanilla_plus:pale_moon"
+    ]
+  },
+  "misty": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.misty",
+    "sounds": [
+      "vanilla_plus:misty"
+    ]
+  },
+  "finding": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.finding",
+    "sounds": [
+      "vanilla_plus:finding"
+    ]
+  },
+  "decay": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.decay",
+    "sounds": [
+      "vanilla_plus:decay"
+    ]
+  },
+  "moving_on": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.moving_on",
+    "sounds": [
+      "vanilla_plus:moving_on"
+    ]
+  },
+  "my_person": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.my_person",
+    "sounds": [
+      "vanilla_plus:my_person"
+    ]
+  },
+  "i_love_you_baby": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.i_love_you_baby",
+    "sounds": [
+      "vanilla_plus:i_love_you_baby"
+    ]
+  },
+  "time": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.time",
+    "sounds": [
+      "vanilla_plus:time"
+    ]
+  },
+  "no_worries": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.no_worries",
+    "sounds": [
+      "vanilla_plus:no_worries"
+    ]
+  },
+  "wistful": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.wistful",
+    "sounds": [
+      "vanilla_plus:wistful"
+    ]
+  },
+  "alone_on_d_beach": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.alone_on_d_beach",
+    "sounds": [
+      "vanilla_plus:alone_on_d_beach"
+    ]
+  },
+  "not_me": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.not_me",
+    "sounds": [
+      "vanilla_plus:not_me"
+    ]
+  },
+  "panic_at_the_disco": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.panic_at_the_disco",
+    "sounds": [
+      "vanilla_plus:panic_at_the_disco"
+    ]
+  },
+  "dance_monkey": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.dance_monkey",
+    "sounds": [
+      "vanilla_plus:dance_monkey"
+    ]
+  }
+}

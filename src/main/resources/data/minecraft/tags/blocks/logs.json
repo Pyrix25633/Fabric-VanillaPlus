@@ -1,0 +1,44 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_plus:decorated_oak_log",
+    "vanilla_plus:decorated_stripped_oak_log",
+    "vanilla_plus:decorated_oak_wood",
+    "vanilla_plus:decorated_stripped_oak_wood",
+
+    "vanilla_plus:decorated_acacia_log",
+    "vanilla_plus:decorated_stripped_acacia_log",
+    "vanilla_plus:decorated_acacia_wood",
+    "vanilla_plus:decorated_stripped_acacia_wood",
+
+    "vanilla_plus:decorated_birch_log",
+    "vanilla_plus:decorated_stripped_birch_log",
+    "vanilla_plus:decorated_birch_wood",
+    "vanilla_plus:decorated_stripped_birch_wood",
+
+    "vanilla_plus:decorated_spruce_log",
+    "vanilla_plus:decorated_stripped_spruce_log",
+    "vanilla_plus:decorated_spruce_wood",
+    "vanilla_plus:decorated_stripped_spruce_wood",
+
+    "vanilla_plus:decorated_jungle_log",
+    "vanilla_plus:decorated_stripped_jungle_log",
+    "vanilla_plus:decorated_jungle_wood",
+    "vanilla_plus:decorated_stripped_jungle_wood",
+
+    "vanilla_plus:decorated_dark_oak_log",
+    "vanilla_plus:decorated_stripped_dark_oak_log",
+    "vanilla_plus:decorated_dark_oak_wood",
+    "vanilla_plus:decorated_stripped_dark_oak_wood",
+
+    "vanilla_plus:decorated_crimson_stem",
+    "vanilla_plus:decorated_stripped_crimson_stem",
+    "vanilla_plus:decorated_crimson_hyphae",
+    "vanilla_plus:decorated_stripped_crimson_hyphae",
+
+    "vanilla_plus:decorated_warped_stem",
+    "vanilla_plus:decorated_stripped_warped_stem",
+    "vanilla_plus:decorated_warped_hyphae",
+    "vanilla_plus:decorated_stripped_warped_hyphae"
+  ]
+}

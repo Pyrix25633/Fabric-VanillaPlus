@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_planks"
+    }
+  },
+  "result": {
+    "item": "vanilla_plus:spruce_vertical_slab",
+    "count": 6
+  }
+}

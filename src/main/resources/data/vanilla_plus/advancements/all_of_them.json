@@ -1,0 +1,142 @@
+{
+  "display": {
+    "icon": {
+      "item": "vanilla_plus:decorated_warped_planks"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them.title"
+    },
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "vanilla_plus:decoration",
+  "criteria": {
+    "oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_oak_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "spruce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_spruce_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "birch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_birch_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "acacia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_acacia_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "jungle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_jungle_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "dark_oak": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_dark_oak_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "crimson": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_crimson_planks"
+            ]
+          }
+        ]
+      }
+    },
+    "warped": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_warped_planks"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "oak"
+    ],
+    [
+      "spruce"
+    ],
+    [
+      "birch"
+    ],
+    [
+      "acacia"
+    ],
+    [
+      "jungle"
+    ],
+    [
+      "dark_oak"
+    ],
+    [
+      "crimson"
+    ],
+    [
+      "warped"
+    ]
+  ]
+}

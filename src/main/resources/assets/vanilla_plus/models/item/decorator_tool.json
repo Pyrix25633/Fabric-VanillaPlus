@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vanilla_plus:item/decorator_tool"
+  }
+}

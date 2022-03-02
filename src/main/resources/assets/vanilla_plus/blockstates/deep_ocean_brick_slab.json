@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanilla_plus:block/deep_ocean_brick_slab"
+    },
+    "type=double": {
+      "model": "vanilla_plus:block/deep_ocean_bricks"
+    },
+    "type=top": {
+      "model": "vanilla_plus:block/deep_ocean_brick_slab_top"
+    }
+  }
+}

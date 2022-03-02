@@ -1,0 +1,60 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "type": "north"
+      },
+      "apply": {
+        "model": "vanilla_plus:block/smooth_stone_vertical_slab_ne",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "type": "east"
+      },
+      "apply": {
+        "model": "vanilla_plus:block/smooth_stone_vertical_slab_ne",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "type": "south"
+      },
+      "apply": {
+        "model": "vanilla_plus:block/smooth_stone_vertical_slab_sw",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "type": "west"
+      },
+      "apply": {
+        "model": "vanilla_plus:block/smooth_stone_vertical_slab_sw",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "type": "double",
+        "is_on_x_axis": true
+      },
+      "apply": {
+        "model": "vanilla_plus:block/smooth_stone_vertical_slab_full",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "type": "double",
+        "is_on_x_axis": false
+      },
+      "apply": {
+        "model": "vanilla_plus:block/smooth_stone_vertical_slab_full",
+        "y": 270
+      }
+    }
+  ]
+}

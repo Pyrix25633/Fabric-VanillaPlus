@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_plus:decorated_dark_oak_log",
+    "vanilla_plus:decorated_stripped_dark_oak_log",
+    "vanilla_plus:decorated_dark_oak_wood",
+    "vanilla_plus:decorated_stripped_dark_oak_wood"
+  ]
+}

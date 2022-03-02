@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "vanilla_plus:decorated_oak_planks"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.decoration.title"
+    },
+    "description": {
+      "translate": "advancements.vanilla_plus.decoration.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "vanilla_plus:textures/block/decorated_oak_planks.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:decorated_oak_planks"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

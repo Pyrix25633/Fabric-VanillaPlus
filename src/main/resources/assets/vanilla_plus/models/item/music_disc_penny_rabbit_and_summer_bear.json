@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vanilla_plus:item/music_disc_penny_rabbit_and_summer_bear"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:blank_music_disc"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    }
+  ],
+  "result": {
+    "item": "vanilla_plus:blank_pop_music_disc",
+    "count": 1
+  }
+}

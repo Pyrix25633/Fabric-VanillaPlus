@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.pyrix25633.vanilla_plus.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [],
+  "client": [
+    "VanillaPlusMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "vanilla_plus-refmap.json"
+}

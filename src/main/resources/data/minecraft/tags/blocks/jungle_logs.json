@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_plus:decorated_jungle_log",
+    "vanilla_plus:decorated_stripped_jungle_log",
+    "vanilla_plus:decorated_jungle_wood",
+    "vanilla_plus:decorated_stripped_jungle_wood"
+  ]
+}

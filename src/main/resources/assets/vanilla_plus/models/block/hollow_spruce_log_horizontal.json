@@ -1,0 +1,8 @@
+{
+	"parent": "vanilla_plus:block/hollow_log_horizontal",
+	"textures": {
+		"out": "block/spruce_log",
+		"front": "block/spruce_log_top",
+		"in": "block/stripped_spruce_log"
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:decorated_stripped_oak_log"
+    }
+  ],
+  "result": {
+    "item": "vanilla_plus:decorated_oak_planks",
+    "count": 4
+  }
+}

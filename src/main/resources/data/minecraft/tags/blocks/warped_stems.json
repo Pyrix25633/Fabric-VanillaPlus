@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "vanilla_plus:decorated_warped_stem",
+    "vanilla_plus:decorated_stripped_warped_stem",
+    "vanilla_plus:decorated_warped_hyphae",
+    "vanilla_plus:decorated_stripped_warped_hyphae"
+  ]
+}

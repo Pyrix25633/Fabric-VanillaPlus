@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:decorated_stripped_spruce_wood"
+    }
+  ],
+  "result": {
+    "item": "vanilla_plus:decorated_spruce_planks",
+    "count": 4
+  }
+}

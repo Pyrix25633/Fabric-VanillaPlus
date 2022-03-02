@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:decorated_stripped_jungle_log"
+    }
+  ],
+  "result": {
+    "item": "vanilla_plus:decorated_jungle_planks",
+    "count": 4
+  }
+}

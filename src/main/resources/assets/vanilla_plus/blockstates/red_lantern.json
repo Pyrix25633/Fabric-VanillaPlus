@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "vanilla_plus:block/red_lantern"
+    },
+    "hanging=true": {
+      "model": "vanilla_plus:block/red_lantern_hanging"
+    }
+  }
+}

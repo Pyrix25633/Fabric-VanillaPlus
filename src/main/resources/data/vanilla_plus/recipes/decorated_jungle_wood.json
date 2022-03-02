@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "vanilla_plus:decorated_jungle_log"
+    }
+  },
+  "result": {
+    "item": "vanilla_plus:decorated_jungle_wood",
+    "count": 3
+  }
+}

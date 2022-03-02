@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_hanging_lantern",
+  "textures": {
+    "lantern": "vanilla_plus:block/yellow_lantern"
+  }
+}

@@ -1,0 +1,8 @@
+{
+	"parent": "vanilla_plus:block/hollow_log_horizontal",
+	"textures": {
+		"out": "block/warped_stem",
+		"front": "block/warped_stem_top",
+		"in": "block/stripped_warped_stem"
+	}
+}

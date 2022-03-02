@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "vanilla_plus:decorated_crimson_stem"
+    }
+  },
+  "result": {
+    "item": "vanilla_plus:decorated_crimson_wood",
+    "count": 3
+  }
+}

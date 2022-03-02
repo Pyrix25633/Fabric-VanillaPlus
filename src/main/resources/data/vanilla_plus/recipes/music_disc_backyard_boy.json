@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:blank_pop_music_disc"
+    },
+    {
+      "item": "minecraft:cyan_dye"
+    },
+    {
+      "item": "minecraft:purple_dye"
+    }
+  ],
+  "result": {
+    "item": "vanilla_plus:music_disc_backyard_boy",
+    "count": 1
+  }
+}

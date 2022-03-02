@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vanilla_plus:item/music_disc_i_have_seen_a_ghost"
+  }
+}
