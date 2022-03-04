@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "vanilla_plus",
-  "version": "1.18.2-0.4.1",
+  "version": "${version}",
 
   "name": "Vanilla Plus",
   "description": "A mod to improve vanilla experience",
@@ -32,7 +32,7 @@
     "fabricloader": ">=0.13.3",
     "fabric": "*",
     "minecraft": "1.18.x",
-    "java": ">=16"
+    "java": ">=17"
   },
   "suggests": {
     "another-mod": "*"

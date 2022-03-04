@@ -235,6 +235,12 @@ public class ModBlocks {
             new VerticalSlabBlock(stoneSettings));
     public static final Block BRICK_VERTICAL_SLAB = registerDecorativeBlock("brick_vertical_slab",
             new VerticalSlabBlock(stoneSettings));
+    public static final Block PRISMARINE_VERTICAL_SLAB = registerDecorativeBlock("prismarine_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block PRISMARINE_BRICK_VERTICAL_SLAB = registerDecorativeBlock("prismarine_brick_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block DARK_PRISMARINE_VERTICAL_SLAB = registerDecorativeBlock("dark_prismarine_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
 
     //Lanterns
     public static final Block GREEN_LANTERN = registerDecorativeBlock("green_lantern",

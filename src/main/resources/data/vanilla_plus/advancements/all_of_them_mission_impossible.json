@@ -351,6 +351,42 @@
           }
         ]
       }
+    },
+    "prismarine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:prismarine_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "prismarine_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:prismarine_brick_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "dark_prismarine": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:dark_prismarine_vertical_slab"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -437,6 +473,15 @@
     ],
     [
       "brick"
+    ],
+    [
+      "prismarine"
+    ],
+    [
+      "prismarine_brick"
+    ],
+    [
+      "dark_prismarine"
     ]
   ]
 }
