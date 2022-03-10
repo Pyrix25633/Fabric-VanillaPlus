@@ -1,0 +1,33 @@
+{
+	"variants" : 
+	{
+		"type=double" : 
+		{
+			"model" : "minecraft:block/quartz_block"
+		},
+		"type=east" : 
+		{
+			"model" : "vanilla_plus:block/quartz_vertical_slab",
+			"uvlock" : true,
+			"y" : 90
+		},
+		"type=north" : 
+		{
+			"model" : "vanilla_plus:block/quartz_vertical_slab",
+			"uvlock" : true,
+			"y" : 0
+		},
+		"type=south" : 
+		{
+			"model" : "vanilla_plus:block/quartz_vertical_slab",
+			"uvlock" : true,
+			"y" : 180
+		},
+		"type=west" : 
+		{
+			"model" : "vanilla_plus:block/quartz_vertical_slab",
+			"uvlock" : true,
+			"y" : 270
+		}
+	}
+}

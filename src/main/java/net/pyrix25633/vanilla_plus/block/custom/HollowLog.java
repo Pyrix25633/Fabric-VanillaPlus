@@ -151,6 +151,7 @@ public class HollowLog extends Block implements Waterloggable{
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack playerItem = player.getStackInHand(hand);
         boolean finished = false;
+        Block toPlace = Blocks.AIR;
         if(state.isOf(this)) {
             if(playerItem.getItem() == Items.MOSS_CARPET) {
                 if(!state.get(MOSSY)) {
@@ -174,64 +175,50 @@ public class HollowLog extends Block implements Waterloggable{
                             SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                     world.addBlockBreakParticles(pos, Blocks.MOSS_CARPET.getDefaultState());
                     dropStack(world, pos, new ItemStack(Items.MOSS_CARPET));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
+                    playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     finished = true;
                 }
             }
             else if(playerItem.getItem() == Items.WOODEN_AXE || playerItem.getItem() == Items.STONE_AXE ||
                     playerItem.getItem() == Items.IRON_AXE || playerItem.getItem() == Items.GOLDEN_AXE ||
                     playerItem.getItem() == Items.DIAMOND_AXE || playerItem.getItem() == Items.NETHERITE_AXE) {
-                //Oak
+                finished = true;
                 if(state.isOf(ModBlocks.HOLLOW_OAK_LOG)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_OAK_LOG.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_OAK_LOG;
                 }
-                //Spruce
                 else if(state.isOf(ModBlocks.HOLLOW_SPRUCE_LOG)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_SPRUCE_LOG.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_SPRUCE_LOG;
                 }
-                //Birch
                 else if(state.isOf(ModBlocks.HOLLOW_BIRCH_LOG)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_BIRCH_LOG.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_BIRCH_LOG;
                 }
-                //Acacia
                 else if(state.isOf(ModBlocks.HOLLOW_ACACIA_LOG)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_ACACIA_LOG.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_ACACIA_LOG;
                 }
-                //Jungle
                 else if(state.isOf(ModBlocks.HOLLOW_JUNGLE_LOG)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_JUNGLE_LOG.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_JUNGLE_LOG;
                 }
-                //Dark Oak
                 else if(state.isOf(ModBlocks.HOLLOW_DARK_OAK_LOG)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_DARK_OAK_LOG.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_DARK_OAK_LOG;
                 }
-                //Crimson
                 else if(state.isOf(ModBlocks.HOLLOW_CRIMSON_STEM)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_CRIMSON_STEM.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_CRIMSON_STEM;
                 }
-                //Warped
                 else if(state.isOf(ModBlocks.HOLLOW_WARPED_STEM)) {
-                    world.setBlockState(pos, ModBlocks.STRIPPED_HOLLOW_WARPED_STEM.getDefaultState()
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_WARPED_STEM;
+                }
+                else {
+                    finished = false;
+                }
+                if(finished) {
+                    world.setBlockState(pos, toPlace.getDefaultState()
                             .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
                             .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
+                    world.playSound(player, player.getX(), player.getY(), player.getZ(),
+                            SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                 }
-                playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                world.playSound(player, player.getX(), player.getY(), player.getZ(),
-                        SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+
                 finished = true;
             }
         }

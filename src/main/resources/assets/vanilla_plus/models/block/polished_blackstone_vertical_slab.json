@@ -1,0 +1,9 @@
+{
+	"parent" : "vanilla_plus:block/vertical_slab",
+	"textures" : 
+	{
+		"bottom" : "minecraft:block/polished_blackstone",
+		"side" : "minecraft:block/polished_blackstone",
+		"top" : "minecraft:block/polished_blackstone"
+	}
+}

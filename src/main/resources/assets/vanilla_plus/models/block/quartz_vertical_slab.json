@@ -1,0 +1,9 @@
+{
+	"parent" : "vanilla_plus:block/vertical_slab",
+	"textures" : 
+	{
+		"bottom" : "minecraft:block/quartz_block",
+		"side" : "minecraft:block/quartz_block",
+		"top" : "minecraft:block/quartz_block"
+	}
+}

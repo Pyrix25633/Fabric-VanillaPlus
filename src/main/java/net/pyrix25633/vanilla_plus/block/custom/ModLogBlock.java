@@ -1,8 +1,8 @@
 package net.pyrix25633.vanilla_plus.block.custom;
 
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -25,18 +25,20 @@ public class ModLogBlock extends Block {
 
     public ModLogBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState) this.getDefaultState().with(AXIS, Direction.Axis.Y));
+        this.setDefaultState(this.getDefaultState().with(AXIS, Direction.Axis.Y));
     }
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return (BlockState)this.getDefaultState().with(AXIS, ctx.getSide().getAxis());
+        return this.getDefaultState().with(AXIS, ctx.getSide().getAxis());
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack playerItem = player.getStackInHand(hand);
-        boolean finished = false;
+        Block toPlace = Blocks.AIR;
+        boolean finished = true;
 
         if(state.isOf(this)){
             if ((playerItem.getItem() == Items.WOODEN_AXE || playerItem.getItem() == Items.STONE_AXE || playerItem.getItem() == Items.GOLDEN_AXE ||
@@ -44,85 +46,46 @@ public class ModLogBlock extends Block {
                 //Strip Log
 
                 if (state.isOf(ModBlocks.DECORATED_OAK_LOG)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_OAK_LOG.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_OAK_LOG;
                 } else if (state.isOf(ModBlocks.DECORATED_OAK_WOOD)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_OAK_WOOD.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_OAK_WOOD;
                 } else if (state.isOf(ModBlocks.DECORATED_ACACIA_LOG)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_ACACIA_LOG.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_ACACIA_LOG;
                 } else if (state.isOf(ModBlocks.DECORATED_ACACIA_WOOD)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_ACACIA_WOOD.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_ACACIA_WOOD;
                 } else if (state.isOf(ModBlocks.DECORATED_BIRCH_LOG)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_BIRCH_LOG.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_BIRCH_LOG;
                 } else if (state.isOf(ModBlocks.DECORATED_BIRCH_WOOD)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_BIRCH_WOOD.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_BIRCH_WOOD;
                 } else if (state.isOf(ModBlocks.DECORATED_SPRUCE_LOG)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_SPRUCE_LOG.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_SPRUCE_LOG;
                 } else if (state.isOf(ModBlocks.DECORATED_SPRUCE_WOOD)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_SPRUCE_WOOD.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_SPRUCE_WOOD;
                 } else if (state.isOf(ModBlocks.DECORATED_JUNGLE_LOG)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_JUNGLE_LOG.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_JUNGLE_LOG;
                 } else if (state.isOf(ModBlocks.DECORATED_JUNGLE_WOOD)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_JUNGLE_WOOD.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_JUNGLE_WOOD;
                 } else if (state.isOf(ModBlocks.DECORATED_DARK_OAK_LOG)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_DARK_OAK_LOG.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_DARK_OAK_LOG;
                 } else if (state.isOf(ModBlocks.DECORATED_DARK_OAK_WOOD)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_DARK_OAK_WOOD.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_DARK_OAK_WOOD;
                 } else if (state.isOf(ModBlocks.DECORATED_CRIMSON_STEM)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_CRIMSON_STEM.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_CRIMSON_STEM;
                 } else if (state.isOf(ModBlocks.DECORATED_CRIMSON_HYPHAE)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_CRIMSON_HYPHAE.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_CRIMSON_HYPHAE;
                 } else if (state.isOf(ModBlocks.DECORATED_WARPED_STEM)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_WARPED_STEM.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
-                    world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
+                    toPlace = ModBlocks.DECORATED_STRIPPED_WARPED_STEM;
                 } else if (state.isOf(ModBlocks.DECORATED_WARPED_HYPHAE)) {
-                    world.setBlockState(pos, ModBlocks.DECORATED_STRIPPED_WARPED_HYPHAE.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.<PlayerEntity>damage(1, player, (p) -> p.sendToolBreakStatus(hand));
+                    toPlace = ModBlocks.DECORATED_STRIPPED_WARPED_HYPHAE;
+                }
+                else {
+                    finished = false;
+                }
+
+                if(finished) {
+                    world.setBlockState(pos, toPlace.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
+                    playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    finished = true;
                 }
             }
         }

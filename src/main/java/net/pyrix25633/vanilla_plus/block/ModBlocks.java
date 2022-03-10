@@ -241,6 +241,47 @@ public class ModBlocks {
             new VerticalSlabBlock(stoneSettings));
     public static final Block DARK_PRISMARINE_VERTICAL_SLAB = registerDecorativeBlock("dark_prismarine_vertical_slab",
             new VerticalSlabBlock(stoneSettings));
+    public static final Block NETHER_BRICK_VERTICAL_SLAB = registerDecorativeBlock("nether_brick_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block RED_NETHER_BRICK_VERTICAL_SLAB = registerDecorativeBlock("red_nether_brick_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block QUARTZ_VERTICAL_SLAB = registerDecorativeBlock("quartz_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block SMOOTH_QUARTZ_VERTICAL_SLAB = registerDecorativeBlock("smooth_quartz_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block PURPUR_VERTICAL_SLAB = registerDecorativeBlock("purpur_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block END_STONE_BRICK_VERTICAL_SLAB = registerDecorativeBlock("end_stone_brick_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block BLACKSTONE_VERTICAL_SLAB = registerDecorativeBlock("blackstone_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block POLISHED_BLACKSTONE_VERTICAL_SLAB = registerDecorativeBlock("polished_blackstone_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB = registerDecorativeBlock("polished_blackstone_brick_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block WAXED_CUT_COPPER_VERTICAL_SLAB = registerDecorativeBlock("waxed_cut_copper_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB = registerDecorativeBlock("waxed_exposed_cut_copper_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB = registerDecorativeBlock("waxed_weathered_cut_copper_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB = registerDecorativeBlock("waxed_oxidized_cut_copper_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block COBBLED_DEEPSLATE_VERTICAL_SLAB = registerDecorativeBlock("cobbled_deepslate_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block POLISHED_DEEPSLATE_VERTICAL_SLAB = registerDecorativeBlock("polished_deepslate_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block DEEPSLATE_BRICK_VERTICAL_SLAB = registerDecorativeBlock("deepslate_brick_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+    public static final Block DEEPSLATE_TILE_VERTICAL_SLAB = registerDecorativeBlock("deepslate_tile_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
+
+    //TODO: translations
+    //TODO: mineable
+    //TODO: advancement
+
+    public static final Block _VERTICAL_SLAB = registerDecorativeBlock("_vertical_slab",
+            new VerticalSlabBlock(stoneSettings));
 
     //Lanterns
     public static final Block GREEN_LANTERN = registerDecorativeBlock("green_lantern",
