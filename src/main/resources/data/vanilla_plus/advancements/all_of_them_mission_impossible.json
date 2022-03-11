@@ -387,6 +387,210 @@
           }
         ]
       }
+    },
+    "nether_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:nether_brick_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "red_nether_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:red_nether_brick_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:quartz_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "smooth_quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:smooth_quartz_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "purpur": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:purpur_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "end_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:end_stone_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "blackstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:blackstone_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "polished_blackstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:polished_blackstone_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "polished_blackstone_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:polished_blackstone_brick_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "waxed_cut_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:waxed_cut_copper_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "waxed_exposed_cut_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:waxed_exposed_cut_copper_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "waxed_weathered_cut_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:waxed_weathered_cut_copper_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "waxed_oxidized_cut_copper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:oxidized_waxed_cut_copper_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "cobbled_deepslate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:cobbled_deepslate_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "polished_deepslate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:deepslate_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "deepslate_brick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:deepslate_brick_vertical_slab"
+            ]
+          }
+        ]
+      }
+    },
+    "deepslate_tile": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:deepslate_tile_vertical_slab"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -482,6 +686,57 @@
     ],
     [
       "dark_prismarine"
+    ],
+    [
+      "nether_brick"
+    ],
+    [
+      "red_nether_brick"
+    ],
+    [
+      "quartz"
+    ],
+    [
+      "smooth_quartz"
+    ],
+    [
+      "purpur"
+    ],
+    [
+      "end_stone"
+    ],
+    [
+      "blackstone"
+    ],
+    [
+      "polished_blackstone"
+    ],
+    [
+      "polished_blackstone_brick"
+    ],
+    [
+      "waxed_cut_copper"
+    ],
+    [
+      "waxed_exposed_cut_copper"
+    ],
+    [
+      "waxed_weathered_cut_copper"
+    ],
+    [
+      "waxed_oxidized_cut_copper"
+    ],
+    [
+      "cobbled_deepslate"
+    ],
+    [
+      "polished_deepslate"
+    ],
+    [
+      "deepslate_brick"
+    ],
+    [
+      "deepslate_tile"
     ]
   ]
 }
