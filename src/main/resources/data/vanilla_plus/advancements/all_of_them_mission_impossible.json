@@ -448,13 +448,13 @@
         ]
       }
     },
-    "end_stone": {
+    "end_stone_brick": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "vanilla_plus:end_stone_vertical_slab"
+              "vanilla_plus:end_stone_brick_vertical_slab"
             ]
           }
         ]
@@ -538,7 +538,7 @@
         "items": [
           {
             "items": [
-              "vanilla_plus:oxidized_waxed_cut_copper_vertical_slab"
+              "vanilla_plus:waxed_oxidized_cut_copper_vertical_slab"
             ]
           }
         ]
@@ -562,7 +562,7 @@
         "items": [
           {
             "items": [
-              "vanilla_plus:deepslate_vertical_slab"
+              "vanilla_plus:polished_deepslate_vertical_slab"
             ]
           }
         ]
@@ -703,7 +703,7 @@
       "purpur"
     ],
     [
-      "end_stone"
+      "end_stone_brick"
     ],
     [
       "blackstone"
