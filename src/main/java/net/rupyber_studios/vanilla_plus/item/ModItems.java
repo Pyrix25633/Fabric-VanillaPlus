@@ -1,12 +1,11 @@
 package net.rupyber_studios.vanilla_plus.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.item.Item;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.vanilla_plus.VanillaPlus;
-import net.rupyber_studios.vanilla_plus.item.custom.DecoratorToolItem;
-import net.rupyber_studios.vanilla_plus.item.custom.ModMusicDiscItem;
+import net.rupyber_studios.vanilla_plus.item.custom.*;
 import net.rupyber_studios.vanilla_plus.sounds.ModSounds;
 
 public class ModItems {
@@ -15,24 +14,45 @@ public class ModItems {
             new DecoratorToolItem(new FabricItemSettings()
                     .group(ModItemGroup.DECORATIVE_BLOCKS).maxDamage(256)));
 
+    //Dungeons items
+    public static final Item AXE = registerItem("axe",
+            new ModAxeItem(ToolMaterials.IRON, 6.2F, -2.9F,
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item DOUBLE_AXE = registerItem("double_axe",
+            new ModAxeItem(ToolMaterials.IRON, 6.4F, -2.7F,
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item MACE = registerItem("mace",
+            new ModAxeItem(ToolMaterials.IRON, 6.6F, -2.5F,
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item SWORD = registerItem("sword",
+            new SwordItem(ToolMaterials.IRON, 4, -2.2F,
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item DIAMOND_SWORD = registerItem("diamond_sword",
+            new SwordItem(ToolMaterials.DIAMOND, 4, -2.2F,
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item DIAMOND_PICKAXE = registerItem("diamond_pickaxe",
+            new ModPickaxeItem(ToolMaterials.DIAMOND, 2, -2.6F,
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item POWER_BOW = registerItem("power_bow",
+            new BowItem(new FabricItemSettings().maxDamage(412).group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item ELITE_POWER_BOW = registerItem("elite_power_bow",
+            new BowItem(new FabricItemSettings().maxDamage(462).group(ModItemGroup.DUNGEONS_ITEMS)));
+    //public static final Item POWER_BOW = registerItem("power_bow",
+    //        new CrossbowItem(new FabricItemSettings().maxDamage(384).group(ModItemGroup.DUNGEONS_ITEMS)));
+
+    //Music discs
     public static final Item BLANK_MUSIC_DISC_PIECE = registerItem("blank_music_disc_piece",
             new Item(new FabricItemSettings().maxCount(64).group(ModItemGroup.MUSIC_DISCS)));
-
     public static final Item BLANK_MUSIC_DISC = registerItem("blank_music_disc",
             new Item(new FabricItemSettings().maxCount(64).group(ModItemGroup.MUSIC_DISCS)));
-
     public static final Item BLANK_LOFI_MUSIC_DISC = registerItem("blank_lofi_music_disc",
             new Item(new FabricItemSettings().maxCount(64).group(ModItemGroup.MUSIC_DISCS)));
-
     public static final Item BLANK_POP_MUSIC_DISC = registerItem("blank_pop_music_disc",
             new Item(new FabricItemSettings().maxCount(64).group(ModItemGroup.MUSIC_DISCS)));
-
     public static final Item BLANK_RAP_MUSIC_DISC = registerItem("blank_rap_music_disc",
             new Item(new FabricItemSettings().maxCount(64).group(ModItemGroup.MUSIC_DISCS)));
-
     public static final Item BLANK_ROCK_MUSIC_DISC = registerItem("blank_rock_music_disc",
             new Item(new FabricItemSettings().maxCount(64).group(ModItemGroup.MUSIC_DISCS)));
-
     public static final Item BLANK_ELECTRO_MUSIC_DISC = registerItem("blank_electro_music_disc",
             new Item(new FabricItemSettings().maxCount(64).group(ModItemGroup.MUSIC_DISCS)));
 
@@ -40,7 +60,6 @@ public class ModItems {
     public static final Item MUSIC_DISC_EVERYTHING_S_A_SYMPTOM = registerItem("music_disc_everything_s_a_symptom",
             new ModMusicDiscItem(4, ModSounds.EVERYTHING_S_A_SYMPTOM, new FabricItemSettings()
                     .group(ModItemGroup.MUSIC_DISCS).maxCount(1)));
-
     public static final Item MUSIC_DISC_DAWN = registerItem("music_disc_dawn",
             new ModMusicDiscItem(4, ModSounds.DAWN, new FabricItemSettings()
                     .group(ModItemGroup.MUSIC_DISCS).maxCount(1)));

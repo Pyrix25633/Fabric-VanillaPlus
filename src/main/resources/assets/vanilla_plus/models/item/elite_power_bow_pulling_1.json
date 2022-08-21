@@ -1,0 +1,6 @@
+{
+  "parent": "vanilla_plus:item/elite_power_bow",
+  "textures": {
+    "layer0": "vanilla_plus:item/dungeons/elite_power_bow_pulling_1"
+  }
+}

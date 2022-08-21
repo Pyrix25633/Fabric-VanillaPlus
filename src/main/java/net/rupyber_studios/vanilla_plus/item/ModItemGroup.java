@@ -11,6 +11,10 @@ public class ModItemGroup {
                     "decorative_blocks"),
              () -> new ItemStack(ModItems.DECORATOR_TOOL));
 
+    public static final ItemGroup DUNGEONS_ITEMS = FabricItemGroupBuilder.build(new Identifier(VanillaPlus.MOD_ID,
+                    "dungeons_items"),
+            () -> new ItemStack(ModItems.AXE));
+
     public static final ItemGroup MUSIC_DISCS = FabricItemGroupBuilder.build(new Identifier(VanillaPlus.MOD_ID,
                     "music_discs"),
             () -> new ItemStack(ModItems.BLANK_MUSIC_DISC));

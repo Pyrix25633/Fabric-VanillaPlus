@@ -132,7 +132,17 @@
   "block.vanilla_plus.yellow_lantern": "Yellow Lantern",
   "block.vanilla_plus.red_lantern": "Red Lantern",
 
+  "item.vanilla_plus.axe": "Axe",
+  "item.vanilla_plus.double_axe": "Double Axe",
+  "item.vanilla_plus.mace": "Mace",
+  "item.vanilla_plus.sword": "Sword",
+  "item.vanilla_plus.diamond_sword": "Diamond Sword",
+  "item.vanilla_plus.diamond_pickaxe": "Diamond Pickaxe",
+  "item.vanilla_plus.power_bow": "Power Bow",
+  "item.vanilla_plus.elite_power_bow": "Elite Power Bow",
+
   "itemGroup.vanilla_plus.decorative_blocks": "Decorative Blocks",
+  "itemGroup.vanilla_plus.dungeons_items": "Dungeons Items",
   "itemGroup.vanilla_plus.music_discs": "Music Discs",
 
   "advancements.vanilla_plus.decoration.title": "Decoration?",
