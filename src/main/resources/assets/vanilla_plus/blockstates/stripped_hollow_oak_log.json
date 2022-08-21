@@ -5,7 +5,7 @@
         "axis": "x"
       },
       "apply": {
-        "model": "vanilla_plus:block/stripped_hollow_oak_log_horizontal",
+        "model": "vanilla_plus:block/oak/stripped_hollow_oak_log_horizontal",
         "y": 90
       }
     },
@@ -23,7 +23,7 @@
         "axis": "y"
       },
       "apply": {
-        "model": "vanilla_plus:block/stripped_hollow_oak_log"
+        "model": "vanilla_plus:block/oak/stripped_hollow_oak_log"
       }
     },
     {
@@ -40,7 +40,7 @@
         "axis": "z"
       },
       "apply": {
-        "model": "vanilla_plus:block/stripped_hollow_oak_log_horizontal"
+        "model": "vanilla_plus:block/oak/stripped_hollow_oak_log_horizontal"
       }
     },
     {

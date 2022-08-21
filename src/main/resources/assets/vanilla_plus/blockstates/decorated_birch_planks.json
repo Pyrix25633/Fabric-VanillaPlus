@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/decorated_birch_planks"
+      "model": "vanilla_plus:block/birch/decorated_birch_planks"
     }
   }
 }

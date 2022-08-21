@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "vanilla_plus:block/decorated_stripped_warped_hyphae",
+      "model": "vanilla_plus:block/warped/decorated_stripped_warped_hyphae",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "vanilla_plus:block/decorated_stripped_warped_hyphae"
+      "model": "vanilla_plus:block/warped/decorated_stripped_warped_hyphae"
     },
     "axis=z": {
-      "model": "vanilla_plus:block/decorated_stripped_warped_hyphae",
+      "model": "vanilla_plus:block/warped/decorated_stripped_warped_hyphae",
       "x": 90
     }
   }

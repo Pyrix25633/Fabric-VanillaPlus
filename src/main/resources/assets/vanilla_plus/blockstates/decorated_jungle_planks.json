@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/decorated_jungle_planks"
+      "model": "vanilla_plus:block/jungle/decorated_jungle_planks"
     }
   }
 }

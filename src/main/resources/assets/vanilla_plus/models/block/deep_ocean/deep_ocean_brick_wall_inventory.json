@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "vanilla_plus:block/deep_ocean/deep_ocean_bricks"
+  }
+}

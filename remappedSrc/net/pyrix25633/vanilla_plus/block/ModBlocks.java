@@ -1,4 +1,4 @@
-package net.pyrix25633.vanilla_plus.block;
+package net.rupyber_studios.vanilla_plus.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -8,9 +8,9 @@ import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.pyrix25633.vanilla_plus.VanillaPlus;
-import net.pyrix25633.vanilla_plus.block.custom.*;
-import net.pyrix25633.vanilla_plus.item.ModItemGroup;
+import net.rupyber_studios.vanilla_plus.VanillaPlus;
+import net.rupyber_studios.vanilla_plus.block.custom.*;
+import net.rupyber_studios.vanilla_plus.item.ModItemGroup;
 
 public class ModBlocks {
 

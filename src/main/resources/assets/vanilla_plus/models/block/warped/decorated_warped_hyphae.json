@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vanilla_plus:block/warped/decorated_warped_stem",
+    "side": "vanilla_plus:block/warped/decorated_warped_stem"
+  }
+}

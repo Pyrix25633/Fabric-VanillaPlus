@@ -5,7 +5,7 @@
         "axis": "x"
       },
       "apply": {
-        "model": "vanilla_plus:block/hollow_acacia_log_horizontal",
+        "model": "vanilla_plus:block/acacia/hollow_acacia_log_horizontal",
         "y": 90
       }
     },
@@ -23,7 +23,7 @@
         "axis": "y"
       },
       "apply": {
-        "model": "vanilla_plus:block/hollow_acacia_log"
+        "model": "vanilla_plus:block/acacia/hollow_acacia_log"
       }
     },
     {
@@ -40,7 +40,7 @@
         "axis": "z"
       },
       "apply": {
-        "model": "vanilla_plus:block/hollow_acacia_log_horizontal"
+        "model": "vanilla_plus:block/acacia/hollow_acacia_log_horizontal"
       }
     },
     {

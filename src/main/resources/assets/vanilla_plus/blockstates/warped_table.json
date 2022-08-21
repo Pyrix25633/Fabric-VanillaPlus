@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/warped_table"
+      "model": "vanilla_plus:block/warped/warped_table"
     }
   }
 }

@@ -13,7 +13,7 @@
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false,
-    "background": "vanilla_plus:textures/block/decorated_oak_planks.png"
+    "background": "vanilla_plus:textures/block/oak/decorated_oak_planks.png"
   },
   "criteria": {
     "requirement": {

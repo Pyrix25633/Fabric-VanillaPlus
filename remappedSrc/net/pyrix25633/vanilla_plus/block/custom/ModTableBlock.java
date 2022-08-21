@@ -1,4 +1,4 @@
-package net.pyrix25633.vanilla_plus.block.custom;
+package net.rupyber_studios.vanilla_plus.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

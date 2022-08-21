@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "vanilla_plus:item/green_lantern"
+    "layer0": "vanilla_plus:item/lanterns/green_lantern"
   }
 }

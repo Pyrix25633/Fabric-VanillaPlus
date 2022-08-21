@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/decorated_crimson_planks"
+      "model": "vanilla_plus:block/crimson/decorated_crimson_planks"
     }
   }
 }

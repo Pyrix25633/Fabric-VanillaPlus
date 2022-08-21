@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/jungle_table"
+      "model": "vanilla_plus:block/jungle/jungle_table"
     }
   }
 }

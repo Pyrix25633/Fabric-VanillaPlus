@@ -1,4 +1,4 @@
-package net.pyrix25633.vanilla_plus.block.custom;
+package net.rupyber_studios.vanilla_plus.block.custom;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.block.Block;
@@ -18,7 +18,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import net.pyrix25633.vanilla_plus.block.ModBlocks;
+import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 
 public class ModLogBlock extends Block {
     public static final EnumProperty<Direction.Axis> AXIS;

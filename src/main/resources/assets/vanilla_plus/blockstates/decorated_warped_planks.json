@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/decorated_warped_planks"
+      "model": "vanilla_plus:block/warped/decorated_warped_planks"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/crimson_table"
+      "model": "vanilla_plus:block/crimson/crimson_table"
     }
   }
 }

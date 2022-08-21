@@ -1,4 +1,4 @@
-package net.pyrix25633.vanilla_plus.block.custom;
+package net.rupyber_studios.vanilla_plus.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
@@ -24,7 +24,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
-import net.pyrix25633.vanilla_plus.block.ModBlocks;
+import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 
 public class HollowLog extends Block implements Waterloggable{
     public static final EnumProperty<Direction.Axis> AXIS;

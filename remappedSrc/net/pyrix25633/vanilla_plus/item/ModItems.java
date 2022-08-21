@@ -1,14 +1,14 @@
-package net.pyrix25633.vanilla_plus.item;
+package net.rupyber_studios.vanilla_plus.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.pyrix25633.vanilla_plus.VanillaPlus;
-import net.pyrix25633.vanilla_plus.item.custom.DecoratorToolItem;
-import net.pyrix25633.vanilla_plus.item.custom.ModMusicDiscItem;
-import net.pyrix25633.vanilla_plus.sounds.ModSounds;
+import net.rupyber_studios.vanilla_plus.VanillaPlus;
+import net.rupyber_studios.vanilla_plus.item.custom.DecoratorToolItem;
+import net.rupyber_studios.vanilla_plus.item.custom.ModMusicDiscItem;
+import net.rupyber_studios.vanilla_plus.sounds.ModSounds;
 
 public class ModItems {
 

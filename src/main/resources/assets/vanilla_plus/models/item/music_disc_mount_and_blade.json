@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "vanilla_plus:item/music_disc_mount_and_blade"
+    "layer0": "vanilla_plus:item/music_discs/music_disc_mount_and_blade"
   }
 }

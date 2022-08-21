@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "vanilla_plus:item/music_disc_i_love_you_baby"
+    "layer0": "vanilla_plus:item/music_discs/music_disc_i_love_you_baby"
   }
 }

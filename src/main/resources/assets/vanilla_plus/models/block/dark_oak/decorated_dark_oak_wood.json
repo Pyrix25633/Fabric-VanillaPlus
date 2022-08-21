@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vanilla_plus:block/dark_oak/decorated_dark_oak_log",
+    "side": "vanilla_plus:block/dark_oak/decorated_dark_oak_log"
+  }
+}

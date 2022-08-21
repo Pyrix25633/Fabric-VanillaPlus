@@ -1,0 +1,8 @@
+{
+  "parent": "vanilla_plus:block/vertical_slab",
+  "textures": {
+    "bottom": "vanilla_plus:block/deep_ocean/deep_ocean_bricks",
+    "top": "vanilla_plus:block/deep_ocean/deep_ocean_bricks",
+    "side" :"vanilla_plus:block/deep_ocean/deep_ocean_bricks"
+  }
+}

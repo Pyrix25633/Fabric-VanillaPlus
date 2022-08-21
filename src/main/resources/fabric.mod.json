@@ -18,10 +18,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.pyrix25633.vanilla_plus.VanillaPlus"
+      "net.rupyber_studios.vanilla_plus.VanillaPlus"
     ],
     "client":[
-      "net.pyrix25633.vanilla_plus.VanillaPlusClient"
+      "net.rupyber_studios.vanilla_plus.VanillaPlusClient"
     ]
   },
   "mixins": [

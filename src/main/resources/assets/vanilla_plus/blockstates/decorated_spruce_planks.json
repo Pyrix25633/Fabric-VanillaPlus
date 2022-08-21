@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "vanilla_plus:block/decorated_spruce_planks"
+      "model": "vanilla_plus:block/spruce/decorated_spruce_planks"
     }
   }
 }
