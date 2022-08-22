@@ -1,12 +1,12 @@
 package net.rupyber_studios.vanilla_plus;
 
+import com.oroarmor.multiitemlib.api.UniqueItemRegistry;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
-import net.rupyber_studios.vanilla_plus.registries.ModFlammableBlocks;
 import net.rupyber_studios.vanilla_plus.sounds.ModSounds;
+import net.rupyber_studios.vanilla_plus.util.ModModelPredicateProvider;
+import net.rupyber_studios.vanilla_plus.util.ModRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -23,13 +23,16 @@ public class VanillaPlusClient implements ClientModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-		ModFlammableBlocks.registerFlammables();
+		ModRegistries.registerFlammables();
 
 		ModSounds.registerSounds();
 
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_LANTERN, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_LANTERN, RenderLayer.getCutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_LANTERN, RenderLayer.getCutout());
+		ModRegistries.getCutouts();
+
+		ModModelPredicateProvider.registerModModels();
+
+		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.POWER_BOW);
+		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.ELITE_POWER_BOW);
 
 		LOGGER.info("Hello Fabric world!");
 	}

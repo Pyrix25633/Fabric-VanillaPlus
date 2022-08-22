@@ -1,10 +1,12 @@
-package net.rupyber_studios.vanilla_plus.registries;
+package net.rupyber_studios.vanilla_plus.util;
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 
-public class ModFlammableBlocks {
-    public static void registerFlammables(){
+public class ModRegistries {
+    public static void registerFlammables() {
         final int Encouragement = 5, Flammability = 20;
         //Oak
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_OAK_PLANKS, Encouragement, Flammability);
@@ -70,5 +72,11 @@ public class ModFlammableBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_OAK_VERTICAL_SLAB, Encouragement, Flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CRIMSON_VERTICAL_SLAB, Encouragement, Flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WARPED_VERTICAL_SLAB, Encouragement, Flammability);
+    }
+
+    public static void getCutouts() {
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_LANTERN, RenderLayer.getCutout());
     }
 }

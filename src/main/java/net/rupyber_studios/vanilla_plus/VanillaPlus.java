@@ -1,10 +1,11 @@
 package net.rupyber_studios.vanilla_plus;
 
+import com.oroarmor.multiitemlib.api.UniqueItemRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
-import net.rupyber_studios.vanilla_plus.registries.ModFlammableBlocks;
 import net.rupyber_studios.vanilla_plus.sounds.ModSounds;
+import net.rupyber_studios.vanilla_plus.util.ModRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -25,10 +26,12 @@ public class VanillaPlus implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-		ModFlammableBlocks.registerFlammables();
+		ModRegistries.registerFlammables();
 
 		ModSounds.registerSounds();
 
+		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.POWER_BOW);
+		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.ELITE_POWER_BOW);
 
 		LOGGER.info("Hello Fabric world!");
 	}
