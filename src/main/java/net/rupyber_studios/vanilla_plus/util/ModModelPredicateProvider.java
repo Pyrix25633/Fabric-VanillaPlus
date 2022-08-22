@@ -11,6 +11,11 @@ public class ModModelPredicateProvider {
     public static void registerModModels() {
         registerBow(ModItems.POWER_BOW);
         registerBow(ModItems.ELITE_POWER_BOW);
+        registerCrossbow(ModItems.EXPLODING_CROSSBOW);
+        registerCrossbow(ModItems.HEAVY_CROSSBOW);
+        registerCrossbow(ModItems.BUTTERFLY_CROSSBOW);
+        registerCrossbow(ModItems.FIREBOLT_THROWER);
+        registerCrossbow(ModItems.RAPID_CROSSBOW);
     }
 
     private static void registerBow(Item bow) {

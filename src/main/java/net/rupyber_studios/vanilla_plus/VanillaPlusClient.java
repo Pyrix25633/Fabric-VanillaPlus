@@ -33,6 +33,11 @@ public class VanillaPlusClient implements ClientModInitializer {
 
 		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.POWER_BOW);
 		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.ELITE_POWER_BOW);
+		UniqueItemRegistry.CROSSBOW.addItemToRegistry(ModItems.EXPLODING_CROSSBOW);
+		UniqueItemRegistry.CROSSBOW.addItemToRegistry(ModItems.HEAVY_CROSSBOW);
+		UniqueItemRegistry.CROSSBOW.addItemToRegistry(ModItems.BUTTERFLY_CROSSBOW);
+		UniqueItemRegistry.CROSSBOW.addItemToRegistry(ModItems.FIREBOLT_THROWER);
+		UniqueItemRegistry.CROSSBOW.addItemToRegistry(ModItems.RAPID_CROSSBOW);
 
 		LOGGER.info("Hello Fabric world!");
 	}

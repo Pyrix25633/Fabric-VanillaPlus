@@ -140,6 +140,11 @@
   "item.vanilla_plus.diamond_pickaxe": "Piccone di Diamanti",
   "item.vanilla_plus.power_bow": "Arco Potente",
   "item.vanilla_plus.elite_power_bow": "Arco Potente Elite",
+  "item.vanilla_plus.exploding_crossbow": "Balestra Esplosiva",
+  "item.vanilla_plus.heavy_crossbow": "Balestra Pesante",
+  "item.vanilla_plus.butterfly_crossbow": "Balestra a Farfalla",
+  "item.vanilla_plus.firebolt_thrower": "Balestra Infuocata",
+  "item.vanilla_plus.rapid_crossbow": "Balestra Rapida",
 
   "itemGroup.vanilla_plus.decorative_blocks": "Blocchi decorativi",
   "itemGroup.vanilla_plus.dungeons_items": "Oggetti Dungeons",

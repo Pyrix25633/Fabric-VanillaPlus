@@ -140,6 +140,11 @@
   "item.vanilla_plus.diamond_pickaxe": "Diamond Pickaxe",
   "item.vanilla_plus.power_bow": "Power Bow",
   "item.vanilla_plus.elite_power_bow": "Elite Power Bow",
+  "item.vanilla_plus.exploding_crossbow": "Exploding Crossbow",
+  "item.vanilla_plus.heavy_crossbow": "Heavy Crossbow",
+  "item.vanilla_plus.butterfly_crossbow": "Butterfly Crossbow",
+  "item.vanilla_plus.firebolt_thrower": "Firebolt Thrower",
+  "item.vanilla_plus.rapid_crossbow": "Rapid Crossbow",
 
   "itemGroup.vanilla_plus.decorative_blocks": "Decorative Blocks",
   "itemGroup.vanilla_plus.dungeons_items": "Dungeons Items",

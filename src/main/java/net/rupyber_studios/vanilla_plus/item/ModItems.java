@@ -37,8 +37,16 @@ public class ModItems {
             new BowItem(new FabricItemSettings().maxDamage(412).group(ModItemGroup.DUNGEONS_ITEMS)));
     public static final Item ELITE_POWER_BOW = registerItem("elite_power_bow",
             new BowItem(new FabricItemSettings().maxDamage(462).group(ModItemGroup.DUNGEONS_ITEMS)));
-    //public static final Item POWER_BOW = registerItem("power_bow",
-    //        new CrossbowItem(new FabricItemSettings().maxDamage(384).group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item EXPLODING_CROSSBOW = registerItem("exploding_crossbow",
+            new CrossbowItem(new FabricItemSettings().maxDamage(486).group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item HEAVY_CROSSBOW = registerItem("heavy_crossbow",
+            new CrossbowItem(new FabricItemSettings().maxDamage(498).group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item BUTTERFLY_CROSSBOW = registerItem("butterfly_crossbow",
+            new CrossbowItem(new FabricItemSettings().maxDamage(524).group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item FIREBOLT_THROWER = registerItem("firebolt_thrower",
+            new CrossbowItem(new FabricItemSettings().maxDamage(546).group(ModItemGroup.DUNGEONS_ITEMS)));
+    public static final Item RAPID_CROSSBOW = registerItem("rapid_crossbow",
+            new CrossbowItem(new FabricItemSettings().maxDamage(568).group(ModItemGroup.DUNGEONS_ITEMS)));
 
     //Music discs
     public static final Item BLANK_MUSIC_DISC_PIECE = registerItem("blank_music_disc_piece",

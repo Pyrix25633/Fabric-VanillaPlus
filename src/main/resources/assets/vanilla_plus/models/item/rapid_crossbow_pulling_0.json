@@ -1,0 +1,6 @@
+{
+  "parent": "vanilla_plus:item/rapid_crossbow",
+  "textures": {
+    "layer0": "vanilla_plus:item/dungeons/rapid_crossbow_pulling_0"
+  }
+}

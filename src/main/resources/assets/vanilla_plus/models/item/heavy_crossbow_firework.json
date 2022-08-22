@@ -1,0 +1,6 @@
+{
+  "parent": "vanilla_plus:item/heavy_crossbow",
+  "textures": {
+    "layer0": "vanilla_plus:item/dungeons/heavy_crossbow_firework"
+  }
+}

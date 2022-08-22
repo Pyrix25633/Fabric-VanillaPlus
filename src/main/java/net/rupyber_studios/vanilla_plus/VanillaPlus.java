@@ -30,9 +30,6 @@ public class VanillaPlus implements ModInitializer {
 
 		ModSounds.registerSounds();
 
-		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.POWER_BOW);
-		UniqueItemRegistry.BOW.addItemToRegistry(ModItems.ELITE_POWER_BOW);
-
 		LOGGER.info("Hello Fabric world!");
 	}
 }

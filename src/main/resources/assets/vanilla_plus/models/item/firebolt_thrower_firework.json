@@ -1,0 +1,6 @@
+{
+  "parent": "vanilla_plus:item/firebolt_thrower",
+  "textures": {
+    "layer0": "vanilla_plus:item/dungeons/firebolt_thrower_firework"
+  }
+}
