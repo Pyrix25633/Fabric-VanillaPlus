@@ -9,12 +9,12 @@
     "Pyrix25633"
   ],
   "contact": {
-    "homepage": "https://pyrix25633.github.io/official_website/"
+    "homepage": "https://rupyberstudios.github.io/website/",
+    "sources": "https://github.com/Pyrix25633/Fabric-VanillaPlus",
+    "issues": "https://github.com/Pyrix25633/Fabric-VanillaPlus/issues"
   },
-
-  "license": "CC-NC-SA",
+  "license": "GPL-3.0",
   "icon": "assets/vanilla_plus/logo.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -24,14 +24,25 @@
       "net.rupyber_studios.vanilla_plus.VanillaPlusClient"
     ]
   },
+  "custom": {
+    "modupdater": {
+      "strategy": "curseforge",
+      "projectID": "564742",
+      "strict": false
+    },
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/AgPTkkQveF"
+      }
+    }
+  },
   "mixins": [
     "vanilla_plus.mixins.json"
   ],
-
   "depends": {
-    "fabricloader": ">=0.13.3",
+    "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.18.2",
     "java": ">=17"
   },
   "suggests": {
