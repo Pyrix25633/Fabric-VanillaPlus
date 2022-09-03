@@ -38,13 +38,13 @@ public class ModLogBlock extends Block {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         ItemStack playerItem = player.getStackInHand(hand);
         Block toPlace = Blocks.AIR;
-        boolean finished = true;
+        boolean finished = false;
 
         if(state.isOf(this)){
             if ((playerItem.getItem() == Items.WOODEN_AXE || playerItem.getItem() == Items.STONE_AXE || playerItem.getItem() == Items.GOLDEN_AXE ||
                     playerItem.getItem() == Items.IRON_AXE || playerItem.getItem() == Items.DIAMOND_AXE || playerItem.getItem() == Items.NETHERITE_AXE)) {
                 //Strip Log
-
+                finished = true;
                 if (state.isOf(ModBlocks.DECORATED_OAK_LOG)) {
                     toPlace = ModBlocks.DECORATED_STRIPPED_OAK_LOG;
                 } else if (state.isOf(ModBlocks.DECORATED_OAK_WOOD)) {
