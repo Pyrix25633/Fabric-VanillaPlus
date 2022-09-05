@@ -27,6 +27,8 @@ public class VanillaPlusClient implements ClientModInitializer {
 
 		ModSounds.registerSounds();
 
+		ModRegistries.registerCommands();
+
 		ModRegistries.getCutouts();
 
 		ModModelPredicateProvider.registerModModels();

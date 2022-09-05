@@ -1,0 +1,101 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 17,
+                    "name": "minecraft:rotten_flesh",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:totem_of_undying",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            },
+                            "limit": 1
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:2, zombieTotem:1b, display:{Name:'{\"text\":\"Zombie Totem of Undying\",\"italic\":false}', Lore:['{\"text\":\"Obtained from a Zombie\", \"italic\":false, \"color\":\"blue\"}', '{\"text\":\"Common\", \"italic\":false, \"color\":\"dark_aqua\"}']}}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.025,
+                    "looting_multiplier": 0.01
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:iron_ingot"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:carrot"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:potato",
+                    "functions": [
+                        {
+                            "function": "furnace_smelt",
+                            "conditions": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "looting_multiplier": 0.01,
+                                    "properties": {
+                                        "on_fire": false
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

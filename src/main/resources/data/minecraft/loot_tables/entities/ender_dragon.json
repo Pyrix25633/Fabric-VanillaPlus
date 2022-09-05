@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+		{
+          "type": "minecraft:item",
+          "functions": [
+			{
+              "function": "set_nbt",
+              "tag": "{CustomModelData:5, dragonTotem:1b, display:{Name:'{\"text\":\"Ender Dragon Totem of Undying\",\"italic\":false}', Lore:['{\"text\":\"Obtained from an Ender Dragon\", \"italic\":false, \"color\":\"blue\"}', '{\"text\":\"Epic\", \"italic\":false, \"color\":\"purple\"}']}}"
+            }
+          ],
+          "name": "minecraft:totem_of_undying"
+        }
+      ]
+    }
+  ]
+}

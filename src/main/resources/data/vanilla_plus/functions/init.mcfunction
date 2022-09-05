@@ -1,0 +1,1 @@
+scoreboard objectives add usedTotem minecraft.used:minecraft.totem_of_undying

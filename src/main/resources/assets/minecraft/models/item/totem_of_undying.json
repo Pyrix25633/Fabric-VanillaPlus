@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/totem_of_undying"
+  },
+  "overrides":[
+    {"predicate": {"custom_model_data": 1}, "model": "vanilla_plus:item/skeleton_totem_of_undying"},
+	{"predicate": {"custom_model_data": 2}, "model": "vanilla_plus:item/zombie_totem_of_undying"},
+	{"predicate": {"custom_model_data": 3}, "model": "vanilla_plus:item/creeper_totem_of_undying"},
+	{"predicate": {"custom_model_data": 4}, "model": "vanilla_plus:item/shulker_totem_of_undying"},
+	{"predicate": {"custom_model_data": 5}, "model": "vanilla_plus:item/dragon_totem_of_undying"},
+	{"predicate": {"custom_model_data": 6}, "model": "vanilla_plus:item/ghast_totem_of_undying"},
+	{"predicate": {"custom_model_data": 7}, "model": "vanilla_plus:item/slime_totem_of_undying"},
+	{"predicate": {"custom_model_data": 8}, "model": "vanilla_plus:item/enderman_totem_of_undying"},
+	{"predicate": {"custom_model_data": 9}, "model": "vanilla_plus:item/guardian_totem_of_undying"},
+	{"predicate": {"custom_model_data": 10}, "model": "vanilla_plus:item/elder_guardian_totem_of_undying"}
+  ]
+}

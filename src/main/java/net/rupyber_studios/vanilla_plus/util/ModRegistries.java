@@ -1,9 +1,11 @@
 package net.rupyber_studios.vanilla_plus.util;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
+import net.rupyber_studios.vanilla_plus.command.GiveTotemsCommand;
 
 public class ModRegistries {
     public static void registerFlammables() {
@@ -72,6 +74,10 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_OAK_VERTICAL_SLAB, Encouragement, Flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CRIMSON_VERTICAL_SLAB, Encouragement, Flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WARPED_VERTICAL_SLAB, Encouragement, Flammability);
+    }
+
+    public static void registerCommands() {
+        CommandRegistrationCallback.EVENT.register(GiveTotemsCommand::register);
     }
 
     public static void getCutouts() {

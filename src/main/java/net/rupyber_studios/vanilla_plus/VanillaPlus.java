@@ -28,6 +28,8 @@ public class VanillaPlus implements ModInitializer {
 
 		ModRegistries.registerFlammables();
 
+		ModRegistries.registerCommands();
+
 		ModSounds.registerSounds();
 
 		LOGGER.info("Hello Fabric world!");

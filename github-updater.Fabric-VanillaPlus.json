@@ -1,0 +1,22 @@
+{
+  "latest": "0.4.4",
+  "keep": [],
+  "releases": [
+    {
+      "tag": "0.4.4",
+      "cross": "vanilla_plus-1.18.2-0.4.4.jar"
+    },
+    {
+      "tag": "0.4.3",
+      "cross": "vanilla_plus-1.18.2-0.4.3.jar"
+    },
+    {
+      "tag": "0.4.2",
+      "cross": "vanilla_plus-1.18.2-0.4.2.jar"
+    },
+    {
+      "tag": "0.4.1",
+      "cross": "vanilla_plus-1.18.2-0.4.1.jar"
+    }
+  ]
+}
