@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "vanilla_plus:firebolt_thrower"
+  },
+  "addition": {
+    "item": "minecraft:tripwire_hook"
+  },
+  "result": {
+    "item": "vanilla_plus:rapid_crossbow"
+  }
+}

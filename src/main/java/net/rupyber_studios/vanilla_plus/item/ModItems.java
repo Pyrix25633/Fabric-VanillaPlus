@@ -17,36 +17,36 @@ public class ModItems {
     //Dungeons items
     public static final Item AXE = registerItem("axe",
             new ModAxeItem(ToolMaterials.IRON, 6.2F, -2.9F,
-                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(262)));
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(292)));
     public static final Item DOUBLE_AXE = registerItem("double_axe",
             new ModAxeItem(ToolMaterials.IRON, 6.4F, -2.7F,
-                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(276)));
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(336)));
     public static final Item MACE = registerItem("mace",
             new ModAxeItem(ToolMaterials.IRON, 6.6F, -2.5F,
-                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(288)));
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(368)));
     public static final Item SWORD = registerItem("sword",
             new ModSwordItem(ToolMaterials.IRON, 4, -2.2F,
-                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(272)));
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(338)));
     public static final Item DIAMOND_SWORD = registerItem("diamond_sword",
             new ModSwordItem(ToolMaterials.DIAMOND, 4, -2.2F,
-                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(1587)));
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(1745)));
     public static final Item DIAMOND_PICKAXE = registerItem("diamond_pickaxe",
             new ModPickaxeItem(ToolMaterials.DIAMOND, 1, -2.8F,
-                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(1587)));
+                    new FabricItemSettings().group(ModItemGroup.DUNGEONS_ITEMS).maxDamage(1745)));
     public static final Item POWER_BOW = registerItem("power_bow",
-            new ModBowItem(new FabricItemSettings().maxDamage(412).group(ModItemGroup.DUNGEONS_ITEMS)));
+            new ModBowItem(new FabricItemSettings().maxDamage(426).group(ModItemGroup.DUNGEONS_ITEMS)));
     public static final Item ELITE_POWER_BOW = registerItem("elite_power_bow",
-            new ModBowItem(new FabricItemSettings().maxDamage(462).group(ModItemGroup.DUNGEONS_ITEMS)));
+            new ModBowItem(new FabricItemSettings().maxDamage(528).group(ModItemGroup.DUNGEONS_ITEMS)));
     public static final Item EXPLODING_CROSSBOW = registerItem("exploding_crossbow",
-            new ModCrossbowItem(new FabricItemSettings().maxDamage(486).group(ModItemGroup.DUNGEONS_ITEMS)));
+            new ModCrossbowItem(new FabricItemSettings().maxDamage(497).group(ModItemGroup.DUNGEONS_ITEMS)));
     public static final Item HEAVY_CROSSBOW = registerItem("heavy_crossbow",
-            new ModCrossbowItem(new FabricItemSettings().maxDamage(498).group(ModItemGroup.DUNGEONS_ITEMS)));
+            new ModCrossbowItem(new FabricItemSettings().maxDamage(525).group(ModItemGroup.DUNGEONS_ITEMS)));
     public static final Item BUTTERFLY_CROSSBOW = registerItem("butterfly_crossbow",
-            new ModCrossbowItem(new FabricItemSettings().maxDamage(524).group(ModItemGroup.DUNGEONS_ITEMS)));
+            new ModCrossbowItem(new FabricItemSettings().maxDamage(558).group(ModItemGroup.DUNGEONS_ITEMS)));
     public static final Item FIREBOLT_THROWER = registerItem("firebolt_thrower",
-            new ModCrossbowItem(new FabricItemSettings().maxDamage(546).group(ModItemGroup.DUNGEONS_ITEMS)));
+            new ModCrossbowItem(new FabricItemSettings().maxDamage(587).group(ModItemGroup.DUNGEONS_ITEMS)));
     public static final Item RAPID_CROSSBOW = registerItem("rapid_crossbow",
-            new ModCrossbowItem(new FabricItemSettings().maxDamage(568).group(ModItemGroup.DUNGEONS_ITEMS)));
+            new ModCrossbowItem(new FabricItemSettings().maxDamage(612).group(ModItemGroup.DUNGEONS_ITEMS)));
 
     //Music discs
     public static final Item BLANK_MUSIC_DISC_PIECE = registerItem("blank_music_disc_piece",
@@ -174,6 +174,11 @@ public class ModItems {
                     .group(ModItemGroup.MUSIC_DISCS).maxCount(1)));
     public static final Item MUSIC_DISC_THE_DISTANCE_BETWEEN_US = registerItem("music_disc_the_distance_between_us",
             new ModMusicDiscItem(4, ModSounds.THE_DISTANCE_BETWEEN_US, new FabricItemSettings()
+                    .group(ModItemGroup.MUSIC_DISCS).maxCount(1)));
+
+    //Other
+    public static final Item MUSIC_DISC_LUSH = registerItem("music_disc_lush",
+            new ModMusicDiscItem(4, ModSounds.LUSH, new FabricItemSettings()
                     .group(ModItemGroup.MUSIC_DISCS).maxCount(1)));
 
     private static Item registerItem(String name, Item item ) {

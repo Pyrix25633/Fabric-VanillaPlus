@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "disc",
   "ingredients": [
     {
       "item": "vanilla_plus:blank_rap_music_disc"

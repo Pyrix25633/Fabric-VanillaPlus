@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "vanilla_plus:heavy_crossbow"
+  },
+  "addition": {
+    "item": "minecraft:tripwire_hook"
+  },
+  "result": {
+    "item": "vanilla_plus:butterfly_crossbow"
+  }
+}

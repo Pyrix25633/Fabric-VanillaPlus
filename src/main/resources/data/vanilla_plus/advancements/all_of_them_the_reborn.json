@@ -423,6 +423,18 @@
           }
         ]
       }
+    },
+    "35": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanilla_plus:music_disc_lush"
+            ]
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -527,6 +539,9 @@
     ],
     [
       "34"
+    ],
+    [
+      "35"
     ]
   ]
 }

@@ -187,6 +187,14 @@
   "advancements.vanilla_plus.all_of_them_the_revenge.description": "Colleziona tutti i dischi musicali vuoti",
   "advancements.vanilla_plus.all_of_them_the_reborn.title": "Tutti loro: La rinascita",
   "advancements.vanilla_plus.all_of_them_the_reborn.description": "Colleziona tutti i dischi musicali della mod",
+  "advancements.vanilla_plus.back_to_life.title": "Ritorno alla vita",
+  "advancements.vanilla_plus.back_to_life.description": "Ottieni uno Skeleton Totem of Undying",
+  "advancements.vanilla_plus.all_of_them_immortal.title": "Tutti loro: Immortale",
+  "advancements.vanilla_plus.all_of_them_immortal.description": "Colleziona tutti i totem della mod",
+  "advancements.vanilla_plus.dungeons.title": "§9Dungeons!§r",
+  "advancements.vanilla_plus.dungeons.description": "Ottieni un'§7Ascia§r",
+  "advancements.vanilla_plus.all_of_them_indestructible.title": "Tutti loro: Indistruttibile",
+  "advancements.vanilla_plus.all_of_them_indestructible.description": "Colleziona tutti gli oggetti Dungeons della mod",
 
   "item.vanilla_plus.blank_music_disc_piece": "Pezzo di disco musicale vuoto",
   "item.vanilla_plus.blank_music_disc": "Disco musicale vuoto",
@@ -306,5 +314,33 @@
 
   "item.vanilla_plus.music_disc_the_distance_between_us": "Disco musicale Electro",
   "item.vanilla_plus.music_disc_the_distance_between_us.desc": "Alberto Bof - The Distance Between Us",
-  "subtitles.vanilla_plus.the_distance_between_us": "Alberto Bof - The Distance Between Us"
+  "subtitles.vanilla_plus.the_distance_between_us": "Alberto Bof - The Distance Between Us",
+
+  "item.vanilla_plus.music_disc_no_worries": "Lofi Music Disc",
+  "item.vanilla_plus.music_disc_no_worries.desc": "Nom - No Worries",
+  "subtitles.vanilla_plus.no_worries": "Nom - No Worries",
+
+  "item.vanilla_plus.music_disc_wistful": "Lofi Music Disc",
+  "item.vanilla_plus.music_disc_wistful.desc": "Nom - Wistful",
+  "subtitles.vanilla_plus.wistful": "Nom - Wistful",
+
+  "item.vanilla_plus.music_disc_alone_on_d_beach": "Lofi Music Disc",
+  "item.vanilla_plus.music_disc_alone_on_d_beach.desc": "0_core - Alone on d beach",
+  "subtitles.vanilla_plus.alone_on_d_beach": "0_core - Alone on d beach",
+
+  "item.vanilla_plus.music_disc_not_me": "Lofi Music Disc",
+  "item.vanilla_plus.music_disc_not_me.desc": "0_core - Not me",
+  "subtitles.vanilla_plus.not_me": "0_core - Not me",
+
+  "item.vanilla_plus.music_disc_panic_at_the_disco": "Pop Music Disc",
+  "item.vanilla_plus.music_disc_panic_at_the_disco.desc": "High Hopes - Panic! At The Disco",
+  "subtitles.vanilla_plus.panic_at_the_disco": "High Hopes - Panic! At The Disco",
+
+  "item.vanilla_plus.music_disc_dance_monkey": "Pop Music Disc",
+  "item.vanilla_plus.music_disc_dance_monkey.desc": "Tones and I - Dance Monkey",
+  "subtitles.vanilla_plus.dance_monkey": "Tones and I - Dance Monkey",
+
+  "item.vanilla_plus.music_disc_lush": "Disco Musicale",
+  "item.vanilla_plus.music_disc_lush.desc": "Lush - GamingTunes",
+  "subtitles.vanilla_plus.lush": "Lush - GamingTunes"
 }

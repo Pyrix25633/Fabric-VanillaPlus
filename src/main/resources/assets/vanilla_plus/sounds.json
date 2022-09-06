@@ -240,5 +240,12 @@
     "sounds": [
       "vanilla_plus:dance_monkey"
     ]
+  },
+  "lush": {
+    "category": "record",
+    "subtitle": "subtitles.vanilla_plus.lush",
+    "sounds": [
+      "vanilla_plus:lush"
+    ]
   }
 }

@@ -50,6 +50,9 @@ public class ModSounds {
     public static SoundEvent I_HAVE_SEEN_A_GHOST = registerSoundEvent("i_have_seen_a_ghost");
     public static SoundEvent THE_DISTANCE_BETWEEN_US = registerSoundEvent("the_distance_between_us");
 
+    //Other
+    public static SoundEvent LUSH = registerSoundEvent("lush");
+
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = new Identifier(VanillaPlus.MOD_ID, name);
         return Registry.register(Registry.SOUND_EVENT, id, new SoundEvent(id));

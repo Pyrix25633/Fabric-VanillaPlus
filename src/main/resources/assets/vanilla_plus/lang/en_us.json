@@ -187,6 +187,14 @@
   "advancements.vanilla_plus.all_of_them_the_revenge.description": "Collect all the Blank Music Discs",
   "advancements.vanilla_plus.all_of_them_the_reborn.title": "All Of Them: The Reborn",
   "advancements.vanilla_plus.all_of_them_the_reborn.description": "Collect all the mod Music Discs",
+  "advancements.vanilla_plus.back_to_life.title": "Back To Life",
+  "advancements.vanilla_plus.back_to_life.description": "Obtain a Skeleton Totem of Undying",
+  "advancements.vanilla_plus.all_of_them_immortal.title": "All Of Them: Immortal",
+  "advancements.vanilla_plus.all_of_them_immortal.description": "Collect all the mod Totems",
+  "advancements.vanilla_plus.dungeons.title": "§9Dungeons!§r",
+  "advancements.vanilla_plus.dungeons.description": "Obtain an §7Axe§r",
+  "advancements.vanilla_plus.all_of_them_indestructible.title": "All Of Them: Indestructible",
+  "advancements.vanilla_plus.all_of_them_indestructible.description": "Collect all the mod Dungeons Items",
 
   "item.vanilla_plus.blank_music_disc_piece": "Blank Music Disc Piece",
   "item.vanilla_plus.blank_music_disc": "Blank Music Disc",
@@ -284,7 +292,6 @@
   "item.vanilla_plus.music_disc_not_me.desc": "0_core - Not me",
   "subtitles.vanilla_plus.not_me": "0_core - Not me",
 
-
   "item.vanilla_plus.music_disc_backyard_boy": "Pop Music Disc",
   "item.vanilla_plus.music_disc_backyard_boy.desc": "Claire Rosinkranz - Backyard Boy",
   "subtitles.vanilla_plus.backyard_boy": "Claire Rosinkranz - Backyard Boy",
@@ -331,5 +338,9 @@
 
   "item.vanilla_plus.music_disc_the_distance_between_us": "Electro Music Disc",
   "item.vanilla_plus.music_disc_the_distance_between_us.desc": "Alberto Bof - The Distance Between Us",
-  "subtitles.vanilla_plus.the_distance_between_us": "Alberto Bof - The Distance Between Us"
+  "subtitles.vanilla_plus.the_distance_between_us": "Alberto Bof - The Distance Between Us",
+
+  "item.vanilla_plus.music_disc_lush": "Music Disc",
+  "item.vanilla_plus.music_disc_lush.desc": "Lush - GamingTunes",
+  "subtitles.vanilla_plus.lush": "Lush - GamingTunes"
 }
