@@ -5,7 +5,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
 
@@ -20,6 +19,6 @@ public class ModPickaxeItem extends PickaxeItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(stack.getItem() == ModItems.DIAMOND_PICKAXE)
-            tooltip.add(new TranslatableText("item.vanilla_plus.diamond_pickaxe.tooltip"));
+            tooltip.add(Text.translatable("item.vanilla_plus.diamond_pickaxe.tooltip"));
     }
 }

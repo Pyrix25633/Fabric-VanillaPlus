@@ -5,7 +5,6 @@ import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
 
@@ -20,10 +19,10 @@ public class ModAxeItem extends AxeItem {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(stack.getItem() == ModItems.AXE)
-            tooltip.add(new TranslatableText("item.vanilla_plus.axe.tooltip"));
+            tooltip.add(Text.translatable("item.vanilla_plus.axe.tooltip"));
         else if(stack.getItem() == ModItems.DOUBLE_AXE)
-            tooltip.add(new TranslatableText("item.vanilla_plus.double_axe.tooltip"));
+            tooltip.add(Text.translatable("item.vanilla_plus.double_axe.tooltip"));
         else if(stack.getItem() == ModItems.MACE)
-            tooltip.add(new TranslatableText("item.vanilla_plus.mace.tooltip"));
+            tooltip.add(Text.translatable("item.vanilla_plus.mace.tooltip"));
     }
 }

@@ -3,6 +3,7 @@ package net.rupyber_studios.vanilla_plus.command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
+import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
@@ -11,7 +12,8 @@ import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 public class GiveTotemsCommand {
-    public static void register(CommandDispatcher<ServerCommandSource> dispatcher, boolean dedicated) {
+    public static void register(CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess access,
+                                CommandManager.RegistrationEnvironment environment) {
         dispatcher.register(CommandManager.literal("givetotem")
                 .then(CommandManager.literal("all").executes(GiveTotemsCommand::giveAll).requires(it -> it.hasPermissionLevel(4))));
         dispatcher.register(CommandManager.literal("givetotem")

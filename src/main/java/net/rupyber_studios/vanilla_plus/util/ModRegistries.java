@@ -1,7 +1,7 @@
 package net.rupyber_studios.vanilla_plus.util;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
