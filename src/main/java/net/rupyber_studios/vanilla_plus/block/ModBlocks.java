@@ -16,7 +16,6 @@ import static net.minecraft.block.Blocks.CRIMSON_PLANKS;
 import static net.minecraft.block.Blocks.WARPED_PLANKS;
 
 public class ModBlocks {
-
     static final float woodHardness = 2.0f, woodResistance = 3.0f,
             deepOceanHardness = 2.0f, deepOceanResistance = 6.0f,
             stoneHardness = 2.0f, stoneResistance = 6.0f;

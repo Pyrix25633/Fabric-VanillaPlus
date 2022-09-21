@@ -1,6 +1,5 @@
 package net.rupyber_studios.vanilla_plus;
 
-import com.oroarmor.multiitemlib.api.UniqueItemRegistry;
 import net.fabricmc.api.ModInitializer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
