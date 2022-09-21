@@ -38,7 +38,6 @@ public class HollowLog extends Block implements Waterloggable{
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public boolean hasSidedTransparency(BlockState state) {
         return true;
     }
@@ -100,19 +99,16 @@ public class HollowLog extends Block implements Waterloggable{
     private static final VoxelShape Z_MOSSY = VoxelShapes.union(Z_1, Z_2, Z_3, Z_4, Z_MOSS);
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }

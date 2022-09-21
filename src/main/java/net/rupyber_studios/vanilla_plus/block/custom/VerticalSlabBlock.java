@@ -37,13 +37,11 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public BlockState rotate(BlockState state, BlockRotation rot) {
         return state.get(TYPE) == VerticalSlabType.DOUBLE ? state : state.with(TYPE, VerticalSlabType.fromDirection(rot.rotate(state.get(TYPE).direction)));
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public BlockState mirror(BlockState state, BlockMirror mirrorIn) {
         VerticalSlabType type = state.get(TYPE);
         if (type == VerticalSlabType.DOUBLE || mirrorIn == BlockMirror.NONE) return state;
@@ -55,7 +53,6 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public boolean hasSidedTransparency(BlockState state) {
         return state.get(TYPE) != VerticalSlabType.DOUBLE;
     }
@@ -66,7 +63,6 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getOutlineShape(BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
         return state.get(TYPE).shape;
     }
@@ -97,7 +93,6 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public boolean canReplace(BlockState state, ItemPlacementContext useContext) {
         ItemStack itemstack = useContext.getStack();
         VerticalSlabType slabType = state.get(TYPE);
@@ -130,7 +125,6 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public boolean canPathfindThrough(BlockState state, BlockView worldIn, BlockPos pos, NavigationType type) {
         return type == NavigationType.WATER && worldIn.getFluidState(pos).isIn(FluidTags.WATER);
     }

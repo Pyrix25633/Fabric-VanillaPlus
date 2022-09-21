@@ -38,13 +38,11 @@ public class SmoothStoneVerticalSlabBlock extends Block implements Waterloggable
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public BlockState rotate(BlockState state, BlockRotation rot) {
         return state.get(TYPE) == VerticalSlabType.DOUBLE ? state : state.with(TYPE, VerticalSlabType.fromDirection(rot.rotate(state.get(TYPE).direction)));
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public BlockState mirror(BlockState state, BlockMirror mirrorIn) {
         VerticalSlabType type = state.get(TYPE);
         if (type == VerticalSlabType.DOUBLE || mirrorIn == BlockMirror.NONE) return state;
@@ -56,7 +54,6 @@ public class SmoothStoneVerticalSlabBlock extends Block implements Waterloggable
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public boolean hasSidedTransparency(BlockState state) {
         return state.get(TYPE) != VerticalSlabType.DOUBLE;
     }
@@ -67,7 +64,6 @@ public class SmoothStoneVerticalSlabBlock extends Block implements Waterloggable
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public VoxelShape getOutlineShape(BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
         return state.get(TYPE).shape;
     }
@@ -100,7 +96,6 @@ public class SmoothStoneVerticalSlabBlock extends Block implements Waterloggable
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public boolean canReplace(BlockState state, ItemPlacementContext useContext) {
         ItemStack itemstack = useContext.getStack();
         VerticalSlabType slabType = state.get(TYPE);
@@ -108,7 +103,6 @@ public class SmoothStoneVerticalSlabBlock extends Block implements Waterloggable
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
@@ -133,7 +127,6 @@ public class SmoothStoneVerticalSlabBlock extends Block implements Waterloggable
     }
 
     @Override
-    @SuppressWarnings("deprecation")
     public boolean canPathfindThrough(BlockState state, BlockView worldIn, BlockPos pos, NavigationType type) {
         return type == NavigationType.WATER && worldIn.getFluidState(pos).isIn(FluidTags.WATER);
     }
