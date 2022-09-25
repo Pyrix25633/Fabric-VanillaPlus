@@ -1,7 +1,11 @@
 {
-  "latest": "0.5.0",
+  "latest": "0.5.1",
   "keep": [],
   "releases": [
+    {
+      "tag": "0.5.1",
+      "cross": "vanilla_plus-1.19.2-0.5.1.jar"
+    },
     {
       "tag": "0.5.0",
       "cross": "vanilla_plus-1.18.2-0.5.0.jar"
