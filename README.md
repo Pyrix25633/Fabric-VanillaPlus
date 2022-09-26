@@ -6,8 +6,8 @@ This is a fabric mod to add new decorative blocks, items and music discs to impr
 ![requires Fabric API](https://i.imgur.com/HabVZJR.png)
 ### Installation:
 - Download [Fabric](https://fabricmc.net/use/installer/);
-- Download the [Fabric API](https://modrinth.com/mod/fabric-api/version/0.61.0%2B1.19.2);
-- Download the version of the mod you want to install (latest version: 1.19.2-0.5.1);
+- Download the [Fabric API](https://modrinth.com/mod/fabric-api/version/0.62.0%2B1.19.2);
+- Download the version of the mod you want to install (latest version: 1.19.2-0.5.2);
 - Execute the Fabric installer;
 - Open the .minecraft folder:
   Windows: use Ctrl+R and type %appdata%, then go into .minecraft/ folder,
