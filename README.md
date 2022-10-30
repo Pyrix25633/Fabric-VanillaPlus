@@ -2,7 +2,7 @@
 
 ### *A mod by Rupyber Studios*
 
-This is a fabric mod to add new decorative blocks, items and music discs to improve the vanilla experience.
+This is a Fabric and Quilt mod to add new decorative blocks, items and music discs to improve the vanilla experience.
 
 ## Visit our [Website](https://rupyberstudios.github.io/website/)!
 
