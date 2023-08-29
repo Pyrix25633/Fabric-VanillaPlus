@@ -1,16 +1,18 @@
 package net.rupyber_studios.vanilla_plus.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.vanilla_plus.VanillaPlus;
 import net.rupyber_studios.vanilla_plus.block.custom.*;
-import net.rupyber_studios.vanilla_plus.item.ModItemGroup;
+import net.rupyber_studios.vanilla_plus.item.ModItemGroups;
 
 import static net.minecraft.block.Blocks.CRIMSON_PLANKS;
 import static net.minecraft.block.Blocks.WARPED_PLANKS;
@@ -290,12 +292,13 @@ public class ModBlocks {
 
     private static Block registerDecorativeBlock(String name, Block block) {
         registerDecorativeBlockItem(name, block);
-        return Registry.register(Registry.BLOCK, new Identifier(VanillaPlus.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, new Identifier(VanillaPlus.MOD_ID, name), block);
     }
 
-    private static Item registerDecorativeBlockItem(String name, Block block) {
-        return Registry.register(Registry.ITEM, new Identifier(VanillaPlus.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(ModItemGroup.DECORATIVE_BLOCKS)));
+    private static void registerDecorativeBlockItem(String name, Block block) {
+        Item registered = Registry.register(Registries.ITEM, new Identifier(VanillaPlus.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.DECORATIVE_BLOCKS).register(entries -> entries.add(registered));
     }
 
     public static void registerModBlocks() {

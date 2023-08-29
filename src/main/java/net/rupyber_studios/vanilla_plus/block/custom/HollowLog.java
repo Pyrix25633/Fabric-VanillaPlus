@@ -26,10 +26,10 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 
-public class HollowLog extends Block implements Waterloggable{
-    public static final EnumProperty<Direction.Axis> AXIS;
-    public static final BooleanProperty MOSSY;
-    public static final BooleanProperty WATERLOGGED;
+public class HollowLog extends Block implements Waterloggable {
+    public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
+    public static final BooleanProperty MOSSY = BooleanProperty.of("mossy");
+    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
     public HollowLog(AbstractBlock.Settings settings) {
         super(settings);
@@ -38,6 +38,7 @@ public class HollowLog extends Block implements Waterloggable{
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public boolean hasSidedTransparency(BlockState state) {
         return true;
     }
@@ -55,25 +56,34 @@ public class HollowLog extends Block implements Waterloggable{
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
 
-    public boolean isTranslucent(BlockState state, BlockView world, BlockPos pos) {
-        return state.getFluidState().isEmpty();
-    }
-
+    @Override
     public boolean tryFillWithFluid(WorldAccess world, BlockPos pos, BlockState state, FluidState fluidState) {
         return Waterloggable.super.tryFillWithFluid(world, pos, state, fluidState);
     }
 
+    @Override
     public boolean canFillWithFluid(BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
         return Waterloggable.super.canFillWithFluid(world, pos, state, fluid);
     }
 
+
+    @Override
     @SuppressWarnings("deprecation")
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState,
-                                                WorldAccess world, BlockPos pos, BlockPos posFrom) {
-        if (state.get(WATERLOGGED)) {
-            world.createAndScheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+        if(!world.isClient) {
+            if(state.get(WATERLOGGED)) {
+                world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+            }
         }
-        return super.getStateForNeighborUpdate(state, direction, newState, world, pos, posFrom);
+    }
+
+    @Override
+    @SuppressWarnings("deprecation")
+    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+        if(state.get(WATERLOGGED)) {
+            world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
+        }
+        return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 
     private static final VoxelShape X_1 = Block.createCuboidShape(0,0,0,16,2,16);
@@ -99,21 +109,24 @@ public class HollowLog extends Block implements Waterloggable{
     private static final VoxelShape Z_MOSSY = VoxelShapes.union(Z_1, Z_2, Z_3, Z_4, Z_MOSS);
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
-    public VoxelShape getShape(BlockState state) {
+    private VoxelShape getShape(BlockState state) {
         VoxelShape toReturn;
         if(state.get(AXIS) == Direction.Axis.X) {
             if(state.get(MOSSY)) {
@@ -219,7 +232,7 @@ public class HollowLog extends Block implements Waterloggable{
             }
         }
 
-        if(finished){
+        if(finished) {
             return ActionResult.success(true);
         }
 
@@ -229,11 +242,5 @@ public class HollowLog extends Block implements Waterloggable{
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(HollowLog.AXIS, MOSSY, WATERLOGGED);
-    }
-
-    static {
-        AXIS = Properties.AXIS;
-        MOSSY = BooleanProperty.of("mossy");
-        WATERLOGGED = Properties.WATERLOGGED;
     }
 }

@@ -22,16 +22,19 @@ public class ModTableBlock extends Block{
     private static final VoxelShape TABLE_SHAPE = VoxelShapes.union(LEG_1, LEG_2, LEG_3, LEG_4, TOP);
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return TABLE_SHAPE;
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return TABLE_SHAPE;
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return TABLE_SHAPE;
     }
