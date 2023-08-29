@@ -16,18 +16,9 @@ public class VanillaPlusClient implements ClientModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("vanilla_plus");
 
-	public static final String MOD_ID = "vanilla_plus";
-
 	@Override
 	public void onInitializeClient() {
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
-
-		ModRegistries.registerFlammables();
-
 		ModSounds.registerSounds();
-
-		ModRegistries.registerCommands();
 
 		ModRegistries.getCutouts();
 

@@ -8,7 +8,6 @@ import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class ModPickaxeItem extends PickaxeItem {
@@ -17,7 +16,7 @@ public class ModPickaxeItem extends PickaxeItem {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         if(stack.getItem() == ModItems.DIAMOND_PICKAXE)
             tooltip.add(Text.translatable("item.vanilla_plus.diamond_pickaxe.tooltip"));
     }

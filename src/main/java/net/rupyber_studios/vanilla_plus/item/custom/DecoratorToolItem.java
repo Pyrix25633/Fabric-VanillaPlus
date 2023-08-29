@@ -278,8 +278,8 @@ public class DecoratorToolItem extends Item {
             finished = true;
         }
 
-        if(finished){
-        return ActionResult.success(true);
+        if(finished) {
+            return ActionResult.success(true);
         }
 
         return super.useOnBlock(context);

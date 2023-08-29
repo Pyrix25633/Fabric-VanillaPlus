@@ -2,6 +2,7 @@ package net.rupyber_studios.vanilla_plus;
 
 import net.fabricmc.api.ModInitializer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
+import net.rupyber_studios.vanilla_plus.item.ModItemGroups;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
 import net.rupyber_studios.vanilla_plus.sounds.ModSounds;
 import net.rupyber_studios.vanilla_plus.util.ModRegistries;
@@ -21,15 +22,17 @@ public class VanillaPlus implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModItemGroups.registerItemGroups();
+
+		ModSounds.registerSounds();
 
 		ModItems.registerModItems();
+
 		ModBlocks.registerModBlocks();
 
 		ModRegistries.registerFlammables();
 
 		ModRegistries.registerCommands();
-
-		ModSounds.registerSounds();
 
 		LOGGER.info("Hello Fabric world!");
 	}

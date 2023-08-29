@@ -159,9 +159,9 @@
   "item.vanilla_plus.rapid_crossbow": "§9Balestra Rapida§r",
   "item.vanilla_plus.rapid_crossbow.tooltip": "Più resistente di una §6Balestra Infuocata§r",
 
-  "itemGroup.vanilla_plus.decorative_blocks": "Blocchi decorativi",
-  "itemGroup.vanilla_plus.dungeons_items": "Oggetti Dungeons",
-  "itemGroup.vanilla_plus.music_discs": "Dischi musicali",
+  "item_group.vanilla_plus.decorative_blocks": "Blocchi decorativi",
+  "item_group.vanilla_plus.dungeons_items": "Oggetti Dungeons",
+  "item_group.vanilla_plus.music_discs": "Dischi musicali",
 
   "advancements.vanilla_plus.decoration.title": "Decorazione?",
   "advancements.vanilla_plus.decoration.description": "Ottieni un blocco di assi di quercia decorate",

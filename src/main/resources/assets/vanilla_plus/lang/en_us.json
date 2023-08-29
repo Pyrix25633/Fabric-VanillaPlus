@@ -159,9 +159,9 @@
   "item.vanilla_plus.rapid_crossbow": "§9Rapid Crossbow§r",
   "item.vanilla_plus.rapid_crossbow.tooltip": "More durable than a §6Firebolt Thrower§r",
 
-  "itemGroup.vanilla_plus.decorative_blocks": "Decorative Blocks",
-  "itemGroup.vanilla_plus.dungeons_items": "Dungeons Items",
-  "itemGroup.vanilla_plus.music_discs": "Music Discs",
+  "item_group.vanilla_plus.decorative_blocks": "Decorative Blocks",
+  "item_group.vanilla_plus.dungeons_items": "Dungeons Items",
+  "item_group.vanilla_plus.music_discs": "Music Discs",
 
   "advancements.vanilla_plus.decoration.title": "Decoration?",
   "advancements.vanilla_plus.decoration.description": "Obtain a Decorated Oak Planks block",

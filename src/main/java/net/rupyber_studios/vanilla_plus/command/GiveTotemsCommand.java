@@ -62,6 +62,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -76,6 +77,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -90,6 +92,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -104,6 +107,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -118,6 +122,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -132,6 +137,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -146,6 +152,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -160,6 +167,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -174,6 +182,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
@@ -188,6 +197,7 @@ public class GiveTotemsCommand {
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
         totem.setNbt(nbt);
+        assert player != null;
         player.giveItemStack(totem);
         return 1;
     }

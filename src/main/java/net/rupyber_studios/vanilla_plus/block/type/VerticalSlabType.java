@@ -16,17 +16,15 @@ public enum VerticalSlabType implements StringIdentifiable {
     VerticalSlabType(Direction direction) {
         this.name = direction == null ? "double" : direction.asString();
         this.direction = direction;
-
-        if (direction == null) shape = VoxelShapes.fullCube();
+        if(direction == null) shape = VoxelShapes.fullCube();
         else {
             double min = 0;
             double max = 8;
-            if (direction.getDirection() == Direction.AxisDirection.NEGATIVE) {
+            if(direction.getDirection() == Direction.AxisDirection.NEGATIVE) {
                 min = 8;
                 max = 16;
             }
-
-            if (direction.getAxis() == Direction.Axis.X) shape = Block.createCuboidShape(min, 0, 0, max, 16, 16);
+            if(direction.getAxis() == Direction.Axis.X) shape = Block.createCuboidShape(min, 0, 0, max, 16, 16);
             else shape = Block.createCuboidShape(0, 0, min, 16, 16, max);
         }
 
@@ -43,8 +41,8 @@ public enum VerticalSlabType implements StringIdentifiable {
     }
 
     public static VerticalSlabType fromDirection(Direction direction) {
-        for (VerticalSlabType type: VerticalSlabType.values())
-            if (type.direction != null && direction == type.direction) return type;
+        for(VerticalSlabType type: VerticalSlabType.values())
+            if(type.direction != null && direction == type.direction) return type;
 
         return null;
     }

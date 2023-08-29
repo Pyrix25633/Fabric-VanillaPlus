@@ -21,7 +21,7 @@ import net.minecraft.world.World;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 
 public class ModLogBlock extends Block {
-    public static final EnumProperty<Direction.Axis> AXIS;
+    public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
 
     public ModLogBlock(Settings settings) {
         super(settings);
@@ -101,9 +101,4 @@ public class ModLogBlock extends Block {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(ModLogBlock.AXIS);
     }
-
-    static {
-        AXIS = Properties.AXIS;
-    }
-
 }

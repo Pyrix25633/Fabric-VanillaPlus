@@ -3,84 +3,120 @@
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.everything_s_a_symptom",
     "sounds": [
-      "vanilla_plus:everything_s_a_symptom"
+      {
+        "name": "vanilla_plus:everything_s_a_symptom",
+        "stream": true
+      }
     ]
   },
   "dawn": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.dawn",
     "sounds": [
-      "vanilla_plus:dawn"
+      {
+        "name": "vanilla_plus:dawn",
+        "stream": true
+      }
     ]
   },
   "heron": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.heron",
     "sounds": [
-      "vanilla_plus:heron"
+      {
+        "name": "vanilla_plus:heron",
+        "stream": true
+      }
     ]
   },
   "sweet_look": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.sweet_look",
     "sounds": [
-      "vanilla_plus:sweet_look"
+      {
+        "name": "vanilla_plus:sweet_look",
+        "stream": true
+      }
     ]
   },
   "lost_treasure": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.lost_treasure",
     "sounds": [
-      "vanilla_plus:lost_treasure"
+      {
+        "name": "vanilla_plus:lost_treasure",
+        "stream": true
+      }
     ]
   },
   "alien_sky": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.alien_sky",
     "sounds": [
-      "vanilla_plus:alien_sky"
+      {
+        "name": "vanilla_plus:alien_sky",
+        "stream": true
+      }
     ]
   },
   "backpack_city": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.backpack_city",
     "sounds": [
-      "vanilla_plus:backpack_city"
+      {
+        "name": "vanilla_plus:backpack_city",
+        "stream": true
+      }
     ]
   },
   "levitate": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.levitate",
     "sounds": [
-      "vanilla_plus:levitate"
+      {
+        "name": "vanilla_plus:levitate",
+        "stream": true
+      }
     ]
   },
   "snaps": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.snaps",
     "sounds": [
-      "vanilla_plus:snaps"
+      {
+        "name": "vanilla_plus:snaps",
+        "stream": true
+      }
     ]
   },
   "mount_and_blade": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.mount_and_blade",
     "sounds": [
-      "vanilla_plus:mount_and_blade"
+      {
+        "name": "vanilla_plus:mount_and_blade",
+        "stream": true
+      }
     ]
   },
   "pink_night_sky": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.pink_night_sky",
     "sounds": [
-      "vanilla_plus:pink_night_sky"
+      {
+        "name": "vanilla_plus:pink_night_sky",
+        "stream": true
+      }
     ]
   },
   "yerba_mate": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.yerba_mate",
     "sounds": [
-      "vanilla_plus:yerba_mate"
+      {
+        "name": "vanilla_plus:yerba_mate",
+        "stream": true
+      }
     ]
   },
 
@@ -88,28 +124,40 @@
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.backyard_boy",
     "sounds": [
-      "vanilla_plus:backyard_boy"
+      {
+        "name": "vanilla_plus:backyard_boy",
+        "stream": true
+      }
     ]
   },
   "losing_my_grip": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.losing_my_grip",
     "sounds": [
-      "vanilla_plus:losing_my_grip"
+      {
+        "name": "vanilla_plus:losing_my_grip",
+        "stream": true
+      }
     ]
   },
   "penny_rabbit_and_summer_bear": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.penny_rabbit_and_summer_bear",
     "sounds": [
-      "vanilla_plus:penny_rabbit_and_summer_bear"
+      {
+        "name": "vanilla_plus:penny_rabbit_and_summer_bear",
+        "stream": true
+      }
     ]
   },
   "remember_when": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.remember_when",
     "sounds": [
-      "vanilla_plus:remember_when"
+      {
+        "name": "vanilla_plus:remember_when",
+        "stream": true
+      }
     ]
   },
 
@@ -117,7 +165,10 @@
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.i_wonder",
     "sounds": [
-      "vanilla_plus:i_wonder"
+      {
+        "name": "vanilla_plus:i_wonder",
+        "stream": true
+      }
     ]
   },
 
@@ -125,7 +176,10 @@
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.liberty_belle",
     "sounds": [
-      "vanilla_plus:liberty_belle"
+      {
+        "name": "vanilla_plus:liberty_belle",
+        "stream": true
+      }
     ]
   },
 
@@ -133,119 +187,170 @@
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.i_have_seen_a_ghost",
     "sounds": [
-      "vanilla_plus:i_have_seen_a_ghost"
+      {
+        "name": "vanilla_plus:i_have_seen_a_ghost",
+        "stream": true
+      }
     ]
   },
   "the_distance_between_us": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.the_distance_between_us",
     "sounds": [
-      "vanilla_plus:the_distance_between_us"
+      {
+        "name": "vanilla_plus:the_distance_between_us",
+        "stream": true
+      }
     ]
   },
   "pale_moon": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.pale_moon",
     "sounds": [
-      "vanilla_plus:pale_moon"
+      {
+        "name": "vanilla_plus:pale_moon",
+        "stream": true
+      }
     ]
   },
   "misty": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.misty",
     "sounds": [
-      "vanilla_plus:misty"
+      {
+        "name": "vanilla_plus:misty",
+        "stream": true
+      }
     ]
   },
   "finding": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.finding",
     "sounds": [
-      "vanilla_plus:finding"
+      {
+        "name": "vanilla_plus:finding",
+        "stream": true
+      }
     ]
   },
   "decay": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.decay",
     "sounds": [
-      "vanilla_plus:decay"
+      {
+        "name": "vanilla_plus:decay",
+        "stream": true
+      }
     ]
   },
   "moving_on": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.moving_on",
     "sounds": [
-      "vanilla_plus:moving_on"
+      {
+        "name": "vanilla_plus:moving_on",
+        "stream": true
+      }
     ]
   },
   "my_person": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.my_person",
     "sounds": [
-      "vanilla_plus:my_person"
+      {
+        "name": "vanilla_plus:my_person",
+        "stream": true
+      }
     ]
   },
   "i_love_you_baby": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.i_love_you_baby",
     "sounds": [
-      "vanilla_plus:i_love_you_baby"
+      {
+        "name": "vanilla_plus:i_love_you_baby",
+        "stream": true
+      }
     ]
   },
   "time": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.time",
     "sounds": [
-      "vanilla_plus:time"
+      {
+        "name": "vanilla_plus:time",
+        "stream": true
+      }
     ]
   },
   "no_worries": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.no_worries",
     "sounds": [
-      "vanilla_plus:no_worries"
+      {
+        "name": "vanilla_plus:no_worries",
+        "stream": true
+      }
     ]
   },
   "wistful": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.wistful",
     "sounds": [
-      "vanilla_plus:wistful"
+      {
+        "name": "vanilla_plus:wistful",
+        "stream": true
+      }
     ]
   },
   "alone_on_d_beach": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.alone_on_d_beach",
     "sounds": [
-      "vanilla_plus:alone_on_d_beach"
+      {
+        "name": "vanilla_plus:alone_on_d_beach",
+        "stream": true
+      }
     ]
   },
   "not_me": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.not_me",
     "sounds": [
-      "vanilla_plus:not_me"
+      {
+        "name": "vanilla_plus:not_me",
+        "stream": true
+      }
     ]
   },
   "panic_at_the_disco": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.panic_at_the_disco",
     "sounds": [
-      "vanilla_plus:panic_at_the_disco"
+      {
+        "name": "vanilla_plus:panic_at_the_disco",
+        "stream": true
+      }
     ]
   },
   "dance_monkey": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.dance_monkey",
     "sounds": [
-      "vanilla_plus:dance_monkey"
+      {
+        "name": "vanilla_plus:dance_monkey",
+        "stream": true
+      }
     ]
   },
   "lush": {
     "category": "record",
     "subtitle": "subtitles.vanilla_plus.lush",
     "sounds": [
-      "vanilla_plus:lush"
+      {
+        "name": "vanilla_plus:lush",
+        "stream": true
+      }
     ]
   }
 }

@@ -7,7 +7,6 @@ import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
 
-import javax.annotation.Nullable;
 import java.util.List;
 
 public class ModBowItem extends BowItem {
@@ -16,7 +15,7 @@ public class ModBowItem extends BowItem {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, TooltipContext context) {
         if(stack.getItem() == ModItems.POWER_BOW)
             tooltip.add(Text.translatable("item.vanilla_plus.power_bow.tooltip"));
         else if(stack.getItem() == ModItems.ELITE_POWER_BOW)
