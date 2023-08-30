@@ -1,4 +1,4 @@
-package net.rupyber_studios.vanilla_plus.util.multiitemlib.api;
+package net.rupyber_studios.vanilla_plus.util;
 
 import java.util.HashSet;
 import java.util.Set;

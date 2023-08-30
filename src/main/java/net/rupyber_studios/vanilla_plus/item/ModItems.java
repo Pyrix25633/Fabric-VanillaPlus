@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import net.rupyber_studios.vanilla_plus.VanillaPlus;
 import net.rupyber_studios.vanilla_plus.item.custom.*;
@@ -194,7 +195,7 @@ public class ModItems {
         return registerItem(name, item, ModItemGroups.MUSIC_DISCS);
     }
 
-    private static Item registerItem(String name, Item item, ItemGroup group) {
+    private static Item registerItem(String name, Item item, RegistryKey<ItemGroup> group) {
         Item registered = Registry.register(Registries.ITEM, new Identifier(VanillaPlus.MOD_ID, name), item);
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(registered));
         return registered;

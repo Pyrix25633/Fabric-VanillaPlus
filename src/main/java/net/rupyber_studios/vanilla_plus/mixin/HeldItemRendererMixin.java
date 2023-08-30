@@ -1,9 +1,9 @@
-package net.rupyber_studios.vanilla_plus.util.multiitemlib.mixin.render;
+package net.rupyber_studios.vanilla_plus.mixin;
 
 import net.minecraft.client.render.item.HeldItemRenderer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.rupyber_studios.vanilla_plus.util.multiitemlib.api.UniqueItemRegistry;
+import net.rupyber_studios.vanilla_plus.util.UniqueItemRegistry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;

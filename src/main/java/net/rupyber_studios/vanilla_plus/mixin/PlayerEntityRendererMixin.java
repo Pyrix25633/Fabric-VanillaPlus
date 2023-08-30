@@ -1,4 +1,4 @@
-package net.rupyber_studios.vanilla_plus.util.multiitemlib.mixin.render;
+package net.rupyber_studios.vanilla_plus.mixin;
 
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.entity.PlayerEntityRenderer;
@@ -6,7 +6,7 @@ import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
-import net.rupyber_studios.vanilla_plus.util.multiitemlib.api.UniqueItemRegistry;
+import net.rupyber_studios.vanilla_plus.util.UniqueItemRegistry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

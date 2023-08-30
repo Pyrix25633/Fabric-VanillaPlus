@@ -1,12 +1,11 @@
 package net.rupyber_studios.vanilla_plus;
 
-import com.oroarmor.multiitemlib.api.UniqueItemRegistry;
 import net.fabricmc.api.ClientModInitializer;
-import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
 import net.rupyber_studios.vanilla_plus.sounds.ModSounds;
 import net.rupyber_studios.vanilla_plus.util.ModModelPredicateProvider;
 import net.rupyber_studios.vanilla_plus.util.ModRegistries;
+import net.rupyber_studios.vanilla_plus.util.UniqueItemRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

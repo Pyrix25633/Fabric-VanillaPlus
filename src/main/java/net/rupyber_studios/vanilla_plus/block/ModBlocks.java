@@ -18,22 +18,12 @@ import static net.minecraft.block.Blocks.CRIMSON_PLANKS;
 import static net.minecraft.block.Blocks.WARPED_PLANKS;
 
 public class ModBlocks {
-    static final float woodHardness = 2.0f, woodResistance = 3.0f,
-            deepOceanHardness = 2.0f, deepOceanResistance = 6.0f,
-            stoneHardness = 2.0f, stoneResistance = 6.0f;
-    static final FabricBlockSettings woodSettings = FabricBlockSettings.of(Material.WOOD)
-            .strength(woodHardness, woodResistance).sounds(BlockSoundGroup.WOOD);
-    static final FabricBlockSettings netherWoodSettings = FabricBlockSettings.of(Material.NETHER_WOOD)
-            .strength(woodHardness, woodResistance).sounds(BlockSoundGroup.WOOD);
-    static final FabricBlockSettings deepOceanSettings = FabricBlockSettings.of(Material.STONE)
-            .strength(deepOceanHardness, deepOceanResistance).mapColor(MapColor.DARK_AQUA)
-            .sounds(BlockSoundGroup.STONE).requiresTool();
-    static final FabricBlockSettings stoneSettings = FabricBlockSettings.of(Material.STONE)
-            .strength(stoneHardness, stoneResistance).sounds(BlockSoundGroup.STONE)
-            .requiresTool();
-    static final FabricBlockSettings lanternSettings = FabricBlockSettings.of(Material.METAL)
-            .strength(3.5f).sounds(BlockSoundGroup.LANTERN).luminance(15)
-            .requiresTool().nonOpaque();
+    static final FabricBlockSettings woodSettings = FabricBlockSettings.copyOf(Blocks.OAK_PLANKS);
+    static final FabricBlockSettings netherWoodSettings = FabricBlockSettings.copyOf(CRIMSON_PLANKS);
+    static final FabricBlockSettings deepOceanSettings = FabricBlockSettings.copyOf(Blocks.STONE)
+            .strength(2.0F, 60.F).mapColor(MapColor.DARK_AQUA);
+    static final FabricBlockSettings stoneSettings = FabricBlockSettings.copyOf(Blocks.STONE);
+    static final FabricBlockSettings lanternSettings = FabricBlockSettings.copyOf(Blocks.LANTERN);
 
     // Oak
     public static final Block DECORATED_OAK_PLANKS = registerDecorativeBlock("decorated_oak_planks",
