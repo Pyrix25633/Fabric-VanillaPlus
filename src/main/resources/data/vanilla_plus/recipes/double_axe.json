@@ -1,11 +1,14 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "vanilla_plus:axe"
-  },
-  "addition": {
-    "item": "minecraft:iron_ingot"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "group": "dungeons_items",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:axe"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
   "result": {
     "item": "vanilla_plus:double_axe"
   }

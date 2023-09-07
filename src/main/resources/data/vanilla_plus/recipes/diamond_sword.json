@@ -1,11 +1,14 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:diamond_sword"
-  },
-  "addition": {
-    "item": "minecraft:diamond"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "group": "dungeons_items",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_sword"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
   "result": {
     "item": "vanilla_plus:diamond_sword"
   }

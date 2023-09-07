@@ -1,11 +1,14 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "minecraft:iron_sword"
-  },
-  "addition": {
-    "item": "minecraft:iron_ingot"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "group": "dungeons_items",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_sword"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
   "result": {
     "item": "vanilla_plus:sword"
   }
