@@ -2,7 +2,6 @@ package net.rupyber_studios.vanilla_plus.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
@@ -55,17 +54,6 @@ public class HollowLog extends Block implements Waterloggable {
     public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
-
-    @Override
-    public boolean tryFillWithFluid(WorldAccess world, BlockPos pos, BlockState state, FluidState fluidState) {
-        return Waterloggable.super.tryFillWithFluid(world, pos, state, fluidState);
-    }
-
-    @Override
-    public boolean canFillWithFluid(BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
-        return Waterloggable.super.canFillWithFluid(world, pos, state, fluid);
-    }
-
 
     @Override
     @SuppressWarnings("deprecation")
