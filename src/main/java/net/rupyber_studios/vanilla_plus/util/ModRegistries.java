@@ -1,10 +1,17 @@
 package net.rupyber_studios.vanilla_plus.util;
 
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.command.v2.ArgumentTypeRegistry;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.command.argument.serialize.ConstantArgumentSerializer;
+import net.minecraft.util.Identifier;
+import net.rupyber_studios.vanilla_plus.VanillaPlus;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.command.GiveTotemsCommand;
+import net.rupyber_studios.vanilla_plus.command.argument.TotemArgumentType;
 
 public class ModRegistries {
     public static void registerFlammables() {
@@ -76,10 +83,14 @@ public class ModRegistries {
     }
 
     public static void registerCommands() {
+        ArgumentTypeRegistry.registerArgumentType(new Identifier(VanillaPlus.MOD_ID, "totem"),
+                TotemArgumentType.class, ConstantArgumentSerializer.of(TotemArgumentType::new));
         CommandRegistrationCallback.EVENT.register(GiveTotemsCommand::register);
     }
 
     public static void getCutouts() {
-
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_LANTERN, RenderLayer.getCutout());
     }
 }

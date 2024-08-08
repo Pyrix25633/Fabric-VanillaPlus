@@ -3,6 +3,7 @@ package net.rupyber_studios.vanilla_plus.util;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
@@ -47,7 +48,9 @@ public class ModModelPredicateProvider {
                 entity != null && entity.isUsingItem() && entity.getActiveItem() == stack && !CrossbowItem.isCharged(stack) ? 1.0F : 0.0F);
         ModelPredicateProviderRegistry.register(crossbow, new Identifier("charged"), (stack, world, entity, seed) ->
                 entity != null && CrossbowItem.isCharged(stack) ? 1.0F : 0.0F);
-        ModelPredicateProviderRegistry.register(crossbow, new Identifier("firework"), (stack, world, entity, seed) ->
-                entity != null && CrossbowItem.isCharged(stack) && ((CrossbowItem)stack.getItem()).getProjectiles() == Items.FIREWORK_ROCKET ? 1.0F : 0.0F);
+        ModelPredicateProviderRegistry.register(crossbow, new Identifier("firework"), (stack, world, entity, seed) -> {
+                System.out.println(((CrossbowItem)stack.getItem()).getProjectiles());
+                return entity != null && CrossbowItem.isCharged(stack) && ((CrossbowItem)stack.getItem()).getProjectiles().test(new ItemStack(Items.FIREWORK_ROCKET)) ? 1.0F : 0.0F;
+        });
     }
 }

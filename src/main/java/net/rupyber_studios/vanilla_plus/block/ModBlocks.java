@@ -21,7 +21,7 @@ public class ModBlocks {
     static final AbstractBlock.Settings deepOceanSettings = AbstractBlock.Settings.copy(Blocks.STONE)
             .strength(2.0F, 60.F).mapColor(MapColor.DARK_AQUA);
     static final AbstractBlock.Settings stoneSettings = AbstractBlock.Settings.copy(Blocks.STONE);
-    static final AbstractBlock.Settings lanternSettings = AbstractBlock.Settings.copy(Blocks.LANTERN);
+    static final AbstractBlock.Settings lanternSettings = AbstractBlock.Settings.copy(Blocks.LANTERN).nonOpaque();
 
     // Oak
     public static final Block DECORATED_OAK_PLANKS = registerDecorativeBlock("decorated_oak_planks",
