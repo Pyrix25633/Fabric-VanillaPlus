@@ -1,8 +1,9 @@
 package net.rupyber_studios.vanilla_plus.util;
 
-
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.command.GiveTotemsCommand;
 
@@ -80,6 +81,8 @@ public class ModRegistries {
     }
 
     public static void getCutouts() {
-
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GREEN_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.YELLOW_LANTERN, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_LANTERN, RenderLayer.getCutout());
     }
 }

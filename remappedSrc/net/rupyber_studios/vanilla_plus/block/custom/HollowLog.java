@@ -1,7 +1,6 @@
 package net.rupyber_studios.vanilla_plus.block.custom;
 
 import net.minecraft.block.*;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
@@ -25,7 +24,6 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
-import org.jetbrains.annotations.NotNull;
 
 public class HollowLog extends Block implements Waterloggable {
     public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
@@ -39,6 +37,7 @@ public class HollowLog extends Block implements Waterloggable {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public boolean hasSidedTransparency(BlockState state) {
         return true;
     }
@@ -51,11 +50,13 @@ public class HollowLog extends Block implements Waterloggable {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public FluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
         if(!world.isClient) {
             if(state.get(WATERLOGGED)) {
@@ -65,6 +66,7 @@ public class HollowLog extends Block implements Waterloggable {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         if(state.get(WATERLOGGED)) {
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
@@ -95,21 +97,24 @@ public class HollowLog extends Block implements Waterloggable {
     private static final VoxelShape Z_MOSSY = VoxelShapes.union(Z_1, Z_2, Z_3, Z_4, Z_MOSS);
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getCameraCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return getShape(state);
     }
 
-    private VoxelShape getShape(@NotNull BlockState state) {
+    private VoxelShape getShape(BlockState state) {
         VoxelShape toReturn;
         if(state.get(AXIS) == Direction.Axis.X) {
             if(state.get(MOSSY)) {
@@ -139,8 +144,9 @@ public class HollowLog extends Block implements Waterloggable {
     }
 
     @Override
-    public ActionResult onUse(@NotNull BlockState state, World world, BlockPos pos, @NotNull PlayerEntity player, BlockHitResult hit) {
-        ItemStack playerItem = player.getStackInHand(Hand.MAIN_HAND);
+    @SuppressWarnings("deprecation")
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        ItemStack playerItem = player.getStackInHand(hand);
         boolean finished = false;
         Block toPlace = Blocks.AIR;
         if(state.isOf(this)) {
@@ -166,7 +172,7 @@ public class HollowLog extends Block implements Waterloggable {
                             SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                     world.addBlockBreakParticles(pos, Blocks.MOSS_CARPET.getDefaultState());
                     dropStack(world, pos, new ItemStack(Items.MOSS_CARPET));
-                    playerItem.damage(1, player, EquipmentSlot.MAINHAND);
+                    playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     finished = true;
                 }
             }
@@ -205,7 +211,7 @@ public class HollowLog extends Block implements Waterloggable {
                     world.setBlockState(pos, toPlace.getDefaultState()
                             .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
                             .with(WATERLOGGED, state.get(WATERLOGGED)));
-                    playerItem.damage(1, player, EquipmentSlot.MAINHAND);
+                    playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
                             SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                 }
@@ -218,11 +224,11 @@ public class HollowLog extends Block implements Waterloggable {
             return ActionResult.success(true);
         }
 
-        return super.onUse(state, world, pos, player, hit);
+        return super.onUse(state, world, pos, player, hand, hit);
     }
 
     @Override
-    protected void appendProperties(StateManager.@NotNull Builder<Block, BlockState> builder) {
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(HollowLog.AXIS, MOSSY, WATERLOGGED);
     }
 }

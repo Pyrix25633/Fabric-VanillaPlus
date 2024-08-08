@@ -1,14 +1,17 @@
 plugins {
-	id 'fabric-loom' version '1.0-SNAPSHOT'
+	id 'java'
+	id 'idea'
+	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
+	id "com.hypherionmc.modutils.modpublisher" version "2.1.5"
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
-archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
 
 repositories {
 	// Add repositories to retrieve artifacts from in here.
@@ -16,6 +19,18 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"modid" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+
 }
 
 dependencies {
@@ -27,10 +42,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	include(implementation(annotationProcessor("io.github.llamalad7:mixinextras-fabric:0.2.2")))
+	// Uncomment the following line to enable the deprecated Fabric API modules.
+	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
-// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
-	// You may need to force-disable transitiveness on them.
+	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 }
 
 processResources {
@@ -42,14 +57,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	// ensure that the encoding is set to UTF-8, no matter what the system default is
-	// this fixes some edge cases with special characters not displaying correctly
-	// see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
-	// If Javadoc is generated, this must be specified in that task too.
-	it.options.encoding = "UTF-8"
-
-	// Minecraft 1.17 (21w19a) upwards uses Java 16.
-	it.options.release = 16
+	it.options.release = 21
 }
 
 java {
@@ -57,6 +65,9 @@ java {
 	// if it is present.
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
@@ -68,14 +79,9 @@ jar {
 // configure the maven publication
 publishing {
 	publications {
-		mavenJava(MavenPublication) {
-			// add all the jars that should be included when publishing to maven
-			artifact(remapJar) {
-				builtBy remapJar
-			}
-			artifact(sourcesJar) {
-				builtBy remapSourcesJar
-			}
+		create("mavenJava", MavenPublication) {
+			artifactId = project.archives_base_name
+			from components.java
 		}
 	}
 
@@ -85,5 +91,59 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+}
+
+publisher {
+	apiKeys {
+		modrinth System.getenv("MODRINTH_TOKEN")
+		curseforge System.getenv("CURSE_TOKEN")
+		github System.getenv("GITHUB_TOKEN")
+	}
+
+	setCurseID("564742")
+	setModrinthID("Z67iUzPK")
+
+	setVersionType("release")
+
+	setChangelog(new File("/media/pyrix25633/Drive/mods/VanillaPlus/changelog.md").text)
+
+	setProjectVersion(project.semantic_version)
+
+	setDisplayName("Vanilla Plus Mod ${project.semantic_version}")
+
+	setGameVersions(project.minecraft_version)
+
+	setLoaders("fabric", "quilt")
+
+	setCurseEnvironment("both")
+
+	setIsManualRelease(false)
+
+	setArtifact("/media/pyrix25633/Drive/mods/VanillaPlus/workspace/Fabric-VanillaPlus/build/libs/vanilla_plus-${project.mod_version}.jar")
+
+	setDisableMalwareScanner(true)
+
+	setJavaVersions(JavaVersion.VERSION_21, 21)
+
+	setDisableEmptyJarCheck(true)
+
+	github {
+		repo = "Pyrix25633/Fabric-VanillaPlus"
+		tag = "v${project.semantic_version}"
+		displayName = "Vanilla Plus ${project.mod_version}"
+		createTag = true
+		createRelease = true
+		updateRelease = true
+		draft = false
+		target = "main"
+	}
+
+	modrinthDepends {
+		optional 'fabric-api', 'qsl'
+	}
+
+	curseDepends {
+		optional 'fabric-api', 'qsl'
 	}
 }

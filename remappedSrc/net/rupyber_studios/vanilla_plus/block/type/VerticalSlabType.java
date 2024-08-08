@@ -5,8 +5,6 @@ import net.minecraft.util.StringIdentifiable;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.Nullable;
 
 public enum VerticalSlabType implements StringIdentifiable {
     NORTH(Direction.NORTH), SOUTH(Direction.SOUTH), WEST(Direction.WEST), EAST(Direction.EAST), DOUBLE(null);
@@ -42,8 +40,7 @@ public enum VerticalSlabType implements StringIdentifiable {
         return name;
     }
 
-    @Contract(pure = true)
-    public static @Nullable VerticalSlabType fromDirection(Direction direction) {
+    public static VerticalSlabType fromDirection(Direction direction) {
         for(VerticalSlabType type: VerticalSlabType.values())
             if(type.direction != null && direction == type.direction) return type;
 

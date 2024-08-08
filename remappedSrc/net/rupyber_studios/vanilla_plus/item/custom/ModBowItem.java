@@ -1,21 +1,21 @@
 package net.rupyber_studios.vanilla_plus.item.custom;
 
-import net.minecraft.client.item.TooltipType;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
+import net.minecraft.world.World;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
 public class ModBowItem extends BowItem {
-    public ModBowItem(Settings settings) {
+    public ModBowItem(net.minecraft.item.Item.Settings settings) {
         super(settings);
     }
 
     @Override
-    public void appendTooltip(@NotNull ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+    public void appendTooltip(ItemStack stack, World world, List<Text> tooltip, net.minecraft.item.Item.TooltipContext context) {
         if(stack.getItem() == ModItems.POWER_BOW)
             tooltip.add(Text.translatable("item.vanilla_plus.power_bow.tooltip"));
         else if(stack.getItem() == ModItems.ELITE_POWER_BOW)

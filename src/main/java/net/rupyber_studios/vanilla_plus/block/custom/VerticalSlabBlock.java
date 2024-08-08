@@ -1,15 +1,12 @@
 package net.rupyber_studios.vanilla_plus.block.custom;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
-import net.minecraft.block.Waterloggable;
+import net.minecraft.block.*;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.state.property.EnumProperty;
@@ -24,26 +21,25 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.rupyber_studios.vanilla_plus.block.type.VerticalSlabType;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class VerticalSlabBlock extends Block implements Waterloggable {
     public static final EnumProperty<VerticalSlabType> TYPE = EnumProperty.of("type", VerticalSlabType.class);
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
 
-    public VerticalSlabBlock(FabricBlockSettings properties) {
+    public VerticalSlabBlock(AbstractBlock.Settings properties) {
         super(properties);
         setDefaultState(getDefaultState().with(TYPE, VerticalSlabType.NORTH).with(WATERLOGGED, false));
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public BlockState rotate(BlockState state, BlockRotation rot) {
+    public BlockState rotate(@NotNull BlockState state, BlockRotation rot) {
         return state.get(TYPE) == VerticalSlabType.DOUBLE ? state : state.with(TYPE, VerticalSlabType.fromDirection(rot.rotate(state.get(TYPE).direction)));
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public BlockState mirror(BlockState state, BlockMirror mirrorIn) {
+    public BlockState mirror(@NotNull BlockState state, BlockMirror mirrorIn) {
         VerticalSlabType type = state.get(TYPE);
         if (type == VerticalSlabType.DOUBLE || mirrorIn == BlockMirror.NONE) return state;
 
@@ -54,37 +50,33 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public boolean hasSidedTransparency(BlockState state) {
+    public boolean hasSidedTransparency(@NotNull BlockState state) {
         return state.get(TYPE) != VerticalSlabType.DOUBLE;
     }
 
     @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+    protected void appendProperties(StateManager.@NotNull Builder<Block, BlockState> builder) {
         builder.add(TYPE, WATERLOGGED);
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public VoxelShape getOutlineShape(BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
+    public VoxelShape getOutlineShape(@NotNull BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
         return state.get(TYPE).shape;
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public VoxelShape getCameraCollisionShape(BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
+    public VoxelShape getCameraCollisionShape(@NotNull BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
         return state.get(TYPE).shape;
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public VoxelShape getCollisionShape(BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
+    public VoxelShape getCollisionShape(@NotNull BlockState state, BlockView worldIn, BlockPos pos, ShapeContext context) {
         return state.get(TYPE).shape;
     }
 
     @Override
     @Nullable
-    public BlockState getPlacementState(ItemPlacementContext context) {
+    public BlockState getPlacementState(@NotNull ItemPlacementContext context) {
         BlockPos blockpos = context.getBlockPos();
         BlockState blockstate = context.getWorld().getBlockState(blockpos);
         if (blockstate.getBlock() == this) return blockstate.with(TYPE, VerticalSlabType.DOUBLE).with(WATERLOGGED, false);
@@ -97,7 +89,7 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
         return retState.with(TYPE, type);
     }
 
-    private Direction getDirectionForPlacement(ItemPlacementContext context) {
+    private Direction getDirectionForPlacement(@NotNull ItemPlacementContext context) {
         Direction direction = context.getSide();
         if (direction.getAxis() != Direction.Axis.Y) return direction;
 
@@ -108,22 +100,19 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public boolean canReplace(BlockState state, ItemPlacementContext useContext) {
+    public boolean canReplace(@NotNull BlockState state, @NotNull ItemPlacementContext useContext) {
         ItemStack itemstack = useContext.getStack();
         VerticalSlabType slabType = state.get(TYPE);
         return slabType != VerticalSlabType.DOUBLE && itemstack.getItem() == this.asItem() && (useContext.canReplaceExisting() && (useContext.getSide() == slabType.direction && getDirectionForPlacement(useContext) == slabType.direction) || (!useContext.canReplaceExisting() && useContext.getSide().getAxis() != slabType.direction.getAxis()));
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public FluidState getFluidState(BlockState state) {
+    public FluidState getFluidState(@NotNull BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStill(false) : super.getFluidState(state);
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public void neighborUpdate(BlockState state, World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
+    public void neighborUpdate(BlockState state, @NotNull World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
         if(!world.isClient) {
             if(state.get(WATERLOGGED)) {
                 world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
@@ -132,8 +121,7 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
+    public BlockState getStateForNeighborUpdate(@NotNull BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
         if(state.get(WATERLOGGED)) {
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
         }
@@ -141,8 +129,7 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public boolean canPathfindThrough(BlockState state, BlockView worldIn, BlockPos pos, NavigationType type) {
-        return type == NavigationType.WATER && worldIn.getFluidState(pos).isOf(Fluids.WATER);
+    public boolean canPathfindThrough(BlockState state, NavigationType type) {
+        return type == NavigationType.WATER && state.getFluidState().isIn(FluidTags.WATER);
     }
 }

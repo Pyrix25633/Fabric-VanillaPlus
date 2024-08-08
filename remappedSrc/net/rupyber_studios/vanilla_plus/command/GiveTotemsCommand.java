@@ -4,18 +4,15 @@ import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import net.minecraft.command.CommandRegistryAccess;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.NbtComponent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
-import org.jetbrains.annotations.NotNull;
 
 public class GiveTotemsCommand {
-    public static void register(@NotNull CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess access,
+    public static void register(CommandDispatcher<ServerCommandSource> dispatcher, CommandRegistryAccess access,
                                 CommandManager.RegistrationEnvironment environment) {
         dispatcher.register(CommandManager.literal("givetotem")
                 .then(CommandManager.literal("all").executes(GiveTotemsCommand::giveAll).requires(it -> it.hasPermissionLevel(4))));
@@ -55,7 +52,7 @@ public class GiveTotemsCommand {
         return 1;
     }
 
-    public static int giveSkeleton(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveSkeleton(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -64,13 +61,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Skeleton Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveZombie(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveZombie(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -79,13 +76,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Zombie Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveCreeper(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveCreeper(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -94,13 +91,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Creeper Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveShulker(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveShulker(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -109,13 +106,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Shulker Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveEnderDragon(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveEnderDragon(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -124,13 +121,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Ender Dragon Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveGhast(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveGhast(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -139,13 +136,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Ghast Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveSlime(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveSlime(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -154,13 +151,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Slime Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveEnderman(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveEnderman(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -169,13 +166,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Enderman Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveGuardian(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveGuardian(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -184,13 +181,13 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Guardian Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;
     }
 
-    public static int giveElderGuardian(@NotNull CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+    public static int giveElderGuardian(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         ServerPlayerEntity player = context.getSource().getPlayer();
         NbtCompound nbt = new NbtCompound();
         NbtCompound tooltip = new NbtCompound();
@@ -199,7 +196,7 @@ public class GiveTotemsCommand {
         tooltip.putString("Name", "{\"text\":\"Elder Guardian Totem of Undying\", \"italic\":false}");
         nbt.put("display", tooltip);
         ItemStack totem = Items.TOTEM_OF_UNDYING.getDefaultStack();
-        totem.set(DataComponentTypes.CUSTOM_DATA, NbtComponent.of(nbt));
+        totem.setNbt(nbt);
         assert player != null;
         player.giveItemStack(totem);
         return 1;

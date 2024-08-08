@@ -1,6 +1,8 @@
 package net.rupyber_studios.vanilla_plus.block;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -16,12 +18,12 @@ import static net.minecraft.block.Blocks.CRIMSON_PLANKS;
 import static net.minecraft.block.Blocks.WARPED_PLANKS;
 
 public class ModBlocks {
-    static final AbstractBlock.Settings woodSettings = AbstractBlock.Settings.copy(Blocks.OAK_PLANKS);
-    static final AbstractBlock.Settings netherWoodSettings = AbstractBlock.Settings.copy(CRIMSON_PLANKS);
-    static final AbstractBlock.Settings deepOceanSettings = AbstractBlock.Settings.copy(Blocks.STONE)
+    static final FabricBlockSettings woodSettings = FabricBlockSettings.copyOf(Blocks.OAK_PLANKS);
+    static final FabricBlockSettings netherWoodSettings = FabricBlockSettings.copyOf(CRIMSON_PLANKS);
+    static final FabricBlockSettings deepOceanSettings = FabricBlockSettings.copyOf(Blocks.STONE)
             .strength(2.0F, 60.F).mapColor(MapColor.DARK_AQUA);
-    static final AbstractBlock.Settings stoneSettings = AbstractBlock.Settings.copy(Blocks.STONE);
-    static final AbstractBlock.Settings lanternSettings = AbstractBlock.Settings.copy(Blocks.LANTERN);
+    static final FabricBlockSettings stoneSettings = FabricBlockSettings.copyOf(Blocks.STONE);
+    static final FabricBlockSettings lanternSettings = FabricBlockSettings.copyOf(Blocks.LANTERN);
 
     // Oak
     public static final Block DECORATED_OAK_PLANKS = registerDecorativeBlock("decorated_oak_planks",
@@ -285,7 +287,7 @@ public class ModBlocks {
 
     private static void registerDecorativeBlockItem(String name, Block block) {
         Item registered = Registry.register(Registries.ITEM, new Identifier(VanillaPlus.MOD_ID, name),
-                new BlockItem(block, new Item.Settings()));
+                new BlockItem(block, new FabricItemSettings()));
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.DECORATIVE_BLOCKS).register(entries -> entries.add(registered));
     }
 

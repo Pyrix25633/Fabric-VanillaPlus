@@ -3,7 +3,6 @@ package net.rupyber_studios.vanilla_plus.block.custom;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -20,7 +19,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
-import org.jetbrains.annotations.NotNull;
 
 public class ModLogBlock extends Block {
     public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
@@ -31,13 +29,14 @@ public class ModLogBlock extends Block {
     }
 
     @Override
-    public BlockState getPlacementState(@NotNull ItemPlacementContext ctx) {
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState().with(AXIS, ctx.getSide().getAxis());
     }
 
     @Override
-    public ActionResult onUse(@NotNull BlockState state, World world, BlockPos pos, @NotNull PlayerEntity player, BlockHitResult hit) {
-        ItemStack playerItem = player.getStackInHand(Hand.MAIN_HAND);
+    @SuppressWarnings("deprecation")
+    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
+        ItemStack playerItem = player.getStackInHand(hand);
         Block toPlace = Blocks.AIR;
         boolean finished = false;
 
@@ -85,7 +84,7 @@ public class ModLogBlock extends Block {
 
                 if(finished) {
                     world.setBlockState(pos, toPlace.getDefaultState().with(ModLogBlock.AXIS, state.get(ModLogBlock.AXIS)));
-                    playerItem.damage(1, player, EquipmentSlot.MAINHAND);
+                    playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                 }
             }
@@ -95,11 +94,11 @@ public class ModLogBlock extends Block {
             return ActionResult.success(true);
         }
 
-        return super.onUse(state, world, pos, player, hit);
+        return super.onUse(state, world, pos, player, hand, hit);
     }
 
     @Override
-    protected void appendProperties(StateManager.@NotNull Builder<Block, BlockState> builder) {
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(ModLogBlock.AXIS);
     }
 }
