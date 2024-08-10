@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blank_electro_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:blank_electro_music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_green_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:green_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_lime_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:lime_dye"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vanilla_plus:music_disc_the_distance_between_us"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blank_electro_music_disc",
+      "has_green_dye",
+      "has_lime_dye"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vanilla_plus:music_disc_the_distance_between_us"
+    ]
+  }
+}

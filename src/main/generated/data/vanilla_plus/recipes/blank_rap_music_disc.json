@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "blank_music_disc",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:blank_music_disc"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla_plus:blank_rap_music_disc"
+  }
+}

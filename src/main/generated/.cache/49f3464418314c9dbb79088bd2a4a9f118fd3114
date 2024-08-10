@@ -1,4 +1,4 @@
-// 1.20.6	2024-08-10T14:41:03.765199366	Vanilla Plus/Block Loot Tables
+// 1.20.6	2024-08-10T22:56:43.596576013	Vanilla Plus/Block Loot Tables
 772910728b0d2523456f764f4d182c1d75594301 data/vanilla_plus/loot_tables/blocks/decorated_dark_oak_planks.json
 64d20e3aa3205cf7cea805a3a2495c90fffaf681 data/vanilla_plus/loot_tables/blocks/cobbled_deepslate_vertical_slab.json
 6efa7e17fe745aca9178cb93b030ad5845ee0bd9 data/vanilla_plus/loot_tables/blocks/decorated_dark_oak_wood.json
@@ -50,8 +50,8 @@ eec79df0a02b2ac7182b3848d9a28894fed5d093 data/vanilla_plus/loot_tables/blocks/de
 4037b583b6188f5d309d53b64062730607af5b5e data/vanilla_plus/loot_tables/blocks/decorated_crimson_planks.json
 4fb3d45f96a17429f0cc66a6b85dbc53e89efbfa data/vanilla_plus/loot_tables/blocks/cut_sandstone_vertical_slab.json
 9735982f3621db7f0c7734081808b8354049eb0b data/vanilla_plus/loot_tables/blocks/decorated_spruce_log.json
-c0df938dd387878eb23e7964b73de0c58288d72e data/vanilla_plus/loot_tables/blocks/red_nether_brick_vertical_slab.json
 b434ef50f4b73041494cd3faf98027c43f7dfc45 data/vanilla_plus/loot_tables/blocks/mossy_stone_brick_vertical_slab.json
+c0df938dd387878eb23e7964b73de0c58288d72e data/vanilla_plus/loot_tables/blocks/red_nether_brick_vertical_slab.json
 e39eaf527fa526313d421294530e0269be2d8aaf data/vanilla_plus/loot_tables/blocks/dark_oak_vertical_slab.json
 1f76cf4fe275688789da4adbd5d09a1dbe7d5dca data/vanilla_plus/loot_tables/blocks/blackstone_vertical_slab.json
 cbc60d2e04b4ac8032225df573629eca72433fbb data/vanilla_plus/loot_tables/blocks/polished_granite_vertical_slab.json

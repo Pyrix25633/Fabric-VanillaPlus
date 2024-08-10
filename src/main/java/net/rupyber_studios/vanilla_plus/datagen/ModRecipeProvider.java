@@ -14,6 +14,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.block.custom.*;
+import net.rupyber_studios.vanilla_plus.item.ModItems;
+import net.rupyber_studios.vanilla_plus.item.custom.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
@@ -48,7 +50,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             else if(block instanceof ModLanternBlock lantern)
                 generateLantern(exporter, lantern);
         }
-        generateDeepOcean(exporter);
+        generateOtherBlocks(exporter);
+        generateOtherItems(exporter);
+        for(Item item : ModItems.ALL) {
+            if(item instanceof BlankMusicDiscItem blankMusicDisc)
+                generateBlankMusicDisk(exporter, blankMusicDisc);
+            else if(item instanceof ModMusicDiscItem musicDisc)
+                generateMusicDisc(exporter, musicDisc);
+            else if(item instanceof DungeonItem dungeonItem)
+                generateDungeonItem(exporter, item, dungeonItem);
+        }
     }
 
     private static void generateTable(RecipeExporter exporter, @NotNull TableBlock table) {
@@ -114,7 +125,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    private static void generateDeepOcean(RecipeExporter exporter) {
+    private static void generateOtherBlocks(RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SMOOTH_STONE_VERTICAL_SLAB, 6).group("vertical_slab")
+                .pattern("#").pattern("#").pattern("#")
+                .input('#', Blocks.SMOOTH_STONE)
+                .criterion(FabricRecipeProvider.hasItem(Blocks.SMOOTH_STONE),
+                        FabricRecipeProvider.conditionsFromItem(Blocks.SMOOTH_STONE))
+                .offerTo(exporter);
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.DEEP_OCEAN_BRICKS, 8).group("deep_ocean")
                 .input(Items.BLUE_DYE)
                 .input(Blocks.CLAY, 4)
@@ -150,5 +167,69 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.DEEP_OCEAN_BRICK_SLAB),
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.DEEP_OCEAN_BRICK_SLAB))
                 .offerTo(exporter);
+    }
+
+    private static void generateOtherItems(RecipeExporter exporter) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DECORATOR_TOOL).group("decorator_tool")
+                .pattern(" =").pattern("/ ")
+                .input('=', Items.IRON_INGOT)
+                .input('/', Items.STICK)
+                .criterion(FabricRecipeProvider.hasItem(Items.IRON_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                        FabricRecipeProvider.conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BLANK_MUSIC_DISC_PIECE).group("blank_music_disc")
+                .input(Items.IRON_INGOT)
+                .input(Items.GLASS)
+                .input(Items.COAL)
+                .criterion(FabricRecipeProvider.hasItem(Items.IRON_INGOT),
+                        FabricRecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+                .criterion(FabricRecipeProvider.hasItem(Items.GLASS),
+                        FabricRecipeProvider.conditionsFromItem(Items.GLASS))
+                .criterion(FabricRecipeProvider.hasItem(Items.COAL),
+                        FabricRecipeProvider.conditionsFromItem(Items.COAL))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BLANK_MUSIC_DISC).group("blank_music_disc")
+                .input(ModItems.BLANK_MUSIC_DISC_PIECE, 2)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.BLANK_MUSIC_DISC_PIECE),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.BLANK_MUSIC_DISC_PIECE))
+                .offerTo(exporter);
+    }
+
+    private static void generateMusicDisc(RecipeExporter exporter, @NotNull ModMusicDiscItem musicDisc) {
+        ShapelessRecipeJsonBuilder builder = ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, musicDisc)
+                .group("music_disc")
+                .input(Blocks.LANTERN);
+        for(Item input : musicDisc.getInputs()) {
+            builder.input(input).criterion(FabricRecipeProvider.hasItem(input),
+                    FabricRecipeProvider.conditionsFromItem(input));
+        }
+        builder.offerTo(exporter);
+    }
+
+    private static void generateBlankMusicDisk(RecipeExporter exporter, @NotNull BlankMusicDiscItem blankMusicDisc) {
+        Item dye = blankMusicDisc.getDye();
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, blankMusicDisc).group("blank_music_disc")
+                .input(ModItems.BLANK_MUSIC_DISC)
+                .input(dye)
+                .criterion(FabricRecipeProvider.hasItem(ModItems.BLANK_MUSIC_DISC),
+                        FabricRecipeProvider.conditionsFromItem(ModItems.BLANK_MUSIC_DISC))
+                .criterion(FabricRecipeProvider.hasItem(dye),
+                        FabricRecipeProvider.conditionsFromItem(dye))
+                .offerTo(exporter);
+    }
+
+    private static void generateDungeonItem(RecipeExporter exporter,
+                                            @NotNull Item item,
+                                            @NotNull DungeonItem dungeonItem) {
+        ShapelessRecipeJsonBuilder builder = ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, item)
+                .group(dungeonItem.getGroup())
+                .input(Blocks.LANTERN);
+        for(Item input : dungeonItem.getInputs()) {
+            builder.input(input).criterion(FabricRecipeProvider.hasItem(input),
+                    FabricRecipeProvider.conditionsFromItem(input));
+        }
+        builder.offerTo(exporter);
     }
 }

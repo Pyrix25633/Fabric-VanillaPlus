@@ -2,16 +2,30 @@ package net.rupyber_studios.vanilla_plus.item.custom;
 
 import net.minecraft.client.item.TooltipType;
 import net.minecraft.item.BowItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class ModBowItem extends BowItem {
+public class ModBowItem extends BowItem implements DungeonItem {
     public ModBowItem(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public List<Item> getInputs() {
+        if(this == ModItems.POWER_BOW) return List.of(Items.BOW, Items.STRING);
+        if(this == ModItems.ELITE_POWER_BOW) return List.of(ModItems.POWER_BOW, Items.STRING);
+        return List.of(Items.AIR);
+    }
+
+    @Override
+    public String getGroup() {
+        return "bow";
     }
 
     @Override
