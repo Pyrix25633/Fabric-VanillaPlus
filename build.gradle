@@ -82,6 +82,10 @@ publishing {
 	}
 }
 
+fabricApi {
+	configureDataGeneration()
+}
+
 publisher {
 	apiKeys {
 		modrinth System.getenv("MODRINTH_TOKEN")

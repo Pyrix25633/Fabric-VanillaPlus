@@ -1,23 +1,23 @@
 package net.rupyber_studios.vanilla_plus.util.totem;
 
 import net.minecraft.text.Text;
-import net.rupyber_studios.vanilla_plus.util.MinecraftColor;
+import net.minecraft.util.Formatting;
 
 public class Rarity {
-    public static final Rarity COMMON = new Rarity("Common", MinecraftColor.DARK_AQUA);
-    public static final Rarity UNCOMMON = new Rarity("Uncommon", MinecraftColor.DARK_GREEN);
-    public static final Rarity RARE = new Rarity("Rare", MinecraftColor.DARK_RED);
-    public static final Rarity EPIC = new Rarity("Epic", MinecraftColor.DARK_PURPLE);
+    public static final Rarity COMMON = new Rarity("Common", Formatting.DARK_AQUA);
+    public static final Rarity UNCOMMON = new Rarity("Uncommon", Formatting.DARK_GREEN);
+    public static final Rarity RARE = new Rarity("Rare", Formatting.DARK_RED);
+    public static final Rarity EPIC = new Rarity("Epic", Formatting.DARK_PURPLE);
 
     private final String text;
-    private final int color;
+    private final Formatting formatting;
 
-    public Rarity(String text, int color) {
+    public Rarity(String text, Formatting formatting) {
         this.text = text;
-        this.color = color;
+        this.formatting = formatting;
     }
 
     public Text toText() {
-        return Text.literal(text).withColor(color);
+        return Text.literal(this.text).formatted(this.formatting);
     }
 }

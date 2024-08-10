@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "hollow_log",
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla_plus:hollow_dark_oak_log"
+  }
+}

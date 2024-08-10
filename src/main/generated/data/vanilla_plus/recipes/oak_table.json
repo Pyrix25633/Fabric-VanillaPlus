@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "table",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "/ /"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla_plus:oak_table"
+  }
+}

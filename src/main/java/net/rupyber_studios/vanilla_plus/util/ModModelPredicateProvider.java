@@ -1,9 +1,10 @@
 package net.rupyber_studios.vanilla_plus.util;
 
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ChargedProjectilesComponent;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.rupyber_studios.vanilla_plus.item.ModItems;
@@ -49,8 +50,10 @@ public class ModModelPredicateProvider {
         ModelPredicateProviderRegistry.register(crossbow, new Identifier("charged"), (stack, world, entity, seed) ->
                 entity != null && CrossbowItem.isCharged(stack) ? 1.0F : 0.0F);
         ModelPredicateProviderRegistry.register(crossbow, new Identifier("firework"), (stack, world, entity, seed) -> {
-                System.out.println(((CrossbowItem)stack.getItem()).getProjectiles());
-                return entity != null && CrossbowItem.isCharged(stack) && ((CrossbowItem)stack.getItem()).getProjectiles().test(new ItemStack(Items.FIREWORK_ROCKET)) ? 1.0F : 0.0F;
+                ChargedProjectilesComponent chargedProjectilesComponent = stack.get(DataComponentTypes.CHARGED_PROJECTILES);
+                if(chargedProjectilesComponent == null) return 0.0F;
+                return entity != null && CrossbowItem.isCharged(stack) && chargedProjectilesComponent.contains(Items.FIREWORK_ROCKET)
+                        ? 1.0F : 0.0F;
         });
     }
 }

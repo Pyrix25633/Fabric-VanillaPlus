@@ -34,6 +34,15 @@ public class VanillaPlus implements ModInitializer {
 
 		ModRegistries.registerCommands();
 
+		ModRegistries.modifyLootTables();
+
 		LOGGER.info("Hello Fabric world!");
+
+		// TODO: crafting recipes
+		// TODO: block loot tables
+		// TODO: advancements
+		// TODO: custom totems
+		// TODO: mangrove, cherry blossom -> table, vertical slabs, hollow logs, decorated logs, decorated hollow logs, decorated planks
+		// TODO: bamboo and bamboo mosaic -> vertical slab
 	}
 }

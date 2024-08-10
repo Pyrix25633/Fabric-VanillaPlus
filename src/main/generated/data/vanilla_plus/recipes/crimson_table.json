@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "table",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_planks"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "/ /"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla_plus:crimson_table"
+  }
+}
