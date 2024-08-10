@@ -31,6 +31,6 @@ public class VanillaPlusClient implements ClientModInitializer {
 		UniqueItemRegistry.CROSSBOW.addItemToRegistry(ModItems.FIREBOLT_THROWER);
 		UniqueItemRegistry.CROSSBOW.addItemToRegistry(ModItems.RAPID_CROSSBOW);
 
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Vanilla Plus Client initialized");
 	}
 }

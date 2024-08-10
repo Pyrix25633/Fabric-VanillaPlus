@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "decorated_planks",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:decorated_jungle_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "vanilla_plus:decorated_jungle_planks"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "deep_ocean",
+  "key": {
+    "#": {
+      "item": "vanilla_plus:deep_ocean_bricks"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "vanilla_plus:deep_ocean_brick_slab"
+  }
+}

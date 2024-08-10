@@ -27,15 +27,15 @@ public class ModBlocks {
 
     // Oak
     public static final Block DECORATED_OAK_PLANKS = registerDecorativeBlock("decorated_oak_planks",
-            new Block(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
+            new DecoratedPlanksBlock(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
     public static final Block DECORATED_OAK_LOG = registerDecorativeBlock("decorated_oak_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
     public static final Block DECORATED_OAK_WOOD = registerDecorativeBlock("decorated_oak_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
     public static final Block DECORATED_STRIPPED_OAK_LOG = registerDecorativeBlock("decorated_stripped_oak_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
     public static final Block DECORATED_STRIPPED_OAK_WOOD = registerDecorativeBlock("decorated_stripped_oak_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.OAK_TAN)));
     public static final Block OAK_TABLE = registerDecorativeBlock("oak_table",
             new TableBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.OAK_TAN)));
     public static final Block HOLLOW_OAK_LOG = registerDecorativeBlock("hollow_oak_log",
@@ -44,15 +44,15 @@ public class ModBlocks {
             new HollowLogBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.OAK_TAN)));
     //Spruce
     public static final Block DECORATED_SPRUCE_PLANKS = registerDecorativeBlock("decorated_spruce_planks",
-            new Block(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
+            new DecoratedPlanksBlock(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block DECORATED_SPRUCE_LOG = registerDecorativeBlock("decorated_spruce_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block DECORATED_SPRUCE_WOOD = registerDecorativeBlock("decorated_spruce_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block DECORATED_STRIPPED_SPRUCE_LOG = registerDecorativeBlock("decorated_stripped_spruce_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block DECORATED_STRIPPED_SPRUCE_WOOD = registerDecorativeBlock("decorated_stripped_spruce_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block SPRUCE_TABLE = registerDecorativeBlock("spruce_table",
             new TableBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.SPRUCE_BROWN)));
     public static final Block HOLLOW_SPRUCE_LOG = registerDecorativeBlock("hollow_spruce_log",
@@ -61,15 +61,15 @@ public class ModBlocks {
             new HollowLogBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.SPRUCE_BROWN)));
     //Birch
     public static final Block DECORATED_BIRCH_PLANKS = registerDecorativeBlock("decorated_birch_planks",
-            new Block(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
+            new DecoratedPlanksBlock(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
     public static final Block DECORATED_BIRCH_LOG = registerDecorativeBlock("decorated_birch_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
     public static final Block DECORATED_BIRCH_WOOD = registerDecorativeBlock("decorated_birch_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
     public static final Block DECORATED_STRIPPED_BIRCH_LOG = registerDecorativeBlock("decorated_stripped_birch_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
     public static final Block DECORATED_STRIPPED_BIRCH_WOOD = registerDecorativeBlock("decorated_stripped_birch_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.PALE_YELLOW)));
     public static final Block BIRCH_TABLE = registerDecorativeBlock("birch_table",
             new TableBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.PALE_YELLOW)));
     public static final Block HOLLOW_BIRCH_LOG = registerDecorativeBlock("hollow_birch_log",
@@ -78,15 +78,15 @@ public class ModBlocks {
             new HollowLogBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.PALE_YELLOW)));
     //Acacia
     public static final Block DECORATED_ACACIA_PLANKS = registerDecorativeBlock("decorated_acacia_planks",
-            new Block(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
+            new DecoratedPlanksBlock(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
     public static final Block DECORATED_ACACIA_LOG = registerDecorativeBlock("decorated_acacia_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
     public static final Block DECORATED_ACACIA_WOOD = registerDecorativeBlock("decorated_acacia_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
     public static final Block DECORATED_STRIPPED_ACACIA_LOG = registerDecorativeBlock("decorated_stripped_acacia_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
     public static final Block DECORATED_STRIPPED_ACACIA_WOOD = registerDecorativeBlock("decorated_stripped_acacia_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.ORANGE)));
     public static final Block ACACIA_TABLE = registerDecorativeBlock("acacia_table",
             new TableBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.ORANGE)));
     public static final Block HOLLOW_ACACIA_LOG = registerDecorativeBlock("hollow_acacia_log",
@@ -95,15 +95,15 @@ public class ModBlocks {
             new HollowLogBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.ORANGE)));
     //Jungle
     public static final Block DECORATED_JUNGLE_PLANKS = registerDecorativeBlock("decorated_jungle_planks",
-            new Block(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
+            new DecoratedPlanksBlock(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
     public static final Block DECORATED_JUNGLE_LOG = registerDecorativeBlock("decorated_jungle_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
     public static final Block DECORATED_JUNGLE_WOOD = registerDecorativeBlock("decorated_jungle_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
     public static final Block DECORATED_STRIPPED_JUNGLE_LOG = registerDecorativeBlock("decorated_stripped_jungle_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
     public static final Block DECORATED_STRIPPED_JUNGLE_WOOD = registerDecorativeBlock("decorated_stripped_jungle_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.DIRT_BROWN)));
     public static final Block JUNGLE_TABLE = registerDecorativeBlock("jungle_table",
             new TableBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.DIRT_BROWN)));
     public static final Block HOLLOW_JUNGLE_LOG = registerDecorativeBlock("hollow_jungle_log",
@@ -112,15 +112,15 @@ public class ModBlocks {
             new HollowLogBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.DIRT_BROWN)));
     //Dark Oak
     public static final Block DECORATED_DARK_OAK_PLANKS = registerDecorativeBlock("decorated_dark_oak_planks",
-            new Block(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
+            new DecoratedPlanksBlock(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
     public static final Block DECORATED_DARK_OAK_LOG = registerDecorativeBlock("decorated_dark_oak_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
     public static final Block DECORATED_DARK_OAK_WOOD = registerDecorativeBlock("decorated_dark_oak_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
     public static final Block DECORATED_STRIPPED_DARK_OAK_LOG = registerDecorativeBlock("decorated_stripped_dark_oak_log",
             new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
     public static final Block DECORATED_STRIPPED_DARK_OAK_WOOD = registerDecorativeBlock("decorated_stripped_dark_oak_wood",
-            new DecoratedLogBlock(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
+            new DecoratedWoodBlock(WOOD_SETTINGS.mapColor(MapColor.BROWN)));
     public static final Block DARK_OAK_TABLE = registerDecorativeBlock("dark_oak_table",
             new TableBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.BROWN)));
     public static final Block HOLLOW_DARK_OAK_LOG = registerDecorativeBlock("hollow_dark_oak_log",
@@ -129,15 +129,15 @@ public class ModBlocks {
             new HollowLogBlock(WOOD_SETTINGS.nonOpaque().mapColor(MapColor.BROWN)));
     //Crimson
     public static final Block DECORATED_CRIMSON_PLANKS = registerDecorativeBlock("decorated_crimson_planks",
-            new Block(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
+            new DecoratedPlanksBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_CRIMSON_STEM = registerDecorativeBlock("decorated_crimson_stem",
             new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_CRIMSON_HYPHAE = registerDecorativeBlock("decorated_crimson_hyphae",
-            new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
+            new DecoratedWoodBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_STRIPPED_CRIMSON_STEM = registerDecorativeBlock("decorated_stripped_crimson_stem",
             new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_STRIPPED_CRIMSON_HYPHAE = registerDecorativeBlock("decorated_stripped_crimson_hyphae",
-            new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
+            new DecoratedWoodBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
     public static final Block CRIMSON_TABLE = registerDecorativeBlock("crimson_table",
             new TableBlock(NETHER_WOOD_SETTINGS.nonOpaque().mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
     public static final Block HOLLOW_CRIMSON_STEM = registerDecorativeBlock("hollow_crimson_stem",
@@ -146,15 +146,15 @@ public class ModBlocks {
             new HollowLogBlock(NETHER_WOOD_SETTINGS.nonOpaque().mapColor(Blocks.CRIMSON_PLANKS.getDefaultMapColor())));
     //Warped
     public static final Block DECORATED_WARPED_PLANKS = registerDecorativeBlock("decorated_warped_planks",
-            new Block(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
+            new DecoratedPlanksBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_WARPED_STEM = registerDecorativeBlock("decorated_warped_stem",
             new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_WARPED_HYPHAE = registerDecorativeBlock("decorated_warped_hyphae",
-            new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
+            new DecoratedWoodBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_STRIPPED_WARPED_STEM = registerDecorativeBlock("decorated_stripped_warped_stem",
             new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
     public static final Block DECORATED_STRIPPED_WARPED_HYPHAE = registerDecorativeBlock("decorated_stripped_warped_hyphae",
-            new DecoratedLogBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
+            new DecoratedWoodBlock(NETHER_WOOD_SETTINGS.mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
     public static final Block WARPED_TABLE = registerDecorativeBlock("warped_table",
             new TableBlock(NETHER_WOOD_SETTINGS.nonOpaque().mapColor(Blocks.WARPED_PLANKS.getDefaultMapColor())));
     public static final Block HOLLOW_WARPED_STEM = registerDecorativeBlock("hollow_warped_stem",
@@ -274,11 +274,11 @@ public class ModBlocks {
 
     //Lanterns
     public static final Block GREEN_LANTERN = registerDecorativeBlock("green_lantern",
-            new LanternBlock(LANTERN_SETTINGS));
+            new ModLanternBlock(LANTERN_SETTINGS));
     public static final Block YELLOW_LANTERN = registerDecorativeBlock("yellow_lantern",
-            new LanternBlock(LANTERN_SETTINGS));
+            new ModLanternBlock(LANTERN_SETTINGS));
     public static final Block RED_LANTERN = registerDecorativeBlock("red_lantern",
-            new LanternBlock(LANTERN_SETTINGS));
+            new ModLanternBlock(LANTERN_SETTINGS));
 
     private static Block registerDecorativeBlock(String name, Block block) {
         registerDecorativeBlockItem(name, block);

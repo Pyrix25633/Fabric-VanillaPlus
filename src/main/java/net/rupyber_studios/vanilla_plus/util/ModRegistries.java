@@ -87,8 +87,6 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BIRCH_VERTICAL_SLAB, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.JUNGLE_VERTICAL_SLAB, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_OAK_VERTICAL_SLAB, encouragement, flammability);
-        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CRIMSON_VERTICAL_SLAB, encouragement, flammability);
-        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WARPED_VERTICAL_SLAB, encouragement, flammability);
     }
 
     public static void registerCommands() {

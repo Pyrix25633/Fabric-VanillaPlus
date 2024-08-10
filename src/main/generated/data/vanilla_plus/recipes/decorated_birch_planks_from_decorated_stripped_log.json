@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "decorated_planks",
+  "ingredients": [
+    {
+      "item": "vanilla_plus:decorated_stripped_birch_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "vanilla_plus:decorated_birch_planks"
+  }
+}

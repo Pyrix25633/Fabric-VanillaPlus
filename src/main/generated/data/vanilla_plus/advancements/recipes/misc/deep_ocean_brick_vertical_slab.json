@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deep_ocean_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:deep_ocean_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "vanilla_plus:deep_ocean_brick_vertical_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deep_ocean_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "vanilla_plus:deep_ocean_brick_vertical_slab"
+    ]
+  }
+}

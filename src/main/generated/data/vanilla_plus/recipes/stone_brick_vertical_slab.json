@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "vertical_slab",
+  "key": {
+    "#": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanilla_plus:stone_brick_vertical_slab"
+  }
+}

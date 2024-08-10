@@ -20,6 +20,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
+import net.rupyber_studios.vanilla_plus.block.ModBlocks;
 import net.rupyber_studios.vanilla_plus.block.type.VerticalSlabType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -31,6 +32,59 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     public VerticalSlabBlock(AbstractBlock.Settings properties) {
         super(properties);
         setDefaultState(getDefaultState().with(TYPE, VerticalSlabType.NORTH).with(WATERLOGGED, false));
+    }
+
+    public Block getFullBlock() {
+        if(this == ModBlocks.DEEP_OCEAN_BRICK_VERTICAL_SLAB) return ModBlocks.DEEP_OCEAN_BRICKS;
+
+        if(this == ModBlocks.OAK_VERTICAL_SLAB) return Blocks.OAK_PLANKS;
+        if(this == ModBlocks.SPRUCE_VERTICAL_SLAB) return Blocks.SPRUCE_PLANKS;
+        if(this == ModBlocks.BIRCH_VERTICAL_SLAB) return Blocks.BIRCH_PLANKS;
+        if(this == ModBlocks.JUNGLE_VERTICAL_SLAB) return Blocks.JUNGLE_PLANKS;
+        if(this == ModBlocks.ACACIA_VERTICAL_SLAB) return Blocks.ACACIA_PLANKS;
+        if(this == ModBlocks.DARK_OAK_VERTICAL_SLAB) return Blocks.DARK_OAK_PLANKS;
+        if(this == ModBlocks.CRIMSON_VERTICAL_SLAB) return Blocks.CRIMSON_PLANKS;
+        if(this == ModBlocks.WARPED_VERTICAL_SLAB) return Blocks.WARPED_PLANKS;
+        if(this == ModBlocks.STONE_VERTICAL_SLAB) return Blocks.STONE;
+        if(this == ModBlocks.SMOOTH_STONE_VERTICAL_SLAB) return Blocks.SMOOTH_STONE;
+        if(this == ModBlocks.COBBLESTONE_VERTICAL_SLAB) return Blocks.COBBLESTONE;
+        if(this == ModBlocks.MOSSY_COBBLESTONE_VERTICAL_SLAB) return Blocks.MOSSY_COBBLESTONE;
+        if(this == ModBlocks.STONE_BRICK_VERTICAL_SLAB) return Blocks.STONE_BRICKS;
+        if(this == ModBlocks.MOSSY_STONE_BRICK_VERTICAL_SLAB) return Blocks.MOSSY_STONE_BRICKS;
+        if(this == ModBlocks.ANDESITE_VERTICAL_SLAB) return Blocks.ANDESITE;
+        if(this == ModBlocks.POLISHED_ANDESITE_VERTICAL_SLAB) return Blocks.POLISHED_ANDESITE;
+        if(this == ModBlocks.DIORITE_VERTICAL_SLAB) return Blocks.DIORITE;
+        if(this == ModBlocks.POLISHED_DIORITE_VERTICAL_SLAB) return Blocks.POLISHED_DIORITE;
+        if(this == ModBlocks.GRANITE_VERTICAL_SLAB) return Blocks.GRANITE;
+        if(this == ModBlocks.POLISHED_GRANITE_VERTICAL_SLAB) return Blocks.POLISHED_GRANITE;
+        if(this == ModBlocks.SANDSTONE_VERTICAL_SLAB) return Blocks.SANDSTONE;
+        if(this == ModBlocks.CUT_SANDSTONE_VERTICAL_SLAB) return Blocks.CUT_SANDSTONE;
+        if(this == ModBlocks.SMOOTH_SANDSTONE_VERTICAL_SLAB) return Blocks.SMOOTH_SANDSTONE;
+        if(this == ModBlocks.RED_SANDSTONE_VERTICAL_SLAB) return Blocks.RED_SANDSTONE;
+        if(this == ModBlocks.CUT_RED_SANDSTONE_VERTICAL_SLAB) return Blocks.CUT_RED_SANDSTONE;
+        if(this == ModBlocks.SMOOTH_RED_SANDSTONE_VERTICAL_SLAB) return Blocks.SMOOTH_RED_SANDSTONE;
+        if(this == ModBlocks.BRICK_VERTICAL_SLAB) return Blocks.BRICKS;
+        if(this == ModBlocks.PRISMARINE_VERTICAL_SLAB) return Blocks.PRISMARINE;
+        if(this == ModBlocks.PRISMARINE_BRICK_VERTICAL_SLAB) return Blocks.PRISMARINE_BRICKS;
+        if(this == ModBlocks.DARK_PRISMARINE_VERTICAL_SLAB) return Blocks.DARK_PRISMARINE;
+        if(this == ModBlocks.NETHER_BRICK_VERTICAL_SLAB) return Blocks.NETHER_BRICKS;
+        if(this == ModBlocks.RED_NETHER_BRICK_VERTICAL_SLAB) return Blocks.RED_NETHER_BRICK_SLAB;
+        if(this == ModBlocks.QUARTZ_VERTICAL_SLAB) return Blocks.QUARTZ_BLOCK;
+        if(this == ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB) return Blocks.SMOOTH_QUARTZ;
+        if(this == ModBlocks.PURPUR_VERTICAL_SLAB) return Blocks.PURPUR_BLOCK;
+        if(this == ModBlocks.END_STONE_BRICK_VERTICAL_SLAB) return Blocks.END_STONE;
+        if(this == ModBlocks.BLACKSTONE_VERTICAL_SLAB) return Blocks.BLACKSTONE;
+        if(this == ModBlocks.POLISHED_BLACKSTONE_VERTICAL_SLAB) return Blocks.POLISHED_BLACKSTONE;
+        if(this == ModBlocks.POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB) return Blocks.POLISHED_BLACKSTONE_BRICKS;
+        if(this == ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB) return Blocks.WAXED_CUT_COPPER;
+        if(this == ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB) return Blocks.WAXED_EXPOSED_CUT_COPPER;
+        if(this == ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB) return Blocks.WAXED_WEATHERED_CUT_COPPER;
+        if(this == ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB) return Blocks.WAXED_OXIDIZED_CUT_COPPER;
+        if(this == ModBlocks.COBBLED_DEEPSLATE_VERTICAL_SLAB) return Blocks.COBBLED_DEEPSLATE;
+        if(this == ModBlocks.POLISHED_DEEPSLATE_VERTICAL_SLAB) return Blocks.POLISHED_DEEPSLATE;
+        if(this == ModBlocks.DEEPSLATE_BRICK_VERTICAL_SLAB) return Blocks.DEEPSLATE_BRICKS;
+        if(this == ModBlocks.DEEPSLATE_TILE_VERTICAL_SLAB) return Blocks.DEEPSLATE_TILES;
+        return Blocks.AIR;
     }
 
     @Override
