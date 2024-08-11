@@ -4,9 +4,6 @@
   "group": "music_disc",
   "ingredients": [
     {
-      "item": "minecraft:lantern"
-    },
-    {
       "item": "vanilla_plus:blank_rap_music_disc"
     },
     {

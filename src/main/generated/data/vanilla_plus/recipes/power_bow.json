@@ -4,9 +4,6 @@
   "group": "bow",
   "ingredients": [
     {
-      "item": "minecraft:lantern"
-    },
-    {
       "item": "minecraft:bow"
     },
     {

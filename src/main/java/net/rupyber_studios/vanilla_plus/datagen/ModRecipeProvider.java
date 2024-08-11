@@ -179,7 +179,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(Items.STICK),
                         FabricRecipeProvider.conditionsFromItem(Items.STICK))
                 .offerTo(exporter);
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BLANK_MUSIC_DISC_PIECE).group("blank_music_disc")
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLANK_MUSIC_DISC_PIECE).group("blank_music_disc")
                 .input(Items.IRON_INGOT)
                 .input(Items.GLASS)
                 .input(Items.COAL)
@@ -190,22 +190,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(Items.COAL),
                         FabricRecipeProvider.conditionsFromItem(Items.COAL))
                 .offerTo(exporter);
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BLANK_MUSIC_DISC).group("blank_music_disc")
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BLANK_MUSIC_DISC).group("blank_music_disc")
                 .input(ModItems.BLANK_MUSIC_DISC_PIECE, 2)
                 .criterion(FabricRecipeProvider.hasItem(ModItems.BLANK_MUSIC_DISC_PIECE),
                         FabricRecipeProvider.conditionsFromItem(ModItems.BLANK_MUSIC_DISC_PIECE))
                 .offerTo(exporter);
-    }
-
-    private static void generateMusicDisc(RecipeExporter exporter, @NotNull ModMusicDiscItem musicDisc) {
-        ShapelessRecipeJsonBuilder builder = ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, musicDisc)
-                .group("music_disc")
-                .input(Blocks.LANTERN);
-        for(Item input : musicDisc.getInputs()) {
-            builder.input(input).criterion(FabricRecipeProvider.hasItem(input),
-                    FabricRecipeProvider.conditionsFromItem(input));
-        }
-        builder.offerTo(exporter);
     }
 
     private static void generateBlankMusicDisk(RecipeExporter exporter, @NotNull BlankMusicDiscItem blankMusicDisc) {
@@ -220,12 +209,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
+    private static void generateMusicDisc(RecipeExporter exporter, @NotNull ModMusicDiscItem musicDisc) {
+        ShapelessRecipeJsonBuilder builder = ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, musicDisc)
+                .group("music_disc");
+        for(Item input : musicDisc.getInputs()) {
+            builder.input(input).criterion(FabricRecipeProvider.hasItem(input),
+                    FabricRecipeProvider.conditionsFromItem(input));
+        }
+        builder.offerTo(exporter);
+    }
+
     private static void generateDungeonItem(RecipeExporter exporter,
                                             @NotNull Item item,
                                             @NotNull DungeonItem dungeonItem) {
         ShapelessRecipeJsonBuilder builder = ShapelessRecipeJsonBuilder.create(RecipeCategory.TOOLS, item)
-                .group(dungeonItem.getGroup())
-                .input(Blocks.LANTERN);
+                .group(dungeonItem.getGroup());
         for(Item input : dungeonItem.getInputs()) {
             builder.input(input).criterion(FabricRecipeProvider.hasItem(input),
                     FabricRecipeProvider.conditionsFromItem(input));

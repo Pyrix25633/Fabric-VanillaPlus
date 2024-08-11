@@ -4,9 +4,6 @@
   "group": "crossbow",
   "ingredients": [
     {
-      "item": "minecraft:lantern"
-    },
-    {
       "item": "minecraft:crossbow"
     },
     {

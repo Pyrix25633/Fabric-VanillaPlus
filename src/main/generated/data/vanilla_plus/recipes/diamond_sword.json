@@ -4,9 +4,6 @@
   "group": "sword",
   "ingredients": [
     {
-      "item": "minecraft:lantern"
-    },
-    {
       "item": "minecraft:diamond_sword"
     },
     {

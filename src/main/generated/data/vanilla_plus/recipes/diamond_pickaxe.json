@@ -4,9 +4,6 @@
   "group": "pickaxe",
   "ingredients": [
     {
-      "item": "minecraft:lantern"
-    },
-    {
       "item": "minecraft:diamond_pickaxe"
     },
     {

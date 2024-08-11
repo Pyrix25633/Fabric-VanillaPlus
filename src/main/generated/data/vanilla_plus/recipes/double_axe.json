@@ -4,9 +4,6 @@
   "group": "axe",
   "ingredients": [
     {
-      "item": "minecraft:lantern"
-    },
-    {
       "item": "vanilla_plus:axe"
     },
     {
