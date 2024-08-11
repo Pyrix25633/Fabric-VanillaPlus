@@ -38,8 +38,8 @@ public class VanillaPlus implements ModInitializer {
 
 		LOGGER.info("Vanilla Plus initialized");
 
-		// TODO: crafting recipes 70%
-		// TODO: block loot tables 50%
+		// TODO: crafting recipes 100% (some to test)
+		// TODO: block loot tables 100%
 		// TODO: advancements 0%
 		// TODO: custom totems 20%
 		// TODO: mangrove, cherry blossom -> table, vertical slabs, hollow logs, decorated logs, decorated hollow logs, decorated planks 0%

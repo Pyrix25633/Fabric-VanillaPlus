@@ -3,15 +3,39 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
       "entries": [
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
           "name": "vanilla_plus:stripped_hollow_acacia_log"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "vanilla_plus:stripped_hollow_acacia_log",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "mossy": "true"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "minecraft:moss_carpet"
         }
       ],
       "rolls": 1.0
