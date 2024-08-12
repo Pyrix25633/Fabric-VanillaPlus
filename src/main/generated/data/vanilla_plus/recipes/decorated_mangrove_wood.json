@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "decorated_wood",
+  "key": {
+    "#": {
+      "item": "vanilla_plus:decorated_mangrove_log"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "vanilla_plus:decorated_mangrove_wood"
+  }
+}

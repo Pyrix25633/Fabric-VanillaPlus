@@ -25,7 +25,7 @@ import net.rupyber_studios.vanilla_plus.command.argument.TotemArgumentType;
 public class ModRegistries {
     public static void registerFlammables() {
         final int encouragement = 5, flammability = 20;
-        //Oak
+        // Oak
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_OAK_PLANKS, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_OAK_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_OAK_WOOD, encouragement, flammability);
@@ -34,7 +34,7 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAK_TABLE, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_OAK_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_OAK_LOG, encouragement, flammability);
-        //Spruce
+        // Spruce
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_SPRUCE_PLANKS, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_SPRUCE_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_SPRUCE_WOOD, encouragement, flammability);
@@ -43,7 +43,7 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPRUCE_TABLE, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_SPRUCE_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_SPRUCE_LOG, encouragement, flammability);
-        //Birch
+        // Birch
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_BIRCH_PLANKS, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_BIRCH_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_BIRCH_WOOD, encouragement, flammability);
@@ -52,7 +52,7 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BIRCH_TABLE, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_BIRCH_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_BIRCH_LOG, encouragement, flammability);
-        //Acacia
+        // Acacia
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_ACACIA_PLANKS, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_ACACIA_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_ACACIA_WOOD, encouragement, flammability);
@@ -61,7 +61,7 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ACACIA_TABLE, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_ACACIA_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_ACACIA_LOG, encouragement, flammability);
-        //Jungle
+        // Jungle
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_JUNGLE_PLANKS, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_JUNGLE_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_JUNGLE_WOOD, encouragement, flammability);
@@ -70,7 +70,7 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.JUNGLE_TABLE, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_JUNGLE_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_JUNGLE_LOG, encouragement, flammability);
-        //Dark Oak
+        // Dark Oak
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_DARK_OAK_PLANKS, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_DARK_OAK_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_DARK_OAK_WOOD, encouragement, flammability);
@@ -79,8 +79,26 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DARK_OAK_TABLE, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_DARK_OAK_LOG, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_DARK_OAK_LOG, encouragement, flammability);
+        // Mangrove
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_MANGROVE_PLANKS, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_MANGROVE_LOG, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_MANGROVE_WOOD, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_STRIPPED_MANGROVE_LOG, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_STRIPPED_MANGROVE_WOOD, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MANGROVE_TABLE, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_MANGROVE_LOG, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_MANGROVE_LOG, encouragement, flammability);
+        // Cherry
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_CHERRY_PLANKS, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_CHERRY_LOG, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_CHERRY_WOOD, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_STRIPPED_CHERRY_LOG, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.DECORATED_STRIPPED_CHERRY_WOOD, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHERRY_TABLE, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.HOLLOW_CHERRY_LOG, encouragement, flammability);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_HOLLOW_CHERRY_LOG, encouragement, flammability);
 
-        //Vertical Slabs
+        // Vertical Slabs
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAK_VERTICAL_SLAB, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPRUCE_VERTICAL_SLAB, encouragement, flammability);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ACACIA_VERTICAL_SLAB, encouragement, flammability);

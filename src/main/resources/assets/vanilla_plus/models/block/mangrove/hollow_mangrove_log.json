@@ -1,0 +1,8 @@
+{
+	"parent": "vanilla_plus:block/hollow_log",
+	"textures": {
+		"out": "block/mangrove_log",
+		"front": "block/mangrove_log_top",
+		"in": "block/stripped_mangrove_log"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"parent": "vanilla_plus:block/hollow_log_horizontal",
+	"textures": {
+		"out": "block/cherry_log",
+		"front": "block/cherry_log_top",
+		"in": "block/stripped_cherry_log"
+	}
+}

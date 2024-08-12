@@ -45,6 +45,10 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
         if(this == ModBlocks.DARK_OAK_VERTICAL_SLAB) return Blocks.DARK_OAK_PLANKS;
         if(this == ModBlocks.CRIMSON_VERTICAL_SLAB) return Blocks.CRIMSON_PLANKS;
         if(this == ModBlocks.WARPED_VERTICAL_SLAB) return Blocks.WARPED_PLANKS;
+        if(this == ModBlocks.MANGROVE_VERTICAL_SLAB) return Blocks.MANGROVE_PLANKS;
+        if(this == ModBlocks.CHERRY_VERTICAL_SLAB) return Blocks.CHERRY_PLANKS;
+        if(this == ModBlocks.BAMBOO_VERTICAL_SLAB) return Blocks.BAMBOO_PLANKS;
+        if(this == ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB) return Blocks.BAMBOO_MOSAIC;
         if(this == ModBlocks.STONE_VERTICAL_SLAB) return Blocks.STONE;
         if(this == ModBlocks.COBBLESTONE_VERTICAL_SLAB) return Blocks.COBBLESTONE;
         if(this == ModBlocks.MOSSY_COBBLESTONE_VERTICAL_SLAB) return Blocks.MOSSY_COBBLESTONE;

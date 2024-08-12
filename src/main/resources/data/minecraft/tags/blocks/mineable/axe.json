@@ -73,6 +73,24 @@
     "vanilla_plus:hollow_warped_stem",
     "vanilla_plus:stripped_hollow_warped_stem",
 
+    "vanilla_plus:decorated_mangrove_planks",
+    "vanilla_plus:decorated_mangrove_log",
+    "vanilla_plus:decorated_mangrove_wood",
+    "vanilla_plus:decorated_stripped_mangrove_log",
+    "vanilla_plus:decorated_stripped_mangrove_wood",
+    "vanilla_plus:mangrove_table",
+    "vanilla_plus:hollow_mangrove_log",
+    "vanilla_plus:stripped_hollow_mangrove_log",
+
+    "vanilla_plus:decorated_cherry_planks",
+    "vanilla_plus:decorated_cherry_log",
+    "vanilla_plus:decorated_cherry_wood",
+    "vanilla_plus:decorated_stripped_cherry_log",
+    "vanilla_plus:decorated_stripped_cherry_wood",
+    "vanilla_plus:cherry_table",
+    "vanilla_plus:hollow_cherry_log",
+    "vanilla_plus:stripped_hollow_cherry_log",
+
     "vanilla_plus:oak_vertical_slab",
     "vanilla_plus:spruce_vertical_slab",
     "vanilla_plus:birch_vertical_slab",
@@ -80,6 +98,10 @@
     "vanilla_plus:jungle_vertical_slab",
     "vanilla_plus:dark_oak_vertical_slab",
     "vanilla_plus:crimson_vertical_slab",
-    "vanilla_plus:warped_vertical_slab"
+    "vanilla_plus:warped_vertical_slab",
+    "vanilla_plus:mangrove_vertical_slab",
+    "vanilla_plus:cherry_vertical_slab",
+    "vanilla_plus:bamboo_vertical_slab",
+    "vanilla_plus:bamboo_mosaic_vertical_slab"
   ]
 }

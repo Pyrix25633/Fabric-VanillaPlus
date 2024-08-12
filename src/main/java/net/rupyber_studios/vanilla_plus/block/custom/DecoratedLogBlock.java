@@ -7,7 +7,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
@@ -39,51 +39,47 @@ public class DecoratedLogBlock extends Block {
     public ActionResult onUse(@NotNull BlockState state, World world, BlockPos pos, @NotNull PlayerEntity player, BlockHitResult hit) {
         ItemStack playerItem = player.getStackInHand(Hand.MAIN_HAND);
         Block toPlace = Blocks.AIR;
-        boolean finished = false;
+        boolean success = false;
 
-        if(state.isOf(this)){
-            if ((playerItem.getItem() == Items.WOODEN_AXE || playerItem.getItem() == Items.STONE_AXE || playerItem.getItem() == Items.GOLDEN_AXE ||
-                    playerItem.getItem() == Items.IRON_AXE || playerItem.getItem() == Items.DIAMOND_AXE || playerItem.getItem() == Items.NETHERITE_AXE)) {
-                //Strip Log
-                finished = true;
-                if (state.isOf(ModBlocks.DECORATED_OAK_LOG)) {
+        if(state.isOf(this)) {
+            if(playerItem.isIn(ItemTags.AXES)) {
+                success = true;
+                if(state.isOf(ModBlocks.DECORATED_OAK_LOG))
                     toPlace = ModBlocks.DECORATED_STRIPPED_OAK_LOG;
-                } else if (state.isOf(ModBlocks.DECORATED_OAK_WOOD)) {
+                else if(state.isOf(ModBlocks.DECORATED_OAK_WOOD))
                     toPlace = ModBlocks.DECORATED_STRIPPED_OAK_WOOD;
-                } else if (state.isOf(ModBlocks.DECORATED_ACACIA_LOG)) {
+                else if(state.isOf(ModBlocks.DECORATED_ACACIA_LOG))
                     toPlace = ModBlocks.DECORATED_STRIPPED_ACACIA_LOG;
-                } else if (state.isOf(ModBlocks.DECORATED_ACACIA_WOOD)) {
+                else if(state.isOf(ModBlocks.DECORATED_ACACIA_WOOD))
                     toPlace = ModBlocks.DECORATED_STRIPPED_ACACIA_WOOD;
-                } else if (state.isOf(ModBlocks.DECORATED_BIRCH_LOG)) {
+                else if(state.isOf(ModBlocks.DECORATED_BIRCH_LOG))
                     toPlace = ModBlocks.DECORATED_STRIPPED_BIRCH_LOG;
-                } else if (state.isOf(ModBlocks.DECORATED_BIRCH_WOOD)) {
+                else if(state.isOf(ModBlocks.DECORATED_BIRCH_WOOD))
                     toPlace = ModBlocks.DECORATED_STRIPPED_BIRCH_WOOD;
-                } else if (state.isOf(ModBlocks.DECORATED_SPRUCE_LOG)) {
+                else if(state.isOf(ModBlocks.DECORATED_SPRUCE_LOG))
                     toPlace = ModBlocks.DECORATED_STRIPPED_SPRUCE_LOG;
-                } else if (state.isOf(ModBlocks.DECORATED_SPRUCE_WOOD)) {
+                else if(state.isOf(ModBlocks.DECORATED_SPRUCE_WOOD))
                     toPlace = ModBlocks.DECORATED_STRIPPED_SPRUCE_WOOD;
-                } else if (state.isOf(ModBlocks.DECORATED_JUNGLE_LOG)) {
+                else if(state.isOf(ModBlocks.DECORATED_JUNGLE_LOG))
                     toPlace = ModBlocks.DECORATED_STRIPPED_JUNGLE_LOG;
-                } else if (state.isOf(ModBlocks.DECORATED_JUNGLE_WOOD)) {
+                else if(state.isOf(ModBlocks.DECORATED_JUNGLE_WOOD))
                     toPlace = ModBlocks.DECORATED_STRIPPED_JUNGLE_WOOD;
-                } else if (state.isOf(ModBlocks.DECORATED_DARK_OAK_LOG)) {
+                else if(state.isOf(ModBlocks.DECORATED_DARK_OAK_LOG))
                     toPlace = ModBlocks.DECORATED_STRIPPED_DARK_OAK_LOG;
-                } else if (state.isOf(ModBlocks.DECORATED_DARK_OAK_WOOD)) {
+                else if(state.isOf(ModBlocks.DECORATED_DARK_OAK_WOOD))
                     toPlace = ModBlocks.DECORATED_STRIPPED_DARK_OAK_WOOD;
-                } else if (state.isOf(ModBlocks.DECORATED_CRIMSON_STEM)) {
+                else if(state.isOf(ModBlocks.DECORATED_CRIMSON_STEM))
                     toPlace = ModBlocks.DECORATED_STRIPPED_CRIMSON_STEM;
-                } else if (state.isOf(ModBlocks.DECORATED_CRIMSON_HYPHAE)) {
+                else if(state.isOf(ModBlocks.DECORATED_CRIMSON_HYPHAE))
                     toPlace = ModBlocks.DECORATED_STRIPPED_CRIMSON_HYPHAE;
-                } else if (state.isOf(ModBlocks.DECORATED_WARPED_STEM)) {
+                else if(state.isOf(ModBlocks.DECORATED_WARPED_STEM))
                     toPlace = ModBlocks.DECORATED_STRIPPED_WARPED_STEM;
-                } else if (state.isOf(ModBlocks.DECORATED_WARPED_HYPHAE)) {
+                else if(state.isOf(ModBlocks.DECORATED_WARPED_HYPHAE))
                     toPlace = ModBlocks.DECORATED_STRIPPED_WARPED_HYPHAE;
-                }
-                else {
-                    finished = false;
-                }
+                else
+                    success = false;
 
-                if(finished) {
+                if(success) {
                     world.setBlockState(pos, toPlace.getDefaultState().with(DecoratedLogBlock.AXIS, state.get(DecoratedLogBlock.AXIS)));
                     playerItem.damage(1, player, EquipmentSlot.MAINHAND);
                     world.playSound(player, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
@@ -91,9 +87,8 @@ public class DecoratedLogBlock extends Block {
             }
         }
 
-        if(finished){
+        if(success)
             return ActionResult.success(true);
-        }
 
         return super.onUse(state, world, pos, player, hit);
     }

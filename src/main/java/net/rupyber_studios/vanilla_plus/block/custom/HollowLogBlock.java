@@ -48,6 +48,8 @@ public class HollowLogBlock extends Block implements Waterloggable {
         if(this == ModBlocks.HOLLOW_DARK_OAK_LOG) return Blocks.DARK_OAK_LOG;
         if(this == ModBlocks.HOLLOW_CRIMSON_STEM) return Blocks.CRIMSON_STEM;
         if(this == ModBlocks.HOLLOW_WARPED_STEM) return Blocks.WARPED_STEM;
+        if(this == ModBlocks.HOLLOW_MANGROVE_LOG) return Blocks.MANGROVE_LOG;
+        if(this == ModBlocks.HOLLOW_CHERRY_LOG) return Blocks.CHERRY_LOG;
         if(this == ModBlocks.STRIPPED_HOLLOW_OAK_LOG) return Blocks.STRIPPED_OAK_LOG;
         if(this == ModBlocks.STRIPPED_HOLLOW_SPRUCE_LOG) return Blocks.STRIPPED_SPRUCE_LOG;
         if(this == ModBlocks.STRIPPED_HOLLOW_BIRCH_LOG) return Blocks.STRIPPED_BIRCH_LOG;
@@ -56,6 +58,8 @@ public class HollowLogBlock extends Block implements Waterloggable {
         if(this == ModBlocks.STRIPPED_HOLLOW_DARK_OAK_LOG) return Blocks.STRIPPED_DARK_OAK_LOG;
         if(this == ModBlocks.STRIPPED_HOLLOW_CRIMSON_STEM) return Blocks.STRIPPED_CRIMSON_STEM;
         if(this == ModBlocks.STRIPPED_HOLLOW_WARPED_STEM) return Blocks.STRIPPED_WARPED_STEM;
+        if(this == ModBlocks.STRIPPED_HOLLOW_MANGROVE_LOG) return Blocks.STRIPPED_MANGROVE_LOG;
+        if(this == ModBlocks.STRIPPED_HOLLOW_CHERRY_LOG) return Blocks.STRIPPED_CHERRY_LOG;
         return Blocks.AIR;
     }
 
@@ -190,6 +194,10 @@ public class HollowLogBlock extends Block implements Waterloggable {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_CRIMSON_STEM;
                 else if(state.isOf(ModBlocks.HOLLOW_WARPED_STEM))
                     toPlace = ModBlocks.STRIPPED_HOLLOW_WARPED_STEM;
+                else if(state.isOf(ModBlocks.HOLLOW_MANGROVE_LOG))
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_ACACIA_LOG;
+                else if(state.isOf(ModBlocks.HOLLOW_CHERRY_LOG))
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_JUNGLE_LOG;
                 else
                     success = false;
                 if(success) {

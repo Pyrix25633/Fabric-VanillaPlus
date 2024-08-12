@@ -1,0 +1,7 @@
+{
+	"parent": "vanilla_plus:block/table",
+	"textures": {
+		"legs": "minecraft:block/stripped_mangrove_log",
+		"top": "minecraft:block/mangrove_planks"
+	}
+}

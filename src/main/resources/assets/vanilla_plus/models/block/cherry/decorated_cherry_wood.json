@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "vanilla_plus:block/cherry/decorated_cherry_log",
+    "side": "vanilla_plus:block/cherry/decorated_cherry_log"
+  }
+}

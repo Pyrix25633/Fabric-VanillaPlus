@@ -18,6 +18,8 @@ public class DecoratedWoodBlock extends DecoratedLogBlock {
         if(this == ModBlocks.DECORATED_DARK_OAK_WOOD) return ModBlocks.DECORATED_DARK_OAK_LOG;
         if(this == ModBlocks.DECORATED_CRIMSON_HYPHAE) return ModBlocks.DECORATED_CRIMSON_STEM;
         if(this == ModBlocks.DECORATED_WARPED_HYPHAE) return ModBlocks.DECORATED_WARPED_STEM;
+        if(this == ModBlocks.DECORATED_MANGROVE_WOOD) return ModBlocks.DECORATED_MANGROVE_LOG;
+        if(this == ModBlocks.DECORATED_CHERRY_WOOD) return ModBlocks.DECORATED_CHERRY_LOG;
         if(this == ModBlocks.DECORATED_STRIPPED_OAK_WOOD) return ModBlocks.DECORATED_STRIPPED_OAK_LOG;
         if(this == ModBlocks.DECORATED_STRIPPED_SPRUCE_WOOD) return ModBlocks.DECORATED_STRIPPED_SPRUCE_LOG;
         if(this == ModBlocks.DECORATED_STRIPPED_BIRCH_WOOD) return ModBlocks.DECORATED_STRIPPED_BIRCH_LOG;
@@ -26,6 +28,8 @@ public class DecoratedWoodBlock extends DecoratedLogBlock {
         if(this == ModBlocks.DECORATED_STRIPPED_DARK_OAK_WOOD) return ModBlocks.DECORATED_STRIPPED_DARK_OAK_LOG;
         if(this == ModBlocks.DECORATED_STRIPPED_CRIMSON_HYPHAE) return ModBlocks.DECORATED_STRIPPED_CRIMSON_STEM;
         if(this == ModBlocks.DECORATED_STRIPPED_WARPED_HYPHAE) return ModBlocks.DECORATED_STRIPPED_WARPED_STEM;
+        if(this == ModBlocks.DECORATED_STRIPPED_MANGROVE_WOOD) return ModBlocks.DECORATED_STRIPPED_MANGROVE_LOG;
+        if(this == ModBlocks.DECORATED_STRIPPED_CHERRY_WOOD) return ModBlocks.DECORATED_STRIPPED_CHERRY_LOG;
         return Blocks.AIR;
     }
 }

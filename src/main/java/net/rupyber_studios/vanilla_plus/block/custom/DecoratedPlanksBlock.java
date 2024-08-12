@@ -18,6 +18,8 @@ public class DecoratedPlanksBlock extends Block {
         if(this == ModBlocks.DECORATED_DARK_OAK_PLANKS) return ModBlocks.DECORATED_DARK_OAK_LOG;
         if(this == ModBlocks.DECORATED_CRIMSON_PLANKS) return ModBlocks.DECORATED_CRIMSON_STEM;
         if(this == ModBlocks.DECORATED_WARPED_PLANKS) return ModBlocks.DECORATED_WARPED_STEM;
+        if(this == ModBlocks.DECORATED_MANGROVE_PLANKS) return ModBlocks.DECORATED_MANGROVE_LOG;
+        if(this == ModBlocks.DECORATED_CHERRY_PLANKS) return ModBlocks.DECORATED_CHERRY_LOG;
         return Blocks.AIR;
     }
 
@@ -30,6 +32,8 @@ public class DecoratedPlanksBlock extends Block {
         if(this == ModBlocks.DECORATED_DARK_OAK_PLANKS) return ModBlocks.DECORATED_STRIPPED_DARK_OAK_LOG;
         if(this == ModBlocks.DECORATED_CRIMSON_PLANKS) return ModBlocks.DECORATED_STRIPPED_CRIMSON_STEM;
         if(this == ModBlocks.DECORATED_WARPED_PLANKS) return ModBlocks.DECORATED_STRIPPED_WARPED_STEM;
+        if(this == ModBlocks.DECORATED_MANGROVE_PLANKS) return ModBlocks.DECORATED_STRIPPED_MANGROVE_LOG;
+        if(this == ModBlocks.DECORATED_CHERRY_PLANKS) return ModBlocks.DECORATED_STRIPPED_CHERRY_LOG;
         return Blocks.AIR;
     }
 
@@ -42,6 +46,8 @@ public class DecoratedPlanksBlock extends Block {
         if(this == ModBlocks.DECORATED_DARK_OAK_PLANKS) return ModBlocks.DECORATED_DARK_OAK_WOOD;
         if(this == ModBlocks.DECORATED_CRIMSON_PLANKS) return ModBlocks.DECORATED_CRIMSON_HYPHAE;
         if(this == ModBlocks.DECORATED_WARPED_PLANKS) return ModBlocks.DECORATED_WARPED_HYPHAE;
+        if(this == ModBlocks.DECORATED_MANGROVE_PLANKS) return ModBlocks.DECORATED_MANGROVE_WOOD;
+        if(this == ModBlocks.DECORATED_CHERRY_PLANKS) return ModBlocks.DECORATED_CHERRY_WOOD;
         return Blocks.AIR;
     }
 
@@ -54,6 +60,8 @@ public class DecoratedPlanksBlock extends Block {
         if(this == ModBlocks.DECORATED_DARK_OAK_PLANKS) return ModBlocks.DECORATED_STRIPPED_DARK_OAK_WOOD;
         if(this == ModBlocks.DECORATED_CRIMSON_PLANKS) return ModBlocks.DECORATED_STRIPPED_CRIMSON_HYPHAE;
         if(this == ModBlocks.DECORATED_WARPED_PLANKS) return ModBlocks.DECORATED_STRIPPED_WARPED_HYPHAE;
+        if(this == ModBlocks.DECORATED_MANGROVE_PLANKS) return ModBlocks.DECORATED_STRIPPED_MANGROVE_WOOD;
+        if(this == ModBlocks.DECORATED_CHERRY_PLANKS) return ModBlocks.DECORATED_STRIPPED_CHERRY_WOOD;
         return Blocks.AIR;
     }
 }

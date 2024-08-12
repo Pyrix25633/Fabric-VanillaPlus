@@ -1,0 +1,7 @@
+{
+	"parent": "vanilla_plus:block/table",
+	"textures": {
+		"legs": "minecraft:block/stripped_cherry_log",
+		"top": "minecraft:block/cherry_planks"
+	}
+}

@@ -37,6 +37,8 @@ public class TableBlock extends Block {
         if(this == ModBlocks.DARK_OAK_TABLE) return Blocks.DARK_OAK_PLANKS;
         if(this == ModBlocks.CRIMSON_TABLE) return Blocks.CRIMSON_PLANKS;
         if(this == ModBlocks.WARPED_TABLE) return Blocks.WARPED_PLANKS;
+        if(this == ModBlocks.MANGROVE_TABLE) return Blocks.MANGROVE_PLANKS;
+        if(this == ModBlocks.CHERRY_TABLE) return Blocks.CHERRY_PLANKS;
         return Blocks.AIR;
     }
 
