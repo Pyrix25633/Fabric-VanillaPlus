@@ -1,0 +1,684 @@
+{
+  "parent": "vanilla_plus:why_vertical",
+  "criteria": {
+    "acacia_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:acacia_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "andesite_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:andesite_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bamboo_mosaic_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:bamboo_mosaic_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bamboo_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:bamboo_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "birch_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:birch_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "blackstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:blackstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cherry_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:cherry_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cobbled_deepslate_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:cobbled_deepslate_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cobblestone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:cobblestone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "crimson_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:crimson_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cut_red_sandstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:cut_red_sandstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cut_sandstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:cut_sandstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "dark_oak_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:dark_oak_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "dark_prismarine_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:dark_prismarine_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "deep_ocean_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:deep_ocean_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "deepslate_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:deepslate_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "deepslate_tile_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:deepslate_tile_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diorite_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:diorite_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "end_stone_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:end_stone_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "granite_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:granite_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "jungle_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:jungle_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "mangrove_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:mangrove_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "mossy_cobblestone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:mossy_cobblestone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "mossy_stone_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:mossy_stone_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "nether_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:nether_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "oak_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:oak_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "polished_andesite_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:polished_andesite_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "polished_blackstone_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:polished_blackstone_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "polished_blackstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:polished_blackstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "polished_deepslate_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:polished_deepslate_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "polished_diorite_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:polished_diorite_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "polished_granite_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:polished_granite_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "prismarine_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:prismarine_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "prismarine_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:prismarine_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "purpur_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:purpur_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "quartz_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:quartz_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "red_nether_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:red_nether_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "red_sandstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:red_sandstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sandstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:sandstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "smooth_quartz_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:smooth_quartz_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "smooth_red_sandstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:smooth_red_sandstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "smooth_sandstone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:smooth_sandstone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "spruce_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:spruce_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "stone_brick_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:stone_brick_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "stone_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:stone_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "warped_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:warped_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "waxed_cut_copper_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:waxed_cut_copper_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "waxed_exposed_cut_copper_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:waxed_exposed_cut_copper_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "waxed_oxidized_cut_copper_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:waxed_oxidized_cut_copper_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "waxed_weathered_cut_copper_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:waxed_weathered_cut_copper_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them_mission_impossible.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:smooth_stone_vertical_slab"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them_mission_impossible.title"
+    }
+  },
+  "requirements": [
+    [
+      "deep_ocean_brick_vertical_slab"
+    ],
+    [
+      "oak_vertical_slab"
+    ],
+    [
+      "spruce_vertical_slab"
+    ],
+    [
+      "birch_vertical_slab"
+    ],
+    [
+      "jungle_vertical_slab"
+    ],
+    [
+      "acacia_vertical_slab"
+    ],
+    [
+      "dark_oak_vertical_slab"
+    ],
+    [
+      "crimson_vertical_slab"
+    ],
+    [
+      "warped_vertical_slab"
+    ],
+    [
+      "mangrove_vertical_slab"
+    ],
+    [
+      "cherry_vertical_slab"
+    ],
+    [
+      "bamboo_vertical_slab"
+    ],
+    [
+      "bamboo_mosaic_vertical_slab"
+    ],
+    [
+      "stone_vertical_slab"
+    ],
+    [
+      "cobblestone_vertical_slab"
+    ],
+    [
+      "mossy_cobblestone_vertical_slab"
+    ],
+    [
+      "stone_brick_vertical_slab"
+    ],
+    [
+      "mossy_stone_brick_vertical_slab"
+    ],
+    [
+      "andesite_vertical_slab"
+    ],
+    [
+      "polished_andesite_vertical_slab"
+    ],
+    [
+      "diorite_vertical_slab"
+    ],
+    [
+      "polished_diorite_vertical_slab"
+    ],
+    [
+      "granite_vertical_slab"
+    ],
+    [
+      "polished_granite_vertical_slab"
+    ],
+    [
+      "sandstone_vertical_slab"
+    ],
+    [
+      "cut_sandstone_vertical_slab"
+    ],
+    [
+      "smooth_sandstone_vertical_slab"
+    ],
+    [
+      "red_sandstone_vertical_slab"
+    ],
+    [
+      "cut_red_sandstone_vertical_slab"
+    ],
+    [
+      "smooth_red_sandstone_vertical_slab"
+    ],
+    [
+      "brick_vertical_slab"
+    ],
+    [
+      "prismarine_vertical_slab"
+    ],
+    [
+      "prismarine_brick_vertical_slab"
+    ],
+    [
+      "dark_prismarine_vertical_slab"
+    ],
+    [
+      "nether_brick_vertical_slab"
+    ],
+    [
+      "red_nether_brick_vertical_slab"
+    ],
+    [
+      "quartz_vertical_slab"
+    ],
+    [
+      "smooth_quartz_vertical_slab"
+    ],
+    [
+      "purpur_vertical_slab"
+    ],
+    [
+      "end_stone_brick_vertical_slab"
+    ],
+    [
+      "blackstone_vertical_slab"
+    ],
+    [
+      "polished_blackstone_vertical_slab"
+    ],
+    [
+      "polished_blackstone_brick_vertical_slab"
+    ],
+    [
+      "waxed_cut_copper_vertical_slab"
+    ],
+    [
+      "waxed_exposed_cut_copper_vertical_slab"
+    ],
+    [
+      "waxed_weathered_cut_copper_vertical_slab"
+    ],
+    [
+      "waxed_oxidized_cut_copper_vertical_slab"
+    ],
+    [
+      "cobbled_deepslate_vertical_slab"
+    ],
+    [
+      "polished_deepslate_vertical_slab"
+    ],
+    [
+      "deepslate_brick_vertical_slab"
+    ],
+    [
+      "deepslate_tile_vertical_slab"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

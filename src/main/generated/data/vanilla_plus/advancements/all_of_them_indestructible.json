@@ -1,0 +1,190 @@
+{
+  "parent": "vanilla_plus:dungeons",
+  "criteria": {
+    "axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "butterfly_crossbow": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:butterfly_crossbow"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:diamond_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:diamond_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "double_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:double_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "elite_power_bow": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:elite_power_bow"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "exploding_crossbow": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:exploding_crossbow"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "firebolt_thrower": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:firebolt_thrower"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "heavy_crossbow": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:heavy_crossbow"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "mace": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:mace"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "power_bow": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:power_bow"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "rapid_crossbow": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:rapid_crossbow"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them_indestructible.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:rapid_crossbow"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them_indestructible.title"
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+    ],
+    [
+      "double_axe"
+    ],
+    [
+      "mace"
+    ],
+    [
+      "sword"
+    ],
+    [
+      "diamond_sword"
+    ],
+    [
+      "diamond_pickaxe"
+    ],
+    [
+      "power_bow"
+    ],
+    [
+      "elite_power_bow"
+    ],
+    [
+      "exploding_crossbow"
+    ],
+    [
+      "heavy_crossbow"
+    ],
+    [
+      "butterfly_crossbow"
+    ],
+    [
+      "firebolt_thrower"
+    ],
+    [
+      "rapid_crossbow"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

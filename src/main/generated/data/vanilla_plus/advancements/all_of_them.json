@@ -1,0 +1,151 @@
+{
+  "parent": "vanilla_plus:decoration",
+  "criteria": {
+    "decorated_acacia_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_acacia_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_birch_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_birch_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_cherry_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_cherry_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_crimson_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_crimson_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_dark_oak_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_dark_oak_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_jungle_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_jungle_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_mangrove_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_mangrove_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_oak_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_oak_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_spruce_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_spruce_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "decorated_warped_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:decorated_warped_planks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:decorated_warped_planks"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them.title"
+    }
+  },
+  "requirements": [
+    [
+      "decorated_oak_planks"
+    ],
+    [
+      "decorated_spruce_planks"
+    ],
+    [
+      "decorated_birch_planks"
+    ],
+    [
+      "decorated_acacia_planks"
+    ],
+    [
+      "decorated_jungle_planks"
+    ],
+    [
+      "decorated_dark_oak_planks"
+    ],
+    [
+      "decorated_crimson_planks"
+    ],
+    [
+      "decorated_warped_planks"
+    ],
+    [
+      "decorated_mangrove_planks"
+    ],
+    [
+      "decorated_cherry_planks"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

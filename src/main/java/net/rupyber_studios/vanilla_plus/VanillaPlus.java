@@ -40,7 +40,7 @@ public class VanillaPlus implements ModInitializer {
 
 		// TODO: crafting recipes 100% (some to test)
 		// TODO: block loot tables 100%
-		// TODO: advancements 0%
+		// TODO: advancements 90%
 		// TODO: custom totems 20%
 		// TODO: mangrove, cherry blossom -> table, vertical slabs, hollow logs, decorated logs, decorated hollow logs, decorated planks 100%
 		// TODO: bamboo and bamboo mosaic -> vertical slab 100%

@@ -1,0 +1,34 @@
+{
+  "parent": "vanilla_plus:decoration",
+  "criteria": {
+    "green_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:green_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.vanilla_plus.true_color.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:green_lantern"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.true_color.title"
+    }
+  },
+  "requirements": [
+    [
+      "green_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

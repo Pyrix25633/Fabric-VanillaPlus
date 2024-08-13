@@ -98,11 +98,9 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     @Override
     public BlockState mirror(@NotNull BlockState state, BlockMirror mirrorIn) {
         VerticalSlabType type = state.get(TYPE);
-        if (type == VerticalSlabType.DOUBLE || mirrorIn == BlockMirror.NONE) return state;
-
-        if ((mirrorIn == BlockMirror.LEFT_RIGHT && type.direction.getAxis() == Direction.Axis.Z) || (mirrorIn == BlockMirror.FRONT_BACK && type.direction.getAxis() == Direction.Axis.X))
+        if(type == VerticalSlabType.DOUBLE || mirrorIn == BlockMirror.NONE) return state;
+        if((mirrorIn == BlockMirror.LEFT_RIGHT && type.direction.getAxis() == Direction.Axis.Z) || (mirrorIn == BlockMirror.FRONT_BACK && type.direction.getAxis() == Direction.Axis.X))
             return state.with(TYPE, VerticalSlabType.fromDirection(state.get(TYPE).direction.getOpposite()));
-
         return state;
     }
 
@@ -136,7 +134,7 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     public BlockState getPlacementState(@NotNull ItemPlacementContext context) {
         BlockPos blockpos = context.getBlockPos();
         BlockState blockstate = context.getWorld().getBlockState(blockpos);
-        if (blockstate.getBlock() == this) return blockstate.with(TYPE, VerticalSlabType.DOUBLE).with(WATERLOGGED, false);
+        if(blockstate.getBlock() == this) return blockstate.with(TYPE, VerticalSlabType.DOUBLE).with(WATERLOGGED, false);
 
         FluidState fluid = context.getWorld().getFluidState(blockpos);
         BlockState retState = getDefaultState().with(WATERLOGGED, fluid.getFluid() == Fluids.WATER);
@@ -148,7 +146,7 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
 
     private Direction getDirectionForPlacement(@NotNull ItemPlacementContext context) {
         Direction direction = context.getSide();
-        if (direction.getAxis() != Direction.Axis.Y) return direction;
+        if(direction.getAxis() != Direction.Axis.Y) return direction;
 
         BlockPos pos = context.getBlockPos();
         Vec3d vec = context.getHitPos().subtract(new Vec3d(pos.getX(), pos.getY(), pos.getZ())).subtract(0.5, 0, 0.5);
@@ -170,18 +168,14 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
 
     @Override
     public void neighborUpdate(BlockState state, @NotNull World world, BlockPos pos, Block sourceBlock, BlockPos sourcePos, boolean notify) {
-        if(!world.isClient) {
-            if(state.get(WATERLOGGED)) {
-                world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
-            }
-        }
+        if(!world.isClient && state.get(WATERLOGGED))
+            world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
     }
 
     @Override
     public BlockState getStateForNeighborUpdate(@NotNull BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-        if(state.get(WATERLOGGED)) {
+        if(state.get(WATERLOGGED))
             world.scheduleFluidTick(pos, Fluids.WATER, Fluids.WATER.getTickRate(world));
-        }
         return super.getStateForNeighborUpdate(state, direction, neighborState, world, pos, neighborPos);
     }
 

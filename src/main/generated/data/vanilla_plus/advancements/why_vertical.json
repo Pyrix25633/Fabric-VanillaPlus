@@ -1,0 +1,34 @@
+{
+  "parent": "vanilla_plus:decoration",
+  "criteria": {
+    "oak_vertical_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:oak_vertical_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.vanilla_plus.why_vertical.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:oak_vertical_slab"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.why_vertical.title"
+    }
+  },
+  "requirements": [
+    [
+      "oak_vertical_slab"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

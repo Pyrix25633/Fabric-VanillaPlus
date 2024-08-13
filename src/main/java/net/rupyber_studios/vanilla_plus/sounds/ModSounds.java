@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 import net.rupyber_studios.vanilla_plus.VanillaPlus;
 
 public class ModSounds {
-    //Lofi
+    // Lofi
     public static SoundEvent EVERYTHING_S_A_SYMPTOM = registerSoundEvent("everything_s_a_symptom");
     public static SoundEvent DAWN = registerSoundEvent("dawn");
     public static SoundEvent HERON = registerSoundEvent("heron");
@@ -31,7 +31,7 @@ public class ModSounds {
     public static SoundEvent ALONE_ON_D_BEACH = registerSoundEvent("alone_on_d_beach");
     public static SoundEvent NOT_ME = registerSoundEvent("not_me");
 
-    //Pop
+    // Pop
     public static SoundEvent BACKYARD_BOY = registerSoundEvent("backyard_boy");
     public static SoundEvent LOSING_MY_GRIP = registerSoundEvent("losing_my_grip");
     public static SoundEvent PENNY_RABBIT_AND_SUMMER_BEAR = registerSoundEvent("penny_rabbit_and_summer_bear");
@@ -41,17 +41,17 @@ public class ModSounds {
     public static SoundEvent PANIC_AT_THE_DISCO = registerSoundEvent("panic_at_the_disco");
     public static SoundEvent DANCE_MONKEY = registerSoundEvent("dance_monkey");
 
-    //Rap
+    // Rap
     public static SoundEvent I_WONDER = registerSoundEvent("i_wonder");
 
-    //Rock
+    // Rock
     public static SoundEvent LIBERTY_BELLE = registerSoundEvent("liberty_belle");
 
-    //Electro
+    // Electro
     public static SoundEvent I_HAVE_SEEN_A_GHOST = registerSoundEvent("i_have_seen_a_ghost");
     public static SoundEvent THE_DISTANCE_BETWEEN_US = registerSoundEvent("the_distance_between_us");
 
-    //Other
+    // Other
     public static SoundEvent LUSH = registerSoundEvent("lush");
 
     private static SoundEvent registerSoundEvent(String name) {

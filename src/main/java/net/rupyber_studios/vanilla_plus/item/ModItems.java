@@ -17,11 +17,14 @@ import java.util.List;
 
 public class ModItems {
     public static final List<Item> ALL = new ArrayList<>();
+    public static final List<ItemConvertible> DUNGEONS_ITEMS = new ArrayList<>();
+    public static final List<ItemConvertible> BLANK_MUSIC_DISCS = new ArrayList<>();
+    public static final List<ItemConvertible> MUSIC_DISCS = new ArrayList<>();
 
     public static final Item DECORATOR_TOOL = registerDecorativeBlocksItem("decorator_tool",
             new DecoratorToolItem(new Item.Settings().maxDamage(256)));
 
-    //Dungeons items
+    // Dungeons items
     public static final Item AXE = registerDungeonsItemsItem("axe", createModAxeItem(
             ToolMaterials.IRON, 292, 6.2F, -2.9F));
     public static final Item DOUBLE_AXE = registerDungeonsItemsItem("double_axe", createModAxeItem(
@@ -49,7 +52,7 @@ public class ModItems {
     public static final Item RAPID_CROSSBOW = registerDungeonsItemsItem("rapid_crossbow",
             new ModCrossbowItem(new Item.Settings().maxDamage(612)));
 
-    //Music discs
+    // Music discs
     public static final Item BLANK_MUSIC_DISC_PIECE = registerMusicDiscsItem("blank_music_disc_piece",
             new Item(new Item.Settings().maxCount(64)));
     public static final Item BLANK_MUSIC_DISC = registerMusicDiscsItem("blank_music_disc",
@@ -65,7 +68,7 @@ public class ModItems {
     public static final Item BLANK_ELECTRO_MUSIC_DISC = registerMusicDiscsItem("blank_electro_music_disc",
             new BlankMusicDiscItem(new Item.Settings().maxCount(64)));
 
-    //Lofi
+    // Lofi
     public static final Item MUSIC_DISC_EVERYTHING_S_A_SYMPTOM = registerMusicDiscsItem("music_disc_everything_s_a_symptom",
             new ModMusicDiscItem(4, ModSounds.EVERYTHING_S_A_SYMPTOM, new Item.Settings()
                     .maxCount(1), 137));
@@ -133,7 +136,7 @@ public class ModItems {
             new ModMusicDiscItem(4, ModSounds.NOT_ME, new Item.Settings()
                     .maxCount(1), 160));
 
-    //Pop
+    // Pop
     public static final Item MUSIC_DISC_BACKYARD_BOY = registerMusicDiscsItem("music_disc_backyard_boy",
             new ModMusicDiscItem(5, ModSounds.BACKYARD_BOY, new Item.Settings()
                     .maxCount(1), 136));
@@ -159,17 +162,17 @@ public class ModItems {
             new ModMusicDiscItem(5, ModSounds.DANCE_MONKEY, new Item.Settings()
                     .maxCount(1), 236));
 
-    //Rap
+    // Rap
     public static final Item MUSIC_DISC_I_WONDER = registerMusicDiscsItem("music_disc_i_wonder",
             new ModMusicDiscItem(6, ModSounds.I_WONDER, new Item.Settings()
                     .maxCount(1), 187));
 
-    //Rock
+    // Rock
     public static final Item MUSIC_DISC_LIBERTY_BELLE = registerMusicDiscsItem("music_disc_liberty_belle",
             new ModMusicDiscItem(7, ModSounds.LIBERTY_BELLE, new Item.Settings()
                     .maxCount(1), 149));
 
-    //Electro
+    // Electro
     public static final Item MUSIC_DISC_I_HAVE_SEEN_A_GHOST = registerMusicDiscsItem("music_disc_i_have_seen_a_ghost",
             new ModMusicDiscItem(8, ModSounds.I_HAVE_SEEN_A_GHOST, new Item.Settings()
                     .maxCount(1), 199));
@@ -177,7 +180,7 @@ public class ModItems {
             new ModMusicDiscItem(8, ModSounds.THE_DISTANCE_BETWEEN_US, new Item.Settings()
                     .maxCount(1), 325));
 
-    //Other
+    // Other
     public static final Item MUSIC_DISC_LUSH = registerMusicDiscsItem("music_disc_lush",
             new ModMusicDiscItem(9, ModSounds.LUSH, new Item.Settings()
                     .maxCount(1), 100));
@@ -214,6 +217,12 @@ public class ModItems {
 
     private static Item registerItem(String name, Item item, RegistryKey<ItemGroup> group) {
         ALL.add(item);
+        if(item instanceof DungeonItem)
+            DUNGEONS_ITEMS.add(item);
+        else if(item instanceof ModMusicDiscItem)
+            MUSIC_DISCS.add(item);
+        else if(item instanceof BlankMusicDiscItem)
+            BLANK_MUSIC_DISCS.add(item);
         Item registered = Registry.register(Registries.ITEM, new Identifier(VanillaPlus.MOD_ID, name), item);
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(registered));
         return registered;

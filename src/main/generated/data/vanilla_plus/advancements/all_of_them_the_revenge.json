@@ -1,0 +1,86 @@
+{
+  "parent": "vanilla_plus:no_music",
+  "criteria": {
+    "blank_electro_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:blank_electro_music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "blank_lofi_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:blank_lofi_music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "blank_pop_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:blank_pop_music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "blank_rap_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:blank_rap_music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "blank_rock_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:blank_rock_music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them_the_revenge.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:blank_lofi_music_disc"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them_the_revenge.title"
+    }
+  },
+  "requirements": [
+    [
+      "blank_lofi_music_disc"
+    ],
+    [
+      "blank_pop_music_disc"
+    ],
+    [
+      "blank_rap_music_disc"
+    ],
+    [
+      "blank_rock_music_disc"
+    ],
+    [
+      "blank_electro_music_disc"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

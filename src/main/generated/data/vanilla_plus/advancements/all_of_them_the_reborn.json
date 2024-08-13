@@ -1,0 +1,476 @@
+{
+  "parent": "vanilla_plus:no_music",
+  "criteria": {
+    "music_disc_alien_sky": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_alien_sky"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_alone_on_d_beach": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_alone_on_d_beach"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_backpack_city": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_backpack_city"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_backyard_boy": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_backyard_boy"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_dance_monkey": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_dance_monkey"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_dawn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_dawn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_decay": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_decay"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_everything_s_a_symptom": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_everything_s_a_symptom"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_finding": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_finding"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_heron": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_heron"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_i_have_seen_a_ghost": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_i_have_seen_a_ghost"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_i_love_you_baby": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_i_love_you_baby"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_i_wonder": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_i_wonder"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_levitate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_levitate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_liberty_belle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_liberty_belle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_losing_my_grip": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_losing_my_grip"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_lost_treasure": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_lost_treasure"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_lush": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_lush"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_misty": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_misty"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_mount_and_blade": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_mount_and_blade"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_moving_on": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_moving_on"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_my_person": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_my_person"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_no_worries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_no_worries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_not_me": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_not_me"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_pale_moon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_pale_moon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_panic_at_the_disco": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_panic_at_the_disco"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_penny_rabbit_and_summer_bear": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_penny_rabbit_and_summer_bear"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_pink_night_sky": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_pink_night_sky"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_remember_when": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_remember_when"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_snaps": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_snaps"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_sweet_look": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_sweet_look"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_the_distance_between_us": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_the_distance_between_us"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_time": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_time"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_wistful": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_wistful"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "music_disc_yerba_mate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:music_disc_yerba_mate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them_the_reborn.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:music_disc_alien_sky"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them_the_reborn.title"
+    }
+  },
+  "requirements": [
+    [
+      "music_disc_everything_s_a_symptom"
+    ],
+    [
+      "music_disc_dawn"
+    ],
+    [
+      "music_disc_heron"
+    ],
+    [
+      "music_disc_sweet_look"
+    ],
+    [
+      "music_disc_lost_treasure"
+    ],
+    [
+      "music_disc_alien_sky"
+    ],
+    [
+      "music_disc_backpack_city"
+    ],
+    [
+      "music_disc_levitate"
+    ],
+    [
+      "music_disc_snaps"
+    ],
+    [
+      "music_disc_mount_and_blade"
+    ],
+    [
+      "music_disc_pink_night_sky"
+    ],
+    [
+      "music_disc_yerba_mate"
+    ],
+    [
+      "music_disc_pale_moon"
+    ],
+    [
+      "music_disc_misty"
+    ],
+    [
+      "music_disc_finding"
+    ],
+    [
+      "music_disc_decay"
+    ],
+    [
+      "music_disc_moving_on"
+    ],
+    [
+      "music_disc_my_person"
+    ],
+    [
+      "music_disc_no_worries"
+    ],
+    [
+      "music_disc_wistful"
+    ],
+    [
+      "music_disc_alone_on_d_beach"
+    ],
+    [
+      "music_disc_not_me"
+    ],
+    [
+      "music_disc_backyard_boy"
+    ],
+    [
+      "music_disc_losing_my_grip"
+    ],
+    [
+      "music_disc_penny_rabbit_and_summer_bear"
+    ],
+    [
+      "music_disc_remember_when"
+    ],
+    [
+      "music_disc_i_love_you_baby"
+    ],
+    [
+      "music_disc_time"
+    ],
+    [
+      "music_disc_panic_at_the_disco"
+    ],
+    [
+      "music_disc_dance_monkey"
+    ],
+    [
+      "music_disc_i_wonder"
+    ],
+    [
+      "music_disc_liberty_belle"
+    ],
+    [
+      "music_disc_i_have_seen_a_ghost"
+    ],
+    [
+      "music_disc_the_distance_between_us"
+    ],
+    [
+      "music_disc_lush"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,60 @@
+{
+  "parent": "vanilla_plus:true_color",
+  "criteria": {
+    "green_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:green_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "red_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:red_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "yellow_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:yellow_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them_live_and_let_die.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:red_lantern"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them_live_and_let_die.title"
+    }
+  },
+  "requirements": [
+    [
+      "green_lantern"
+    ],
+    [
+      "yellow_lantern"
+    ],
+    [
+      "red_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

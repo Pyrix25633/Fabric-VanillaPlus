@@ -1,0 +1,34 @@
+{
+  "parent": "vanilla_plus:decoration",
+  "criteria": {
+    "oak_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:oak_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.vanilla_plus.the_table.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:oak_table"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.the_table.title"
+    }
+  },
+  "requirements": [
+    [
+      "oak_table"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

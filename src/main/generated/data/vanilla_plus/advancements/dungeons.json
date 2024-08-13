@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/deepslate.png",
+    "description": {
+      "translate": "advancements.vanilla_plus.dungeons.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:axe"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.dungeons.title"
+    }
+  },
+  "requirements": [
+    [
+      "axe"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

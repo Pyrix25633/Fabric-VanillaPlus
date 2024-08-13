@@ -1,0 +1,151 @@
+{
+  "parent": "vanilla_plus:the_table",
+  "criteria": {
+    "acacia_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:acacia_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "birch_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:birch_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cherry_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:cherry_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "crimson_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:crimson_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "dark_oak_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:dark_oak_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "jungle_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:jungle_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "mangrove_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:mangrove_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "oak_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:oak_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "spruce_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:spruce_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "warped_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "vanilla_plus:warped_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.vanilla_plus.all_of_them_the_return.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "vanilla_plus:crimson_table"
+    },
+    "title": {
+      "translate": "advancements.vanilla_plus.all_of_them_the_return.title"
+    }
+  },
+  "requirements": [
+    [
+      "oak_table"
+    ],
+    [
+      "spruce_table"
+    ],
+    [
+      "birch_table"
+    ],
+    [
+      "acacia_table"
+    ],
+    [
+      "jungle_table"
+    ],
+    [
+      "dark_oak_table"
+    ],
+    [
+      "crimson_table"
+    ],
+    [
+      "warped_table"
+    ],
+    [
+      "mangrove_table"
+    ],
+    [
+      "cherry_table"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,4 +1,4 @@
-// 1.20.6	2024-08-12T14:39:34.866313205	Vanilla Plus/Block Loot Tables
+// 1.20.6	2024-08-13T14:14:01.798121886	Vanilla Plus/Block Loot Tables
 772910728b0d2523456f764f4d182c1d75594301 data/vanilla_plus/loot_tables/blocks/decorated_dark_oak_planks.json
 2c2adc00effe89461d2c8af401114244ce16052e data/vanilla_plus/loot_tables/blocks/cobbled_deepslate_vertical_slab.json
 6efa7e17fe745aca9178cb93b030ad5845ee0bd9 data/vanilla_plus/loot_tables/blocks/decorated_dark_oak_wood.json
@@ -136,6 +136,6 @@ eb91d360251a1f73cb897030636143992ae1190e data/vanilla_plus/loot_tables/blocks/po
 4ea5d5a6f7b02ccb5aa910509d3d9952633c7145 data/vanilla_plus/loot_tables/blocks/mossy_cobblestone_vertical_slab.json
 6931edc6c2cda837b5d9b6c40b4fc053b32bb56f data/vanilla_plus/loot_tables/blocks/stripped_hollow_dark_oak_log.json
 e5b14eea492af3b605c1c1ffee1afc39f01a8513 data/vanilla_plus/loot_tables/blocks/decorated_stripped_acacia_wood.json
-5567bcc3f6d1da95b204176afafc4b96e3443fcc data/vanilla_plus/loot_tables/blocks/polished_diorite_vertical_slab.json
 c1688ef31cf6df7ef5def8210cfbc60ce56ee4b5 data/vanilla_plus/loot_tables/blocks/deep_ocean_brick_vertical_slab.json
+5567bcc3f6d1da95b204176afafc4b96e3443fcc data/vanilla_plus/loot_tables/blocks/polished_diorite_vertical_slab.json
 7c6df6beafedbb48091f749bcdac06cdc3580cac data/vanilla_plus/loot_tables/blocks/decorated_stripped_birch_wood.json

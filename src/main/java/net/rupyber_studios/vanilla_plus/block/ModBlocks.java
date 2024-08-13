@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -20,6 +21,10 @@ public class ModBlocks {
     private static final AbstractBlock.Settings LANTERN_SETTINGS = AbstractBlock.Settings.copy(Blocks.LANTERN);
 
     public static final List<Block> ALL = new ArrayList<>();
+    public static final List<ItemConvertible> DECORATED_PLANKS = new ArrayList<>();
+    public static final List<ItemConvertible> TABLES = new ArrayList<>();
+    public static final List<ItemConvertible> VERTICAL_SLABS = new ArrayList<>();
+    public static final List<ItemConvertible> LANTERNS = new ArrayList<>();
 
     // Oak
     public static final Block DECORATED_OAK_PLANKS = registerDecorativeBlock("decorated_oak_planks",
@@ -321,6 +326,14 @@ public class ModBlocks {
     private static Block registerDecorativeBlock(String name, Block block) {
         registerDecorativeBlockItem(name, block);
         ALL.add(block);
+        if(block instanceof DecoratedPlanksBlock)
+            DECORATED_PLANKS.add(block);
+        else if(block instanceof TableBlock)
+            TABLES.add(block);
+        else if(block instanceof VerticalSlabBlock)
+            VERTICAL_SLABS.add(block);
+        else if(block instanceof ModLanternBlock)
+            LANTERNS.add(block);
         return Registry.register(Registries.BLOCK, new Identifier(VanillaPlus.MOD_ID, name), block);
     }
 

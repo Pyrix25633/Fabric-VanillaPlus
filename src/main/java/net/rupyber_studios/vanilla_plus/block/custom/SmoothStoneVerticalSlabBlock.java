@@ -83,13 +83,12 @@ public class SmoothStoneVerticalSlabBlock extends Block implements Waterloggable
         if (blockstate.getBlock() == this) return blockstate.with(TYPE, VerticalSlabType.DOUBLE).with(WATERLOGGED, false);
 
         FluidState fluid = context.getWorld().getFluidState(blockpos);
-        BlockState retState = getDefaultState().with(WATERLOGGED, fluid.getFluid() == Fluids.WATER);
+        BlockState state = getDefaultState().with(WATERLOGGED, fluid.getFluid() == Fluids.WATER);
         Direction direction = getDirectionForPlacement(context);
-        boolean isOnXAxis = getDirectionForPlacement(context) == Direction.WEST
-                || getDirectionForPlacement(context) == Direction.EAST;
+        boolean isOnXAxis = direction == Direction.WEST || direction == Direction.EAST;
         VerticalSlabType type = VerticalSlabType.fromDirection(direction);
 
-        return retState.with(TYPE, type).with(IS_ON_X_AXIS, isOnXAxis);
+        return state.with(TYPE, type).with(IS_ON_X_AXIS, isOnXAxis);
     }
 
     private Direction getDirectionForPlacement(@NotNull ItemPlacementContext context) {
