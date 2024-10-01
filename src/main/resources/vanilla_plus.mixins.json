@@ -7,7 +7,8 @@
   "client": [
     "VanillaPlusMixin",
     "HeldItemRendererMixin",
-    "PlayerEntityRendererMixin"
+    "PlayerEntityRendererMixin",
+    "LivingEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 0

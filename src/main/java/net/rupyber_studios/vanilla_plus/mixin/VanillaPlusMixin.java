@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class VanillaPlusMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		VanillaPlus.LOGGER.info("This line is printed by an example mod mixin!");
+		VanillaPlus.LOGGER.info("Vanilla Plus Test Mixin Working!");
 	}
 }
